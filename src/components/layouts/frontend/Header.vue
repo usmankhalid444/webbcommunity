@@ -5,7 +5,8 @@
   >
     <!-- logo start -->
     <div class="col-span-12 md:col-span-1 text-2xl my-auto">
-      <p>Webb.</p>
+      <!-- <a href="../../pages/frontend/home/HomePage.vue">Webb.</a> -->
+      <router-link to="/">Webb.</router-link>
     </div>
     <!-- desktop menu start -->
     <div class="col-span-12 md:col-span-11 hidden md:block ">
@@ -67,11 +68,13 @@
           </i>
         </li>
         <li class="inline p-1 md:p-5 hover:text-custom-btnblue">
-          <img
-            class="inline w-11 h-11 rounded-full outline-solid"
-            src="/assets/user.png"
-            alt="user"
-          />
+          <router-link to="/communityevents">
+            <img
+              class="inline w-11 h-11 rounded-full outline-solid"
+              src="/assets/user.png"
+              alt="user"
+            />
+          </router-link>
         </li>
       </ul>
     </div>
@@ -83,6 +86,7 @@
       class="ri-menu-line text-right col-span-12 p-2.5 top-0 right-0 text-2xl absolute block md:hidden"
       @click="isToggle = !isToggle"
     ></i>
+    <router-view />
   </header>
 </template>
 <script>
