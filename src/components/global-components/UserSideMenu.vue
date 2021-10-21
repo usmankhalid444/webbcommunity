@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen  text-custom-lightblue capitalize font-semibold border-r border-gray-300 w-72  fixed"
+    class="h-screen hidden md:block text-custom-lightblue capitalize font-semibold border-r border-gray-300 w-72  fixed"
   >
     <ul class="border-b border-gray-300 w-full px-10 py-5">
       <li class=" py-4">

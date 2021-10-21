@@ -1,16 +1,16 @@
 <template>
   <Header headerClasses="text-white bg-custom-darkblue" />
-  <UserDashboard />
+  <UserSideMenu />
   <Events />
 </template>
 <script>
 import Header from "../../../layouts/frontend/Header";
-import UserDashboard from "../../../global-components/UserDashboard";
+import UserSideMenu from "../../../global-components/UserSideMenu";
 import Events from "./components/Events";
 export default {
   components: {
     Header,
-    UserDashboard,
+    UserSideMenu,
     Events,
   },
 };

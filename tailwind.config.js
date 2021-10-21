@@ -20,7 +20,12 @@ module.exports = {
         "1100p":"1100px",
         "800p":"800px",
         "269px":"269px",
-        "90vh":"450px"
+        "563px":"563px",
+        
+        // "90vh":"450px"
+      },
+      fontSize:{
+        "34px": "34px" 
       },
       backgroundImage: {
          'hero-background': "url('/assets/hero-hall.jpg')",

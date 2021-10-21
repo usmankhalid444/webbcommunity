@@ -1,7 +1,7 @@
 <template>
   <!-- main container -->
   <div
-    class=" w-full text-white bg-hero-background bg-gray-500 bg-blend-multiply bg-cover px-4 py-10 md:py-48 md:px-28 lg:h-800p text-center md:text-left"
+    class=" w-full text-white bg-hero-background bg-gray-600 bg-blend-multiply bg-cover px-4 py-10 md:py-48 md:px-28 lg:h-800p text-center md:text-left"
   >
     <!-- inner text -->
     <div class="w-full md:w-10/12">
