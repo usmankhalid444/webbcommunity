@@ -2,7 +2,10 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "../components/pages/frontend/home/HomePage.vue";
 import CommunityEvents from "../components/pages/frontend/community-events/CommunityEvents.vue";
 import Signup from '../components/pages/frontend/signup/Signup.vue'
-import Varification from '../components/pages/frontend/signup/components/Varification.vue'
+import Verification from '../components/pages/frontend/signup/components/Verification.vue'
+import Verified from '../components/pages/frontend/signup/components/Verified.vue'
+import Login from '../components/pages/frontend/login/Login.vue'
+import ForgotPassword from '../components/pages/frontend/login/components/ForgotPassword.vue'
 const routes = [
   {
     path: "/",
@@ -20,10 +23,26 @@ const routes = [
     component: Signup,
   },
   {
-    path: "/varification",
-    name: "Varification",
-    component: Varification,
+    path: "/verification",
+    name: "verification",
+    component: Verification,
   },
+  {
+    path: "/verified",
+    name: "verified",
+    component: Verified,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+  {
+    path: "/forgotpassword",
+    name: "forgot password",
+    component: ForgotPassword,
+  },
+  
 ];
 
 const router = createRouter({

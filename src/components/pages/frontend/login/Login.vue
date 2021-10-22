@@ -5,13 +5,8 @@
   >
     <div class="md:w-563px  text-custom-darkblue mt-10">
       <!-- heading -->
-      <h1 class="text-center font-semibold text-34px ">Sign up</h1>
-      <!-- name -->
-      <input
-        type="text"
-        placeholder="Name"
-        class="block h-16 border border-custom-lightgray w-full px-5 placeholder-custom-lightgray my-8 font-semibold"
-      />
+      <h1 class="text-center font-semibold text-34px ">Login</h1>
+
       <!-- email -->
       <input
         type="text"
@@ -23,7 +18,7 @@
         <input
           :type="showpassword ? 'text' : 'password'"
           placeholder="Password"
-          class="block h-16 border border-custom-lightgray w-full px-5  placeholder-custom-lightgray my-8 font-semibold"
+          class="block h-16 border border-custom-lightgray w-full px-5  placeholder-custom-lightgray my-5 font-semibold"
         />
         <i
           class="ri-eye-line text-xl absolute top-4 right-4 text-custom-lightgray cursor-pointer "
@@ -36,16 +31,10 @@
           v-if="!showpassword"
         ></i>
       </div>
-      <div class="font-semibold my-8">
-        <input
-          type="checkbox"
-          class="mr-3 ml-1 transform scale-125 cursor-pointer"
-        />
-        <!-- resedent or not check -->
-        <p class="inline">
-          I’m the resident of Webb Estate Community
-        </p>
-        <i class="ri-question-line float-right text-xl align-middle"></i>
+      <div class="font-semibold pb-5">
+        <router-link to="forgotpassword" class="underline float-right"
+          >Forgot password?
+        </router-link>
       </div>
       <div
         class="font-semibold my-8 bg-white py-6 border border-custom-lightgray relative px-5"
@@ -55,21 +44,23 @@
         <i class="ri-question-line float-right text-xl align-middle"></i>
       </div>
       <!-- register account button -->
-      <router-link to="verification"
+      <router-link to=""
         ><button
           class="bg-custom-btnblue hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
         >
-          REGISTER ACCOUNT
+          LOGIN ACCOUNT
         </button></router-link
       >
 
       <!-- if already have account then login -->
       <div class="font-semibold text-center mb-8">
         <p class="inline">
-          Already have an account?
+          Not a member yet?
         </p>
-        <router-link class="hover:text-custom-btnblue underline pl-1" to="login"
-          >Login
+        <router-link
+          class="hover:text-custom-btnblue underline pl-1"
+          to="signup"
+          >Sign up
         </router-link>
       </div>
     </div>

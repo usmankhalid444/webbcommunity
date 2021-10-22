@@ -12,24 +12,40 @@
         <p>Please enter the code below to verify your email.</p>
       </div>
       <!-- otp code fields -->
-      <div class="md:px-11 mx-auto text-center w-563px py-10">
+      <div class="md:px-11 mx-auto text-center py-5">
         <input
+          type="text"
+          maxlength="1"
+          class="border col-span-3 h-16 border-custom-lightgray w-14 mx-3 text-center text-3xl font-semibold text-custom-lightblue"
+        />
+        <input
+          maxlength="1"
           type="text"
           class="border col-span-3 h-16 border-custom-lightgray w-14 mx-3 text-center text-3xl font-semibold text-custom-lightblue"
         />
         <input
+          maxlength="1"
           type="text"
           class="border col-span-3 h-16 border-custom-lightgray w-14 mx-3 text-center text-3xl font-semibold text-custom-lightblue"
         />
         <input
-          type="text"
-          class="border col-span-3 h-16 border-custom-lightgray w-14 mx-3 text-center text-3xl font-semibold text-custom-lightblue"
-        />
-        <input
+          maxlength="1"
           type="text"
           class="border col-span-3 h-16 border-custom-lightgray w-14 mx-3 text-center text-3xl font-semibold text-custom-lightblue"
         />
       </div>
+      <!-- not receave resend section -->
+      <div class="md:text-lg text-center text-custom-darkblue">
+        <p class="inline">Not received?</p>
+        <a href="#" class="underline hover:text-custom-btnblue mx-3">Resend</a>
+      </div>
+      <router-link to="verified"
+        ><button
+          class="bg-custom-btnblue hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-12"
+        >
+          VERIFY EMAIL
+        </button></router-link
+      >
     </div>
   </div>
 </template>
