@@ -3,7 +3,7 @@
   <div
     class="bg-custom-lightgreen md:fixed grid h-screen justify-items-center md:p-0 p-5 w-full "
   >
-    <div class="md:w-563px  text-custom-darkblue mt-52">
+    <div class="w-full md:w-563px  text-custom-darkblue mt-20 md:mt-52">
       <!-- heading -->
       <h1 class="text-center font-semibold text-34px ">Forgot Password</h1>
 

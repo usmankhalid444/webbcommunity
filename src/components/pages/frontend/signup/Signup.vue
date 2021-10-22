@@ -1,9 +1,9 @@
 <template>
   <Header headerClasses="text-white bg-custom-darkblue" />
   <div
-    class="bg-custom-lightgreen md:fixed grid h-screen justify-items-center md:p-0 p-5 w-full"
+    class="bg-custom-lightgreen md:fixed grid md:h-screen justify-items-center md:p-0 p-5 w-full"
   >
-    <div class="md:w-563px  text-custom-darkblue mt-10">
+    <div class="w-full md:w-563px  text-custom-darkblue md:mt-10">
       <!-- heading -->
       <h1 class="text-center font-semibold text-34px ">Sign up</h1>
       <!-- name -->
