@@ -26,7 +26,7 @@
   </div>
 </template>
 <script>
-import Intro from "./Intro";
+import Intro from "../../../../global-components/Intro.vue";
 import Card from "./Card";
 export default {
   components: {

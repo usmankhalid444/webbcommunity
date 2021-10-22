@@ -17,7 +17,7 @@
       <!-- recovery link button -->
       <router-link to=""
         ><button
-          class="bg-custom-btnblue hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
+          class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
         >
           GET RECOVERY LINK
         </button></router-link

@@ -7,7 +7,7 @@ module.exports = {
         custom:{
           darkblue:"#00033C",
           lightblue:"#5F68A6",
-          btnblue:"#575EF6",
+          purple:"#575EF6",
           lightgreen:"#F6F8FB",
           lightgray:"#9EA4C9",
         }

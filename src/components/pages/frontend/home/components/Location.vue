@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import Intro from "./Intro";
+import Intro from "../../../../global-components/Intro.vue";
 import BtnLg from "../../../../global-components/BtnLg";
 export default {
   components: {

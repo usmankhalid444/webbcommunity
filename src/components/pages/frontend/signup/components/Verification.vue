@@ -37,11 +37,11 @@
       <!-- not receave resend section -->
       <div class="md:text-lg text-center text-custom-darkblue">
         <p class="inline">Not received?</p>
-        <a href="#" class="underline hover:text-custom-btnblue mx-3">Resend</a>
+        <a href="#" class="underline hover:text-custom-purple mx-3">Resend</a>
       </div>
       <router-link to="verified"
         ><button
-          class="bg-custom-btnblue hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-12"
+          class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-12"
         >
           VERIFY EMAIL
         </button></router-link

@@ -12,7 +12,7 @@
   </div>
 </template>
 <script>
-import Intro from "./Intro";
+import Intro from "../../../../global-components/Intro.vue";
 export default {
   components: {
     Intro,

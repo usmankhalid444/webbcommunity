@@ -1,5 +1,5 @@
 <template>
-  <div class="md:text-center p-5 md:p-10  lg:py-24">
+  <div class="md:text-center p-5 md:py-20">
     <h1
       class="text-custom-darkblue text-3xl md:text-6xl font-semibold capitalize"
     >

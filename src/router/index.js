@@ -6,6 +6,7 @@ import Verification from '../components/pages/frontend/signup/components/Verific
 import Verified from '../components/pages/frontend/signup/components/Verified.vue'
 import Login from '../components/pages/frontend/login/Login.vue'
 import ForgotPassword from '../components/pages/frontend/login/components/ForgotPassword.vue'
+import WebbCommunity from '../components/pages/frontend/webb-community/WebbCommunity.vue'
 const routes = [
   {
     path: "/",
@@ -41,6 +42,11 @@ const routes = [
     path: "/forgotpassword",
     name: "forgot password",
     component: ForgotPassword,
+  },
+  {
+    path: "/webbcommunity",
+    name: "Webb Communit",
+    component: WebbCommunity,
   },
   
 ];

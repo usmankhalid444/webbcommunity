@@ -47,7 +47,7 @@
             <td>dec 15, 2020</td>
             <td>under review</td>
             <td>
-              <a href="#" class="text-custom-btnblue" @click="modal = !modal"
+              <a href="#" class="text-custom-purple" @click="modal = !modal"
                 >view</a
               >
             </td>

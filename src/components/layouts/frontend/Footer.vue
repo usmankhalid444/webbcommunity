@@ -14,22 +14,22 @@
     </div>
     <div class="col-span-6 md:col-span-3">
       <ul class="capitalize text-md md:text-2xl font-semibold">
-        <li class="mb-5 hover:text-custom-btnblue"><a href="#">about us</a></li>
-        <li class="mb-5 hover:text-custom-btnblue">
+        <li class="mb-5 hover:text-custom-purple"><a href="#">about us</a></li>
+        <li class="mb-5 hover:text-custom-purple">
           <a href="#">newsletter</a>
         </li>
-        <li class="mb-5 hover:text-custom-btnblue">
+        <li class="mb-5 hover:text-custom-purple">
           <a href="#">privacy policy</a>
         </li>
       </ul>
     </div>
     <div class="col-span-6 md:col-span-3">
       <ul class="capitalize text-md md:text-2xl font-semibold">
-        <li class="mb-5 hover:text-custom-btnblue">
+        <li class="mb-5 hover:text-custom-purple">
           <a href="#">webb community</a>
         </li>
-        <li class="mb-5 hover:text-custom-btnblue"><a href="#">bookings</a></li>
-        <li class="mb-5 hover:text-custom-btnblue"><a href="#">calender</a></li>
+        <li class="mb-5 hover:text-custom-purple"><a href="#">bookings</a></li>
+        <li class="mb-5 hover:text-custom-purple"><a href="#">calender</a></li>
       </ul>
     </div>
     <div class="col-span-12  md:col-span-9 ">
@@ -39,13 +39,13 @@
     </div>
     <div class="col-span-12 md:col-span-3 text-3xl text-center md:text-left ">
       <a href="#">
-        <i class="ri-facebook-circle-fill mx-4 hover:text-custom-btnblue "></i>
+        <i class="ri-facebook-circle-fill mx-4 hover:text-custom-purple "></i>
       </a>
       <a href="#">
-        <i class="ri-twitter-fill mx-4 hover:text-custom-btnblue"></i>
+        <i class="ri-twitter-fill mx-4 hover:text-custom-purple"></i>
       </a>
       <a href="#">
-        <i class="ri-instagram-fill mx-4 hover:text-custom-btnblue"></i>
+        <i class="ri-instagram-fill mx-4 hover:text-custom-purple"></i>
       </a>
     </div>
   </div>

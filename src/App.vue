@@ -3,14 +3,7 @@
 </template>
 
 <script>
-// // import HomePage  from './components/pages/frontend/home/HomePage'
-// import CommunityEvents from "./components/pages/frontend/community-events/CommunityEvents.vue";
-// export default {
-//   components: {
-//     // HomePage
-//     CommunityEvents,
-//   },
-// };
+export default {};
 </script>
 
 <style>

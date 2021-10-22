@@ -1,6 +1,6 @@
 <template>
   <button
-    class="bg-custom-btnblue hover:bg-custom-lightblue md:w-44 md:h-12 h-10 w-40 uppercase font-semibold text-white"
+    class="bg-custom-purple hover:bg-custom-lightblue md:w-44 md:h-12 h-10 w-40 uppercase font-semibold text-white"
     :class="classes"
   >
     <i :class="icon"></i> {{ text }}

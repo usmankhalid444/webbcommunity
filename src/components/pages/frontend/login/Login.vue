@@ -46,7 +46,7 @@
       <!-- register account button -->
       <router-link to=""
         ><button
-          class="bg-custom-btnblue hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
+          class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
         >
           LOGIN ACCOUNT
         </button></router-link
@@ -57,9 +57,7 @@
         <p class="inline">
           Not a member yet?
         </p>
-        <router-link
-          class="hover:text-custom-btnblue underline pl-1"
-          to="signup"
+        <router-link class="hover:text-custom-purple underline pl-1" to="signup"
           >Sign up
         </router-link>
       </div>

@@ -5,7 +5,9 @@
   >
     <div class="w-full md:w-563px  text-custom-darkblue md:mt-10">
       <!-- heading -->
-      <h1 class="text-center font-semibold text-34px ">Sign up</h1>
+      <h1 class="text-center font-semibold text-34px">
+        Sign up
+      </h1>
       <!-- name -->
       <input
         type="text"
@@ -45,7 +47,14 @@
         <p class="inline">
           I’m the resident of Webb Estate Community
         </p>
-        <i class="ri-question-line float-right text-xl align-middle"></i>
+        <i
+          class="ri-question-line float-right text-xl align-middle relative group"
+        >
+          <span
+            class="absolute right-0 md:left-0 bottom-8 bg-white p-3 rounded-2xl w-48 text-custom-lightgray hidden group-hover:block"
+            >Select if you are resedent</span
+          >
+        </i>
       </div>
       <div
         class="font-semibold my-8 bg-white py-6 border border-custom-lightgray relative px-5"
@@ -57,7 +66,7 @@
       <!-- register account button -->
       <router-link to="verification"
         ><button
-          class="bg-custom-btnblue hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
+          class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
         >
           REGISTER ACCOUNT
         </button></router-link
@@ -68,7 +77,7 @@
         <p class="inline">
           Already have an account?
         </p>
-        <router-link class="hover:text-custom-btnblue underline pl-1" to="login"
+        <router-link class="hover:text-custom-purple underline pl-1" to="login"
           >Login
         </router-link>
       </div>

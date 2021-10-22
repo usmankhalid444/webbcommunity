@@ -55,11 +55,11 @@
     <div class="float-right mt-10">
       <button>
         <i
-          class="ri-delete-bin-7-line text-xl p-5 align-middle mr-5 hover:text-custom-btnblue"
+          class="ri-delete-bin-7-line text-xl p-5 align-middle mr-5 hover:text-custom-purple"
         ></i>
       </button>
       <button
-        class="border-2 border-gray-300 px-6 py-2 font-semibold text-lg hover:bg-custom-btnblue hover:text-white transition"
+        class="border-2 border-gray-300 px-6 py-2 font-semibold text-lg hover:bg-custom-purple hover:text-white transition"
       >
         RECHEDULE
       </button>
