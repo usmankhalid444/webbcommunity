@@ -1,7 +1,9 @@
 <template>
   <Header headerClasses="text-white bg-custom-darkblue" />
 
-  <div class="container mx-auto lg:w-800p xl:w-1100p text-custom-darkblue">
+  <div
+    class="container mx-auto lg:w-800p xl:w-1100p text-custom-darkblue px-2 md:px-0"
+  >
     <Intro
       heading="Webb Community"
       info="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
@@ -25,7 +27,7 @@
     <News v-if="showEvent" />
     <Event v-if="!showEvent" />
 
-    <div class="text-center mt-20 text-xl text-custom-lightgray">
+    <div class="text-center my-14 text-xl text-custom-lightgray">
       <i class="ri-arrow-left-s-line align-middle mx-4 text-custom-darkblue">
       </i>
       <a href="#" class="mx-2 md:mx-4 text-custom-darkblue">1</a>

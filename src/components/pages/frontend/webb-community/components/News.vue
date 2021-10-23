@@ -1,13 +1,21 @@
 <template>
   <div class="grid grid-cols-12 xl:gap-12 gap-4 mt-12">
-    <Card imgsrc="" name="" date="" heading="" info="" />
+    <NewsCard
+      v-for="card in cards"
+      :key="card.id"
+      :imgsrc="card.imgsrc"
+      :name="card.name"
+      :date="card.date"
+      :heading="card.heading"
+      :info="card.info"
+    />
   </div>
 </template>
 <script>
-import Card from "./Card";
+import NewsCard from "./NewsCard";
 export default {
   components: {
-    Card,
+    NewsCard,
   },
   data() {
     return {
