@@ -1,5 +1,5 @@
 <template>
-  <Header headerClasses="text-white bg-custom-darkblue" />
+  <Header :darkHeader="true" />
   <div
     class="bg-custom-lightgreen md:fixed grid h-screen justify-items-center md:p-0 p-5 w-full"
   >
@@ -66,6 +66,7 @@
 </template>
 <script>
 import Header from "../../../layouts/frontend/Header";
+
 export default {
   components: {
     Header,

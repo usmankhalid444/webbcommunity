@@ -110,7 +110,7 @@
   </transition>
 </template>
 <script>
-import Btnsm from "../../../../global-components/BtnSm";
+import Btnsm from "../../../../../global-components/BtnSm";
 import Modal from "./Modal";
 export default {
   components: {

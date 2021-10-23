@@ -1,5 +1,5 @@
 <template>
-  <Header headerClasses="text-white bg-custom-darkblue" />
+  <Header headerClasses="bg-custom-lightgreen" />
   <div
     class="bg-custom-lightgreen md:fixed grid md:h-screen justify-items-center md:p-0 p-5 w-full"
   >

@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "../components/pages/frontend/home/HomePage.vue";
-import CommunityEvents from "../components/pages/frontend/community-events/CommunityEvents.vue";
+import CommunityEvents from "../components/pages/frontend/profile/community-events/CommunityEvents.vue";
 import Signup from '../components/pages/frontend/signup/Signup.vue'
 import Verification from '../components/pages/frontend/signup/components/Verification.vue'
 import Verified from '../components/pages/frontend/signup/components/Verified.vue'

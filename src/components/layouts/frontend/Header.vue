@@ -1,7 +1,11 @@
 <template>
   <header
     class="grid grid-cols-12 gap-4   font-semibold py-2  px-4  lg:px-16  capitalize relative md:sticky md:top-0 z-50 "
-    :class="headerClasses ? headerClasses : 'bg-white text-custom-darkblue'"
+    :class="
+      darkHeader
+        ? 'text-white bg-custom-darkblue'
+        : 'bg-white text-custom-darkblue'
+    "
   >
     <!-- logo start -->
     <div class="col-span-12 md:col-span-1 text-2xl my-auto">
@@ -70,13 +74,24 @@
           </i>
         </li>
         <li class="inline p-1 md:p-5 hover:text-custom-purple">
-          <router-link to="/communityevents">
+          <router-link
+            to="/login"
+            class="text-white px-6 py-2 rounded border border-custom-darkblue"
+            :class="
+              darkHeader
+                ? 'bg-custom-purple hover:bg-custom-darkblue hover:border-white'
+                : 'bg-custom-darkblue hover:bg-custom-purple hover:border-custom-purple'
+            "
+            >Sign In</router-link
+          >
+          <!-- below buttom will be visible when user is loged in -->
+          <!-- <router-link to="/communityevents">
             <img
               class="inline w-11 h-11 rounded-full outline-solid"
               src="/assets/user.png"
               alt="user"
             />
-          </router-link>
+          </router-link> -->
         </li>
       </ul>
     </div>
@@ -94,7 +109,7 @@
 <script>
 import MobileMenu from "./MobileMenu";
 export default {
-  props: ["headerClasses"],
+  props: ["darkHeader"],
   components: {
     MobileMenu,
   },
