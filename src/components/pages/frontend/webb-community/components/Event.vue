@@ -11,6 +11,16 @@
       :location="card.location"
     />
   </div>
+  <div class="text-center my-14 text-xl text-custom-lightgray">
+    <i class="ri-arrow-left-s-line align-middle mx-4 text-custom-darkblue"> </i>
+    <a href="#" class="mx-2 md:mx-4 text-custom-darkblue">1</a>
+    <a href="#" class="mx-2 md:mx-4">2</a>
+    <a href="#" class="mx-2 md:mx-4">3</a>
+    <a href="#" class="mx-2 md:mx-4">4</a>
+    <a href="#" class="mx-2 md:mx-4">5</a>
+    <a href="#" class="mx-2 md:mx-4">6</a>
+    <i class="ri-arrow-right-s-line align-middle mx-4 text-custom-darkblue"></i>
+  </div>
 </template>
 <script>
 import EventCard from "./EventCard";

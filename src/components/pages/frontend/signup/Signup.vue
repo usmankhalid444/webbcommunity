@@ -1,5 +1,6 @@
 <template>
-  <Header headerClasses="bg-custom-lightgreen" />
+  <Header :darkHeader="true" />
+
   <div
     class="bg-custom-lightgreen md:fixed grid md:h-screen justify-items-center md:p-0 p-5 w-full"
   >
