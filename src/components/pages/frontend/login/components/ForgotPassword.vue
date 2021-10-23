@@ -1,35 +1,33 @@
 <template>
-  <Header :darkHeader="true" />
-  <div
-    class="bg-custom-lightgreen md:fixed grid h-screen justify-items-center md:p-0 p-5 w-full "
-  >
-    <div class="w-full md:w-563px  text-custom-darkblue mt-20 md:mt-52">
-      <!-- heading -->
-      <h1 class="text-center font-semibold text-34px ">Forgot Password</h1>
+  <FrontendMain :darkHeder="false">
+    <div
+      class="bg-custom-lightgreen grid justify-items-center md:p-0 p-5 w-full md:py-32"
+    >
+      <div class="w-full md:w-563px  text-custom-darkblue  ">
+        <!-- heading -->
+        <h1 class="text-center font-semibold text-34px ">Forgot Password</h1>
 
-      <!-- email -->
-      <input
-        type="text"
-        placeholder="Email"
-        class="block h-16 border border-custom-lightgray w-full px-5 placeholder-custom-lightgray my-10 font-semibold "
-      />
+        <!-- email -->
+        <input
+          type="text"
+          placeholder="Email"
+          class="block h-16 border border-custom-lightgray w-full px-5 placeholder-custom-lightgray my-10 font-semibold "
+        />
 
-      <!-- recovery link button -->
-      <router-link to=""
-        ><button
-          class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
+        <!-- recovery link button -->
+        <router-link to=""
+          ><button
+            class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
+          >
+            GET RECOVERY LINK
+          </button></router-link
         >
-          GET RECOVERY LINK
-        </button></router-link
-      >
+      </div>
     </div>
-  </div>
+  </FrontendMain>
 </template>
 <script>
-import Header from "../../../../layouts/frontend/Header";
 export default {
-  components: {
-    Header,
-  },
+  components: {},
 };
 </script>

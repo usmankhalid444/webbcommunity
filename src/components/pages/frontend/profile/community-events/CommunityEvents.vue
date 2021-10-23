@@ -1,5 +1,5 @@
 <template>
-  <Header headerClasses="text-white bg-custom-darkblue" />
+  <Header :darkHeader="true" />
   <UserSideMenu />
   <Events />
 </template>
