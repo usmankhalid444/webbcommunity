@@ -85,13 +85,13 @@
             >Sign In</router-link
           >
           <!-- below buttom will be visible when user is loged in -->
-          <!-- <router-link to="/communityevents">
+          <router-link to="/myprofile" class="px-6">
             <img
               class="inline w-11 h-11 rounded-full outline-solid"
               src="/assets/user.png"
               alt="user"
             />
-          </router-link> -->
+          </router-link>
         </li>
       </ul>
     </div>
