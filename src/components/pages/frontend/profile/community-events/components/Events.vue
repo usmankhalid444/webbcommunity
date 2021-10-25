@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-custom-lightgreen p-3 md:p-14 w-full md:w-auto md:ml-72">
+  <div
+    class="bg-custom-lightgreen p-3 md:p-14 w-full md:w-auto md:ml-72 h-screen"
+  >
     <!-- title and add new event section -->
     <div class="w-full relative">
       <h1 class="font-semibold text-xl md:text-4xl text-custom-darkblue inline">

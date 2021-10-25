@@ -7,8 +7,7 @@ import Verified from '../components/pages/frontend/signup/components/Verified.vu
 import Login from '../components/pages/frontend/login/Login.vue'
 import ForgotPassword from '../components/pages/frontend/login/components/ForgotPassword.vue'
 import WebbCommunity from '../components/pages/frontend/webb-community/WebbCommunity.vue'
-
-import Test from '../components/pages/frontend/Test.vue';
+import SingleNewsPage from '../components/pages/frontend/webb-community/components/SingleNewsPage'
 const routes = [
   {
     path: "/",
@@ -51,11 +50,10 @@ const routes = [
     component: WebbCommunity,
   },
   {
-    path: "/test",
-    name: "test",
-    component: Test,
+    path: "/singlenewspage",
+    name: "Single news page",
+    component: SingleNewsPage,
   },
-  
 ];
 
 const router = createRouter({

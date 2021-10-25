@@ -50,6 +50,7 @@
       </li>
     </ul>
   </div>
+  <slot></slot>
 </template>
 <script>
 export default {};

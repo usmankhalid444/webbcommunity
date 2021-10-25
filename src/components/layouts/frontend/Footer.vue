@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-12 gap-8 md:gap-10 bg-custom-darkblue text-white p-5 md:p-20"
+    class="grid grid-cols-12 gap-8 md:gap-10 bg-custom-darkblue text-white p-5 md:p-20 "
   >
     <div class="col-span-12">
       <h1 class="text-4xl md:text-5xl ">Webb.</h1>
