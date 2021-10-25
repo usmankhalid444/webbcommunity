@@ -8,6 +8,8 @@ import Login from '../components/pages/frontend/login/Login.vue'
 import ForgotPassword from '../components/pages/frontend/login/components/ForgotPassword.vue'
 import WebbCommunity from '../components/pages/frontend/webb-community/WebbCommunity.vue'
 import SingleNewsPage from '../components/pages/frontend/webb-community/components/SingleNewsPage'
+import MyProfile from '../components/pages/frontend/profile/my-profile/MyProfile'
+import NumberVerification from '../components/pages/frontend/profile/my-profile/components/NumberVerification'
 const routes = [
   {
     path: "/",
@@ -53,6 +55,16 @@ const routes = [
     path: "/singlenewspage",
     name: "Single news page",
     component: SingleNewsPage,
+  },
+  {
+    path: "/myprofile",
+    name: "My Profile",
+    component: MyProfile,
+  },
+  {
+    path: "/numberverification",
+    name: "Number Verification",
+    component: NumberVerification,
   },
 ];
 
