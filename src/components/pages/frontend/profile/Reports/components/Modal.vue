@@ -3,8 +3,10 @@
     class="capitalize w-full  z-50 absolute md:w-2/3 h-auto md:h-4/6 inset-0 md:left-1/4 md:top-28 p-5 md:p-12 shadow-2xl bg-white lg:max-w-4xl"
   >
     <div class="border-b pb-8">
-      <p class="text-custom-lightblue font-medium inline-block">REF No. WC01</p>
-      <p class="float-right">
+      <p class="text-custom-lightblue font-medium inline-block">
+        REF No. <span class="underline">WC01</span>
+      </p>
+      <p class="float-right cursor-pointer">
         <i class="ri-close-line text-3xl"></i>
       </p>
       <h1

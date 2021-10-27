@@ -44,7 +44,7 @@
           <i class="ri-question-line float-right text-xl align-middle"></i>
         </div>
         <!-- register account button -->
-        <router-link to=""
+        <router-link to="myprofile"
           ><button
             class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 mb-8"
           >

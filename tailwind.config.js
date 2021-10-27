@@ -8,6 +8,7 @@ module.exports = {
           darkblue:"#00033C",
           lightblue:"#5F68A6",
           purple:"#575EF6",
+          green:"#3ACC40",
           lightgreen:"#F6F8FB",
           lightgray:"#9EA4C9",
         }
@@ -38,6 +39,7 @@ module.exports = {
   variants: {
     extend: {
       display: ['group-hover'],
+      visibility: ['group-hover'],
       outline:['hover'],
       border:['hover'],
       borderColor:['hover'],

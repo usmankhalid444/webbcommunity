@@ -1,5 +1,5 @@
 <template>
-  <FrontendMain :darkHeder="false">
+  <FrontendMain :darkHeder="true">
     <div
       class="bg-custom-lightgreen  grid  justify-items-center md:p-0 p-5 w-full md:py-20"
     >
@@ -39,7 +39,7 @@
           <p class="inline">Not received?</p>
           <a href="#" class="underline hover:text-custom-purple mx-3">Resend</a>
         </div>
-        <router-link to="verified"
+        <router-link to="myprofile"
           ><button
             class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-12"
           >

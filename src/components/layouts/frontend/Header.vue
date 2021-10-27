@@ -26,7 +26,32 @@
         <!-- drop down menu start -->
         <li class="inline    relative group">
           <a href="#" class="hover:text-custom-purple p-5 inline-block">
-            bookings <i class="ri-arrow-down-s-line text-center"></i>
+            bookings
+            <svg
+              class="inline"
+              :class="
+                darkHeader
+                  ? 'fill-current text-white'
+                  : 'fill-current text-custom-darkblue'
+              "
+              id="arrow_down_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                id="Path_117"
+                data-name="Path 117"
+                d="M0,0H24V24H0Z"
+                fill="none"
+              />
+              <path
+                id="Path_118"
+                data-name="Path 118"
+                d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
+              />
+            </svg>
           </a>
           <!-- dropdown items start -->
           <span
@@ -66,12 +91,39 @@
           <!-- dropdown items end -->
         </li>
         <!-- dropdown menu end -->
-        <li class="inline  hover:text-custom-purple tex-5xl p-1 md:p-5">
-          <i class="ri-notification-line relative">
-            <span
-              class="w-2 h-2 bg-green-400 absolute rounded-full md:right-0 bottom-4"
-            ></span>
-          </i>
+        <li class="inline relative hover:text-custom-purple tex-5xl p-1 md:p-5">
+          <!-- bell icon svg -->
+          <svg
+            class="inline"
+            :class="
+              darkHeader
+                ? 'fill-current text-white'
+                : 'fill-current text-custom-darkblue'
+            "
+            id="notifications_icon_white"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="Path_131"
+              data-name="Path 131"
+              d="M0,0H24V24H0Z"
+              fill="none"
+            />
+            <path
+              id="Path_132"
+              data-name="Path 132"
+              d="M12,22a2.006,2.006,0,0,0,2-2H10A2.006,2.006,0,0,0,12,22Zm6-6V11c0-3.07-1.63-5.64-4.5-6.32V4a1.5,1.5,0,0,0-3,0v.68C7.64,5.36,6,7.92,6,11v5L4,18v1H20V18Zm-2,1H8V11c0-2.48,1.51-4.5,4-4.5s4,2.02,4,4.5Z"
+            />
+          </svg>
+          <span
+            class="w-2 h-2 bg-green-400 absolute rounded-full top-4 left-9"
+          ></span>
+
+          <!-- <i class="ri-notification-line relative">
+          </i> -->
         </li>
         <li class="inline p-1 md:p-5 hover:text-custom-purple">
           <router-link
