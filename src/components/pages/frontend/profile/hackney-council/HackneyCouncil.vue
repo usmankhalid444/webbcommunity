@@ -1,5 +1,6 @@
 <template>
   <div>
+    <UserProfileLayoutMobile />
     <UserProfileLayout>
       <!-- title section-->
       <div class="w-full relative">
@@ -206,8 +207,9 @@
 </template>
 <script>
 import Modal from "./components/Modal";
+import UserProfileLayoutMobile from "../../../../layouts/frontend/UserProfileLayoutMobile";
 export default {
-  components: { Modal },
+  components: { Modal, UserProfileLayoutMobile },
   data() {
     return {
       modal: false,

@@ -17,11 +17,76 @@
               SAVE CHANGES
             </button>
           </router-link>
+        </div>
+        <div class="relative group w-32">
           <img
             src="/assets/user.png"
             alt="userimage"
-            class="h-32 w-32 rounded-full my-10"
+            class="h-32 w-32 rounded-full my-10 "
           />
+          <span
+            class="absolute top-10 left-6  bg-custom-lightblue rounded-full bg-opacity-50 cursor-pointer hidden group-hover:block"
+            ><svg
+              class="fill-current text-white p-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 1280.000000 984.000000"
+            >
+              <g
+                transform="translate(0.000000,984.000000) scale(0.100000,-0.100000)"
+                stroke="none"
+              >
+                <path
+                  d="M4790 9830 c-238 -42 -424 -193 -600 -490 -37 -63 -220 -420 -406
+-792 l-339 -677 -1085 -3 c-1079 -3 -1085 -3 -1183 -25 -306 -70 -526 -190
+-743 -407 -216 -216 -339 -443 -406 -749 l-23 -102 0 -2640 c0 -2505 1 -2645
+18 -2735 60 -313 218 -600 449 -815 205 -190 463 -319 743 -371 97 -18 260
+-19 5185 -19 4925 0 5088 1 5185 19 303 56 562 193 780 411 216 216 354 477
+412 777 17 88 18 235 18 2733 l0 2640 -23 102 c-67 305 -191 533 -406 749
+-217 217 -437 337 -743 407 -98 22 -104 22 -1183 25 l-1085 3 -339 677 c-186
+372 -363 720 -394 772 -160 275 -312 418 -519 488 l-78 27 -1595 1 c-877 1
+-1615 -2 -1640 -6z m-3224 -2951 c87 -16 176 -63 248 -129 203 -190 207 -500
+10 -698 -111 -111 -269 -165 -416 -142 -244 37 -419 239 -419 483 -1 95 11
+148 51 227 56 110 156 197 275 238 95 34 155 39 251 21z m5199 -14 c865 -110
+1617 -579 2101 -1307 321 -482 484 -1030 484 -1623 0 -362 -55 -678 -176
+-1013 -278 -767 -895 -1408 -1653 -1717 -369 -150 -714 -217 -1121 -217 -553
+0 -1044 134 -1518 416 -268 159 -558 409 -765 659 -355 427 -585 971 -652
+1543 -20 168 -19 491 0 659 79 677 374 1286 855 1765 506 504 1169 802 1900
+854 106 7 426 -4 545 -19z"
+                />
+                <path
+                  d="M6230 5404 c-158 -19 -348 -78 -495 -151 -535 -269 -859 -847 -806
+-1436 61 -675 536 -1200 1206 -1333 125 -25 405 -25 530 0 467 93 847 378
+1055 793 121 243 174 517 150 778 -59 656 -507 1170 -1150 1321 -85 21 -138
+26 -280 29 -96 2 -191 1 -210 -1z"
+                />
+              </g>
+            </svg>
+          </span>
+          <span
+            class="absolute top-10 left-16 bg-custom-lightblue rounded-full bg-opacity-50 cursor-pointer hidden group-hover:block"
+            ><svg
+              class="fill-current text-white p-2"
+              id="delete_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+            >
+              <path
+                id="Path_3347"
+                data-name="Path 3347"
+                d="M0,0H24V24H0Z"
+                fill="none"
+              />
+              <path
+                id="Path_3348"
+                data-name="Path 3348"
+                d="M6,19a2.006,2.006,0,0,0,2,2h8a2.006,2.006,0,0,0,2-2V7H6ZM8,9h8V19H8Zm7.5-5-1-1h-5l-1,1H5V6H19V4Z"
+              />
+            </svg>
+          </span>
         </div>
         <div
           class="grid grid-cols-12 text-custom-darkblue gap-x-4 md:gap-x-12 border-b md:pb-10 2xl:w-1100p"

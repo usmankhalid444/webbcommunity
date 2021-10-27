@@ -1,9 +1,9 @@
 <template>
-  <Header darkHeader="true" />
   <div
-    class="h-screen  md:block text-custom-lightblue capitalize font-semibold border-r border-gray-300 w-72  fixed"
+    class="bg-white hidden capitalize fixed font-semibold h-screen shadow-2xl text-custom-lightblue w-56 z-10 pt-16"
   >
-    <ul class="border-b border-gray-300 w-full px-10 py-5">
+    <ul class="border-b border-gray-300 w-full px-5 ">
+      <div class="float-right">close</div>
       <li>
         <router-link
           class="py-4 hover:text-custom-darkblue block"
@@ -178,7 +178,7 @@
         >
       </li>
     </ul>
-    <ul class=" w-full px-10 py-2">
+    <ul class=" w-full px-5 pt-2">
       <li>
         <a href="#" class="py-4 hover:text-custom-darkblue block">settings</a>
       </li>
@@ -187,19 +187,10 @@
       </li>
     </ul>
   </div>
-  <!-- user profile content goes here -->
-  <div
-    class="bg-custom-lightgreen p-3 md:p-14 w-full md:w-auto md:ml-72 h-screen"
-  >
-    <slot></slot>
-  </div>
 </template>
 <script>
-import Header from "./Header";
 export default {
-  components: {
-    Header,
-  },
+  components: {},
   data() {
     return {
       mobileMenu: true,
