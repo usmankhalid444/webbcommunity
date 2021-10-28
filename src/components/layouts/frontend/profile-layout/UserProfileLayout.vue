@@ -15,7 +15,7 @@
       <li class=" relative">
         <!-- dropdown menu -->
         <p
-          class="py-4 hover:text-custom-darkblue block group"
+          class="py-4 hover:text-custom-darkblue block group cursor-pointer"
           :class="
             bookingsDropdown
               ? 'fill-current text-custom-darkblue'
