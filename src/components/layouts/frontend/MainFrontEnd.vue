@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-import Header from "./Header";
+import Header from "./header/Header";
 import Footer from "./Footer";
 export default {
   props: ["darkHeder"],

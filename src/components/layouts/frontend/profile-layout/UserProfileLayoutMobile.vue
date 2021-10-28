@@ -1,9 +1,46 @@
 <template>
-  <Header darkHeader="true" />
+  <div class="mb-3 md:hidden" @click="close = !close">
+    <svg
+      class=" fill-current text-custom-lightblue"
+      fill="#000000"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 50 50"
+      width="25px"
+      height="25px"
+    >
+      <path
+        d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"
+      />
+    </svg>
+  </div>
   <div
-    class="h-screen  md:block text-custom-lightblue capitalize font-semibold border-r border-gray-300 w-72  fixed"
+    class="bg-white transition-all duration-1000 ease-in-out capitalize absolute top-0 left-0 font-semibold h-screen shadow-2xl text-custom-lightblue w-56 z-10 pt-16"
+    :class="close ? 'shadow-none -left-56 ' : 'left-0'"
   >
-    <ul class="border-b border-gray-300 w-full px-10 py-5">
+    <div class="float-right px-6">
+      <svg
+        class="bg-custom-lightgreen rounded-full fill-current text-red-400 "
+        @click="close = !close"
+        id="close_icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          id="Path_104"
+          data-name="Path 104"
+          d="M0,0H24V24H0Z"
+          fill="none"
+        />
+        <path
+          id="Path_105"
+          data-name="Path 105"
+          d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+        />
+      </svg>
+    </div>
+    <ul class="border-b border-gray-300 w-full px-5 mt-5">
       <li>
         <router-link
           class="py-4 hover:text-custom-darkblue block"
@@ -178,7 +215,7 @@
         >
       </li>
     </ul>
-    <ul class=" w-full px-10 py-2">
+    <ul class=" w-full px-5 pt-2">
       <li>
         <a href="#" class="py-4 hover:text-custom-darkblue block">settings</a>
       </li>
@@ -187,24 +224,16 @@
       </li>
     </ul>
   </div>
-  <!-- user profile content goes here -->
-  <div
-    class="bg-custom-lightgreen p-3 md:p-14 w-full md:w-auto md:ml-72 h-screen"
-  >
-    <slot></slot>
-  </div>
 </template>
 <script>
-import Header from "./Header";
 export default {
-  components: {
-    Header,
-  },
+  components: {},
   data() {
     return {
       mobileMenu: true,
       bookingsDropdown: false,
       webbcommunityDropdown: false,
+      close: true,
     };
   },
 };

@@ -12,7 +12,6 @@
               type="submit"
               value="submit"
               class="absolute right-0 top-0 bg-custom-green hover:bg-custom-lightblue md:w-44 md:h-12 h-8 w-36 text-sm uppercase font-semibold text-white"
-              :class="classes"
             >
               SAVE CHANGES
             </button>
@@ -25,7 +24,7 @@
             class="h-32 w-32 rounded-full my-10 "
           />
           <span
-            class="absolute top-10 left-6  bg-custom-lightblue rounded-full bg-opacity-50 cursor-pointer hidden group-hover:block"
+            class="absolute top-10 left-6  bg-custom-lightblue rounded-full bg-opacity-50 hover:bg-opacity-90 cursor-pointer hidden group-hover:block"
             ><svg
               class="fill-current text-white p-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +64,7 @@
             </svg>
           </span>
           <span
-            class="absolute top-10 left-16 bg-custom-lightblue rounded-full bg-opacity-50 cursor-pointer hidden group-hover:block"
+            class="absolute top-10 left-16 bg-custom-lightblue rounded-full bg-opacity-50 hover:bg-opacity-90 cursor-pointer hidden group-hover:block"
             ><svg
               class="fill-current text-white p-2"
               id="delete_icon"
