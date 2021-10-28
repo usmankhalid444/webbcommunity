@@ -3,10 +3,15 @@
     <UserProfileLayout>
       <form action="#">
         <div class="w-full relative 2xl:w-1100p">
-          <span class="absolute -left-14 text-3xl"
-            ><i class="ri-arrow-left-line p-3"></i
-          ></span>
-          <h1 class="font-semibold text-4xl text-custom-darkblue">New Event</h1>
+          <router-link to="myprofile">
+            <span
+              class="absolute right-0 md:right-auto md:-left-14 text-3xl -top-12 md:top-auto"
+              ><i class="ri-arrow-left-line p-3"></i
+            ></span>
+          </router-link>
+          <h1 class="font-semibold text-4xl text-custom-darkblue">
+            Edit Profile
+          </h1>
           <router-link to="myprofile">
             <button
               type="submit"

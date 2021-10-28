@@ -4,7 +4,7 @@
       <!-- intro -->
       <div class="w-full relative 2xl:w-1100p mb-14">
         <router-link to="reports">
-          <span class="absolute -left-14 text-3xl"
+          <span class="absolute right-0 md:right-auto md:-left-14 text-3xl"
             ><i class="ri-arrow-left-line p-3"></i
           ></span>
         </router-link>

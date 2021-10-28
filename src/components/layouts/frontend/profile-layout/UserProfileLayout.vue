@@ -1,5 +1,6 @@
 <template>
   <Header darkHeader="true" />
+  <UserProfileLayoutMobile />
   <div
     class="h-screen hidden md:block text-custom-lightblue capitalize font-semibold border-r border-gray-300 w-72  fixed"
   >
@@ -196,9 +197,11 @@
 </template>
 <script>
 import Header from "../header/Header";
+import UserProfileLayoutMobile from "./UserProfileLayoutMobile";
 export default {
   components: {
     Header,
+    UserProfileLayoutMobile,
   },
   data() {
     return {

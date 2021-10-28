@@ -1,7 +1,6 @@
 <template>
   <div>
     <UserProfileLayout>
-      <UserProfileLayoutMobile v-if="isMobile" />
       <!-- title section-->
       <div class="w-full relative">
         <h1
@@ -207,26 +206,12 @@
 </template>
 <script>
 import Modal from "./components/Modal";
-import UserProfileLayoutMobile from "../../../../layouts/frontend/profile-layout/UserProfileLayoutMobile.vue";
 export default {
-  components: { Modal, UserProfileLayoutMobile },
+  components: { Modal },
   data() {
     return {
       modal: false,
     };
-  },
-  methods: {
-    isMobile() {
-      if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        )
-      ) {
-        return true;
-      } else {
-        return false;
-      }
-    },
   },
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
-  <div class="mb-3 md:hidden" @click="close = !close">
+  <!-- profile layout for mobile -->
+  <div class="p-3 bg-custom-lightgreen md:hidden" @click="close = !close">
     <svg
       class=" fill-current text-custom-lightblue"
       fill="#000000"
