@@ -2,7 +2,7 @@
   <div>
     <UserProfileLayout>
       <!-- intro -->
-      <div class="w-full relative 2xl:w-1100p mb-14">
+      <div class="w-full relative mb-14">
         <router-link to="hackneycouncil">
           <span class="absolute right-0 md:right-auto md:-left-14 text-3xl"
             ><i class="ri-arrow-left-line p-3"></i
@@ -15,7 +15,7 @@
       <!--intro end  -->
       <form>
         <div
-          class="grid grid-cols-12 text-custom-darkblue gap-x-4 md:gap-x-12 md:pb-10 2xl:w-1100p"
+          class="grid grid-cols-12 text-custom-darkblue gap-x-4 md:gap-x-12 md:pb-10"
         >
           <div class="col-span-12 md:col-span-6 relative mb-5">
             <p class="font-semibold text-custom-lightblue">Category</p>

@@ -2,7 +2,7 @@
   <div>
     <UserProfileLayout>
       <form action="#">
-        <div class="w-full relative 2xl:w-1100p">
+        <div class="w-full relative">
           <router-link to="myprofile">
             <span
               class="absolute right-0 md:right-auto md:-left-14 text-3xl -top-12 md:top-auto"
@@ -93,7 +93,7 @@
           </span>
         </div>
         <div
-          class="grid grid-cols-12 text-custom-darkblue gap-x-4 md:gap-x-12 border-b md:pb-10 2xl:w-1100p"
+          class="grid grid-cols-12 text-custom-darkblue gap-x-4 md:gap-x-12 border-b md:pb-10p"
         >
           <div class="col-span-12 md:col-span-6">
             <p class="font-semibold">Name</p>
@@ -193,7 +193,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-12 text-custom-darkblue gap-x-4 md:gap-x-12  md:pb-10 my-12 2xl:w-1100p"
+          class="grid grid-cols-12 text-custom-darkblue gap-x-4 md:gap-x-12  md:pb-10 my-12"
         >
           <div class="col-span-12 md:col-span-6">
             <p class="font-semibold">Old Password</p>

@@ -98,7 +98,9 @@
   <div
     class="bg-custom-lightgreen p-3 md:p-14 w-full md:w-auto md:ml-72 h-screen"
   >
-    <slot></slot>
+    <div class="2xl:w-1100p">
+      <slot></slot>
+    </div>
   </div>
 </template>
 <script>

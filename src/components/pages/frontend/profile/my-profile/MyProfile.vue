@@ -1,7 +1,7 @@
 <template>
   <div>
     <UserProfileLayout>
-      <div class="relative   2xl:w-1100p">
+      <div class="relative">
         <div class="">
           <img
             src="/assets/user.png"
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div
-        class="border-t border-b grid grid-cols-12 mt-16 py-2 text-custom-darkblue 2xl:w-1100p"
+        class="border-t border-b grid grid-cols-12 mt-16 py-2 text-custom-darkblue"
       >
         <div class="col-span-12 md:col-span-5">
           <p class="text-custom-lightblue">Email</p>
@@ -85,7 +85,7 @@
           </router-link>
         </div>
       </div>
-      <div class="text-custom-darkblue grid grid-cols-12 gap-5   2xl:w-1100p">
+      <div class="text-custom-darkblue grid grid-cols-12 gap-5">
         <p class="text-custom-lightblue col-span-12 pt-8">
           Residential Documents
         </p>
