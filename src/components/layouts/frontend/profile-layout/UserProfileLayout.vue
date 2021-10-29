@@ -96,7 +96,7 @@
   </div>
   <!-- user profile content goes here -->
   <div
-    class="bg-custom-lightgreen p-3 md:p-14 w-full md:w-auto md:ml-72 h-screen"
+    class="bg-custom-lightgreen p-3 md:p-14 w-full md:w-auto md:ml-72 h-screen 2xl:fixed 2xl:w-full"
   >
     <div class="2xl:w-1100p">
       <slot></slot>
@@ -135,7 +135,7 @@ export default {
           ],
         },
         {
-          title: "webb community",
+          title: "Webb community",
           link: "abcd",
           dropdown: [
             {
