@@ -24,14 +24,14 @@
           >
         </li>
         <!-- drop down menu start -->
-        <li class="inline    relative group">
+        <li class="inline relative group">
           <a href="#" class="hover:text-custom-purple p-5 inline-block">
             bookings
             <svg
-              class="inline"
+              class="inline fill-current"
               :class="
                 darkHeader
-                  ? 'fill-current text-white'
+                  ? 'fill-current text-white group-hover:text-custom-purple'
                   : 'fill-current text-custom-darkblue'
               "
               id="arrow_down_icon"
