@@ -113,7 +113,7 @@
               <option value="Resident">Resident</option>
               <option value="Non Resident">Non Resident</option>
             </select>
-            <span class="absolute top-14 right-5">
+            <span class="absolute top-14 right-5 pointer-events-none">
               <svg
                 id="arrow_down_icon"
                 xmlns="http://www.w3.org/2000/svg"

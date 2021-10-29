@@ -50,31 +50,58 @@
             >
               <ul>
                 <li>
-                  <a class="py-1.5 inline-block" href="#">All Enquiries</a>
-                </li>
-                <li>
-                  <a class="py-1.5 inline-block" href="#"
+                  <a
+                    class="py-1.5 inline-block hover:text-custom-lightblue"
+                    href="#"
                     >Parking Enquiries and Payments</a
                   >
                 </li>
-                <li><a class="py-1.5 inline-block" href="#">Council Tax</a></li>
                 <li>
-                  <a class="py-1.5 inline-block" href="#"
+                  <a
+                    class="py-1.5 inline-block hover:text-custom-lightblue"
+                    href="#"
+                    >Council Tax</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="py-1.5 inline-block hover:text-custom-lightblue"
+                    href="#"
                     >Tenants and Leaseholders</a
                   >
                 </li>
                 <li>
-                  <a class="py-1.5 inline-block" href="#">Housing Repairs</a>
+                  <a
+                    class="py-1.5 inline-block hover:text-custom-lightblue"
+                    href="#"
+                    >Housing Repairs</a
+                  >
                 </li>
                 <li>
-                  <a class="py-1.5 inline-block" href="#">Housing Advice</a>
+                  <a
+                    class="py-1.5 inline-block hover:text-custom-lightblue"
+                    href="#"
+                    >Housing Advice</a
+                  >
                 </li>
-                <li><a class="py-1.5 inline-block" href="#">Benefits</a></li>
                 <li>
-                  <a class="py-1.5 inline-block" href="#">Planning Duty Desk</a>
+                  <a
+                    class="py-1.5 inline-block hover:text-custom-lightblue"
+                    href="#"
+                    >Benefits</a
+                  >
                 </li>
                 <li>
-                  <a class="py-1.5 inline-block" href="#"
+                  <a
+                    class="py-1.5 inline-block hover:text-custom-lightblue"
+                    href="#"
+                    >Planning Duty Desk</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="py-1.5 inline-block hover:text-custom-lightblue"
+                    href="#"
                     >Bulky Waste Collection</a
                   >
                 </li>

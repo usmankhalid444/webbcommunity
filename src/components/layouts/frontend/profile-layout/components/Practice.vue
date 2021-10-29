@@ -44,11 +44,8 @@
   </ul>
 </template>
 <script>
-//import Pchild from "./Pchild.vue";
 export default {
-  components: {
-    //Pchild,
-  },
+  components: {},
   data() {
     return {
       current_submenu: null,
