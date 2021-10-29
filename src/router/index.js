@@ -17,6 +17,7 @@ import CreateEvent from '../components/pages/frontend/profile/events/components/
 import Report from '../components/pages/frontend/profile/Reports/Report'
 import CreateReport from '../components/pages/frontend/profile/Reports/components/CreateReport'
 import Practice from '../components/layouts/frontend/profile-layout/components/Practice'
+import ManageBooking from '../components/pages/frontend/profile/bookings/ManageBooking'
 const routes = [
   {
     path: "/",
@@ -108,6 +109,11 @@ const routes = [
     path: "/practice",
     name: "Practice",
     component: Practice,
+  },
+  {
+    path: "/managebookings",
+    name: "Manage Bookings",
+    component: ManageBooking,
   },
 ];
 

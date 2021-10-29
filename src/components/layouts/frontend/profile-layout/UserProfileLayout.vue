@@ -130,7 +130,7 @@ export default {
             },
             {
               title: "Manage",
-              link: "abcd",
+              link: "managebookings",
             },
           ],
         },

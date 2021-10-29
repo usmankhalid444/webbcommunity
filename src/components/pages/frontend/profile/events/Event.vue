@@ -59,7 +59,7 @@
         </div>
       </div>
       <!-- table start -->
-      <div class="capitalize h-90vh mt-10 overflow-auto w-full">
+      <div class="capitalize h-96 mt-10 overflow-auto w-full">
         <!-- px-8 py-4 -->
         <table
           class="w-full md:leading-extra-loose overflow-scroll text-sm md:text-base"
