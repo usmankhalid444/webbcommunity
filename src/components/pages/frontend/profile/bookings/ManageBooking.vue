@@ -29,9 +29,9 @@
             <a href="#">Past</a>
           </li>
         </ul>
-        <div class="float-right relative">
+        <div class="lg:float-right relative">
           <input
-            class="border border-gray-400 w-44  md:w-80 h-10 -mt-8 float-right inline pr-4 pl-10"
+            class="border border-gray-400 w-44  lg:w-80 h-10 lg:-mt-8 lg:float-right inline pr-4 pl-10 mt-5"
             type="text"
             placeholder=" Search"
           />
@@ -64,7 +64,7 @@
         </div>
       </div>
       <!-- table start -->
-      <div class="capitalize h-96 mt-10 overflow-auto w-full">
+      <div class="capitalize h-72 md:h-96 mt-10 overflow-auto w-full">
         <!-- px-8 py-4 -->
         <table
           class="w-full md:leading-extra-loose overflow-scroll text-sm md:text-base"
