@@ -13,6 +13,6 @@ app.component('UserProfileLayout', UserProfileLayout); // global registration - 
 
 app.use(router);
 
-app.mount('#app')
+app.mount('#app');
 
 ///createApp(App).use(router).mount('#app');
