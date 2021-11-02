@@ -18,6 +18,7 @@ import Report from '../components/pages/frontend/profile/Reports/Report';
 import CreateReport from '../components/pages/frontend/profile/Reports/components/CreateReport';
 import Practice from '../components/layouts/frontend/profile-layout/components/Practice';
 import ManageBooking from '../components/pages/frontend/profile/bookings/manage-booking/ManageBooking';
+import RescheduleBooking from '../components/pages/frontend/profile/bookings/manage-booking/components/RescheduleBooking';
 const routes = [
   {  
     path: "/",
@@ -113,6 +114,11 @@ const routes = [
     path: "/managebookings",
     name: "Manage Bookings",
     component: ManageBooking,
+  },
+  {
+    path: "/rechedulebooking",
+    name: "Reschedule Bookings",
+    component: RescheduleBooking,
   },
 ];
 

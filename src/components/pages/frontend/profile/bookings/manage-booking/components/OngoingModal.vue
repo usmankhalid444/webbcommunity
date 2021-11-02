@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute bg-white capitalize h-auto left-52 lg:max-w-4xl md:h-4/6 md:p-12 md:w-2/3 p-5 shadow-2xl top-32 w-full z-50"
+    class="absolute bg-white capitalize h-auto left-52 lg:max-w-4xl md:h-4/6 md:p-12 md:w-2/3 p-5 shadow-2xl top-32 w-full z-200"
     v-if="show"
   >
     <div class="border-b pb-8">
@@ -58,22 +58,31 @@
     <div class="float-right mt-10">
       <button>
         <i
+          @click="cancel = !cancel"
           class="ri-delete-bin-7-line text-xl p-5 align-middle mr-5 hover:text-custom-purple"
         ></i>
       </button>
-      <button
-        class="border-2 border-gray-300 px-6 py-2 font-semibold text-lg hover:bg-custom-purple hover:text-white transition"
-      >
-        RECHEDULE
-      </button>
+      <router-link to="rechedulebooking">
+        <button
+          class="border-2 border-gray-300 px-6 py-2 font-semibold text-lg hover:bg-custom-purple hover:text-white transition"
+        >
+          RECHEDULE
+        </button>
+      </router-link>
     </div>
   </div>
+  <CancelBooking v-if="cancel" />
 </template>
 <script>
+import CancelBooking from "./CancelBooking";
 export default {
+  components: {
+    CancelBooking,
+  },
   data() {
     return {
       show: true,
+      cancel: false,
     };
   },
 };
