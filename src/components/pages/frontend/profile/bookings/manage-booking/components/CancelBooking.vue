@@ -63,7 +63,7 @@
         <div class="col-span-6">
           <div>
             <button
-              class=" py-5 w-full font-semibold border-2 border-custom-darkblue"
+              class=" py-5 w-full font-semibold border-2 border-custom-darkblue hover:border-red-900"
             >
               YES! CANCEL IT
             </button>
