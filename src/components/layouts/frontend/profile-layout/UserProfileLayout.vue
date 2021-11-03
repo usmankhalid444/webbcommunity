@@ -122,11 +122,11 @@ export default {
         },
         {
           title: "Bookings",
-          link: "abcd",
+          // link: "abcd",
           dropdown: [
             {
               title: "Create New",
-              link: "abcd",
+              link: "createbooking",
             },
             {
               title: "Manage",
@@ -136,7 +136,7 @@ export default {
         },
         {
           title: "Webb community",
-          link: "abcd",
+          // link: "abcd",
           dropdown: [
             {
               title: "Events",
@@ -154,7 +154,7 @@ export default {
         },
         {
           title: "Notifications",
-          link: "abcd",
+          link: "myprofile",
           dropdown: [],
         },
       ],

@@ -19,6 +19,7 @@ import CreateReport from '../components/pages/frontend/profile/Reports/component
 import Practice from '../components/layouts/frontend/profile-layout/components/Practice';
 import ManageBooking from '../components/pages/frontend/profile/bookings/manage-booking/ManageBooking';
 import RescheduleBooking from '../components/pages/frontend/profile/bookings/manage-booking/components/RescheduleBooking';
+import CreateBooking from '../components/pages/frontend/profile/bookings/create-booking/CreateBooking';
 const routes = [
   {  
     path: "/",
@@ -119,6 +120,11 @@ const routes = [
     path: "/rechedulebooking",
     name: "Reschedule Bookings",
     component: RescheduleBooking,
+  },
+  {
+    path: "/createbooking",
+    name: "New Booking",
+    component: CreateBooking,
   },
 ];
 

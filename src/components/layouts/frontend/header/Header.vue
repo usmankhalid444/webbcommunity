@@ -28,7 +28,7 @@
           <a href="#" class="hover:text-custom-purple p-5 inline-block">
             bookings
             <svg
-              class="inline fill-current"
+              class="inline fill-current group-hover:text-custom-purple"
               :class="
                 darkHeader
                   ? 'fill-current text-white group-hover:text-custom-purple'

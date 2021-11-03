@@ -1,12 +1,13 @@
 <template>
   <div
-    class="capitalize w-full  z-50 absolute md:w-2/3 h-auto md:h-4/6 inset-0 md:left-1/4 md:top-28 p-5 md:p-12 shadow-2xl bg-white lg:max-w-4xl"
+    class="absolute bg-white capitalize h-auto left-52 lg:max-w-4xl md:p-12 md:w-2/3 p-5 shadow-2xl top-32 w-full z-50"
+    v-if="show"
   >
     <div class="border-b pb-8">
       <p class="text-custom-lightblue font-medium inline-block">
         REF No. <span class="underline">WC01</span>
       </p>
-      <p class="float-right cursor-pointer">
+      <p @click="show = false" class="float-right cursor-pointer">
         <i class="ri-close-line text-3xl"></i>
       </p>
       <h1
@@ -69,5 +70,11 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      show: true,
+    };
+  },
+};
 </script>
