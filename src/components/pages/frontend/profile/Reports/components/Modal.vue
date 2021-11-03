@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute bg-white capitalize h-auto left-52 lg:max-w-4xl md:p-12 md:w-2/3 p-5 shadow-2xl top-32 w-full z-50"
+    class="absolute bg-white capitalize h-auto left-0 md:left-52 lg:max-w-4xl md:p-12 md:w-2/3 p-5 shadow-2xl md:top-32 top-20 w-full z-50"
     v-if="show"
   >
     <div class="border-b pb-8">
@@ -21,13 +21,13 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">duration</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           1 day event
         </p>
       </div>
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">guest no.</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           80-100
         </p>
       </div>
@@ -35,13 +35,13 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">start</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           15 dec 2020, 01:00 PM
         </p>
       </div>
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">end</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           15 dec 2020, 04:00 PM
         </p>
       </div>
@@ -49,16 +49,16 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">total cost</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2 inline">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2 inline">
           £45 inc. tax
         </p>
-        <p class="inline px-5 text-custom-lightgray text-xl">(£15 /hour)</p>
+        <p class="inline px-5 text-custom-lightgray md:text-xl">(£15 /hour)</p>
       </div>
     </div>
     <div class="float-right mt-10">
       <button>
         <i
-          class="ri-delete-bin-7-line text-xl p-5 align-middle mr-5 hover:text-custom-purple"
+          class="ri-delete-bin-7-line md:text-xl p-5 align-middle mr-5 hover:text-custom-purple"
         ></i>
       </button>
       <button

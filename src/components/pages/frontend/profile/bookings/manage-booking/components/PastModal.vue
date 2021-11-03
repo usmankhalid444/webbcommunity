@@ -1,6 +1,6 @@
 <template>
   <div
-    class="capitalize w-full z-50 absolute md:w-2/3 h-screen top-0 md:left-60 md:top-0 p-5 md:p-12 shadow-2xl bg-white lg:max-w-4xl overflow-auto"
+    class="capitalize w-full z-50 absolute md:w-2/3 h-screen top-0 left-0 md:left-60 p-5 md:p-12 shadow-2xl bg-white lg:max-w-4xl overflow-auto"
     v-if="show"
   >
     <div class="border-b pb-8">
@@ -21,13 +21,13 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">duration</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           1 day event
         </p>
       </div>
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">guest no.</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           20 Kids :: 50 Adults
         </p>
       </div>
@@ -35,13 +35,13 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">start</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           15 dec 2020, 01:00 PM
         </p>
       </div>
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">end</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           15 dec 2020, 04:00 PM
         </p>
       </div>
@@ -49,13 +49,13 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">Total hours</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           3 hours
         </p>
       </div>
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">total amount</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           £245
         </p>
       </div>
@@ -63,13 +63,13 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2 gap-x-5">
       <p class="col-span-12 text-custom-lightblue">Domage images</p>
       <div class="col-span-4 border my-3">
-        <img src="/assets/s-img1.png" alt="domage image" class="h-52" />
+        <img src="/assets/s-img1.png" alt="domage image" class="md:h-52" />
         <p class="text-sm underline py-2 text-center text-custom-darkblue">
           image001.jpeg
         </p>
       </div>
       <div class="col-span-4 border my-3">
-        <img src="/assets/s-img2.png" alt="domage image" class="h-52" />
+        <img src="/assets/s-img2.png" alt="domage image" class="md:h-52" />
         <p class="text-sm underline py-2 text-center text-custom-darkblue">
           image002.jpeg
         </p>

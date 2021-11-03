@@ -1,7 +1,7 @@
 <template>
   <Header darkHeader="true" />
   <div
-    class="bg-custom-lightgreen md:py-20 grid  justify-items-center md:p-0 p-5 w-full h-full md:fixed"
+    class="bg-custom-lightgreen md:py-20 grid  justify-items-center md:p-0 p-5 w-full h-full fixed"
   >
     <div class="w-full md:w-563px  text-custom-darkblue ">
       <!-- heading -->

@@ -10,7 +10,7 @@
       @click="nextStep('step4')"
       class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"
     >
-      SEND BOOKING REQUEST4
+      SEND BOOKING REQUEST
     </button>
   </div>
 </template>

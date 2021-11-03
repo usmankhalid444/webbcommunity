@@ -43,7 +43,7 @@
       @click="nextStep('step2')"
       class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"
     >
-      CONTINUE1
+      CONTINUE
     </button>
   </div>
 </template>

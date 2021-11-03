@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute bg-white capitalize h-auto left-52 lg:max-w-4xl md:p-12 md:w-2/3 p-5 shadow-2xl top-32 w-full z-50"
+    class="absolute bg-white capitalize h-auto left-0 mdleft-52 lg:max-w-4xl md:p-12 md:w-2/3 p-5 shadow-2xl top-10 md:top-32 w-full z-50"
     v-if="show"
   >
     <div class="border-b pb-8">
@@ -51,13 +51,13 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">source</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           john andrews (YOU)
         </p>
       </div>
       <div class="col-span-6 ">
         <p class="text-custom-lightblue">date and time</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           15 dec 2020, 04:00 PM
         </p>
       </div>
@@ -65,7 +65,7 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-12 ">
         <p class="text-custom-lightblue">subject</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
           praesentium nesciunt maiores exercitationem sapiente nostrum .
         </p>
@@ -74,7 +74,7 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-12 ">
         <p class="text-custom-lightblue">decription</p>
-        <p class="text-custom-darkblue text-xl font-semibold py-2 inline">
+        <p class="text-custom-darkblue md:text-xl font-semibold py-2 inline">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
           delectus suscipit odio impedit eos nostrum esse, commodi cum quod
           fugit minima ullam quos ex, tempora ut alias praesentium vero
