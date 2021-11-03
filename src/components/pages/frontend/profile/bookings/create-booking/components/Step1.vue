@@ -40,17 +40,19 @@
       upload form)
     </p>
     <button
-      @click="nextstep"
+      @click="nextStep('step2')"
       class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"
     >
-      CONTINUE
+      CONTINUE1
     </button>
   </div>
 </template>
 <script>
 export default {
-  props: {
-    nextstep: Function,
+  methods: {
+    nextStep(currentStep) {
+      this.$emit("nextStep", currentStep);
+    },
   },
 };
 </script>

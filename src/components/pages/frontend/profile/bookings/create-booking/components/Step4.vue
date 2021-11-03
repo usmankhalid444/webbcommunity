@@ -7,17 +7,19 @@
       value="21 Dec 2020, 02:00 PM"
     />
     <button
-      @click="nextstep"
+      @click="nextStep('step4')"
       class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"
     >
-      SEND BOOKING REQUEST
+      SEND BOOKING REQUEST4
     </button>
   </div>
 </template>
 <script>
 export default {
-  props: {
-    nextstep: Function,
+  methods: {
+    nextStep(currentStep) {
+      this.$emit("nextStep", currentStep);
+    },
   },
 };
 </script>
