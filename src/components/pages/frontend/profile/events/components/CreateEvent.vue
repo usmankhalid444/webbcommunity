@@ -29,7 +29,7 @@
               <option value="Benefits">Benefits</option>
               <option value="Housing Advise">Housing Advise</option>
             </select>
-            <span class="absolute top-14 right-5">
+            <span class="absolute top-14 right-5 pointer-events-none">
               <svg
                 id="arrow_down_icon"
                 xmlns="http://www.w3.org/2000/svg"
