@@ -1,16 +1,16 @@
 <template>
   <div
-    class="grid grid-cols-12 p-2 md:p-8 gap-x-4 md:gap-x-8 text-custom-darkblue mx-auto"
+    class="grid grid-cols-12 p-2 md:p-8 gap-x-4 md:gap-x-8 text-custom-darkblue mx-auto xl:max-w-7xl mt-10"
   >
-    <div class="col-span-12 md:col-span-9">
+    <div class="col-span-12 md:col-span-7 xl:col-span-9">
       <FullCalendar :options="calendarOptions" />
     </div>
     <div
-      class="col-span-12 md:col-span-3 border text-center py-8 px-5 md:mt-16 mt-5"
+      class="col-span-12 md:col-span-5 xl:col-span-3 border text-center py-8 px-5 md:mt-16 mt-5"
     >
       <div class="mb-4 relative" @click="selectAll()">
         <button
-          class="border border-custom-lightgray w-full py-3 px-5 font-semibold text-left "
+          class="border border-custom-lightgray w-full py-3 px-5  font-semibold text-left"
         >
           All Days
         </button>
@@ -69,7 +69,7 @@
         @click="addTime(item)"
       >
         <button
-          class="border border-custom-lightgray w-full py-3 px-5 font-semibold text-left"
+          class="border border-custom-lightgray w-full py-3 px-5  font-semibold text-left"
           :class="!item.available ? 'opacity-50' : ''"
         >
           {{ item.title }}
@@ -131,6 +131,7 @@
       </div>
       <div class="relative  my-1.5">
         <button
+          @click="nextStep('monthlyCalender')"
           class="w-full h-14 bg-custom-purple hover:bg-custom-darkblue text-white font-semibold transition"
         >
           CONTINUE
@@ -183,7 +184,7 @@ export default {
           this.selectedTimes.push(item.title);
         }
       } else {
-        let itemIndex = this.selectedTimes.indexOf(item);
+        let itemIndex = this.selectedTimes.indexOf(item.title);
         this.selectedTimes.splice(itemIndex, 1);
       }
       console.log(this.selectedTimes);
@@ -193,6 +194,9 @@ export default {
       this.selectedTimes = this.times.map((i) => {
         return i.title;
       });
+    },
+    nextStep(currentStep) {
+      this.$emit("nextStep", currentStep);
     },
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute bg-white capitalize h-auto left-0 mdleft-52 lg:max-w-4xl md:p-12 md:w-2/3 p-5 shadow-2xl top-10 md:top-32 w-full z-50"
+    class="absolute bg-white capitalize h-auto left-0 md:left-52 lg:max-w-4xl md:p-12 md:w-2/3 p-5 shadow-2xl top-10 md:top-32 w-full z-50"
     v-if="show"
   >
     <div class="border-b pb-8">

@@ -20,7 +20,7 @@ import Practice from '../components/layouts/frontend/profile-layout/components/P
 import ManageBooking from '../components/pages/frontend/profile/bookings/manage-booking/ManageBooking';
 import RescheduleBooking from '../components/pages/frontend/profile/bookings/manage-booking/components/RescheduleBooking';
 import CreateBooking from '../components/pages/frontend/profile/bookings/create-booking/CreateBooking';
-import CalenderMonthly from '../components/pages/frontend/profile/bookings/create-booking/components/step3/CalenderMonthly'
+import CalenderMonthly from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderMonthly'
 const routes = [
   {  
     path: "/",

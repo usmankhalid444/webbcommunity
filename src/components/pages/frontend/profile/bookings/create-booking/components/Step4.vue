@@ -6,12 +6,14 @@
       type="datetime-local"
       value="21 Dec 2020, 02:00 PM"
     />
-    <button
-      @click="nextStep('step4')"
-      class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"
-    >
-      SEND BOOKING REQUEST
-    </button>
+    <router-link to="calender">
+      <button
+        @click="nextStep('monthlyCalender')"
+        class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"
+      >
+        SEND BOOKING REQUEST
+      </button>
+    </router-link>
   </div>
 </template>
 <script>
