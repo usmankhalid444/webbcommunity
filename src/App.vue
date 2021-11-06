@@ -13,4 +13,7 @@ export default {};
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+select {
+  background-image: none !important;
+}
 </style>
