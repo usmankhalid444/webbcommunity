@@ -42,7 +42,7 @@
           <div class="font-semibold my-8">
             <input
               type="checkbox"
-              class="mr-3 ml-1 transform scale-125 cursor-pointer"
+              class="mr-3 ml-1 transform scale-125 cursor-pointer focus:ring-0 focus:shadow-none ring-offset-0 text-custom-darkblue"
             />
             <!-- resedent or not check -->
             <p class="inline">

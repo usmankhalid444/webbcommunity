@@ -40,12 +40,17 @@ module.exports = {
     extend: {
       display: ['group-hover'],
       visibility: ['group-hover'],
-      outline:['hover'],
+      outline:['hover','focus'],
       border:['hover'],
       borderColor:['hover'],
       borderWidth:['hover'],
+      backgroundColor: ['checked'],
+      borderColor: ['checked'],
+
 
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

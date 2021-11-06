@@ -21,7 +21,7 @@
 import Header from "../../../../../layouts/frontend/header/Header";
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
-import Step3 from "./components/Step3";
+import Step3 from "./components/step3/Step3";
 import Step3Part2 from "./components/Step3Part2";
 import Step4 from "./components/Step4";
 export default {
