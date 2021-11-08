@@ -6,7 +6,7 @@
       type="datetime-local"
       value="21 Dec 2020, 02:00 PM"
     />
-    <router-link to="calender">
+    <router-link to="calenderoneday">
       <button
         @click="nextStep('monthlyCalender')"
         class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"

@@ -129,7 +129,7 @@ const routes = [
     component: CreateBooking,
   },
   {
-    path: "/calender",
+    path: "/calenderoneday",
     name: "One Day Calender",
     component: CalenderOneDay,
   },

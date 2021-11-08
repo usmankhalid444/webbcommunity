@@ -12,7 +12,7 @@
             :key="i"
           >
             <div
-              class="col-span-12 xl:col-span-1 justify-self-center xl:justify-self-auto  xl:py-0 py-2"
+              class="col-span-12 md:col-span-1 justify-self-center xl:justify-self-auto  md:py-0 py-2"
             >
               <img
                 class="w-10 h-10 rounded-full"
@@ -21,16 +21,16 @@
               />
             </div>
             <div
-              class="col-span-12 xl:col-span-3 font-semibold my-auto xl:py-0 py-2  xl:text-left"
+              class="col-span-12 md:col-span-3 font-semibold my-auto md:py-0 py-2  md:text-left"
             >
               <p>{{ item.title }}</p>
             </div>
             <div
-              class="col-span-12 xl:col-span-6 text-custom-lightblue my-auto xl:py-0 py-2 xl:text-left"
+              class="col-span-12 md:col-span-6 text-custom-lightblue my-auto md:py-0 py-2 md:text-left"
             >
               <p>{{ item.info }}</p>
             </div>
-            <div class="col-span-12 xl:col-span-2 my-auto xl:py-0 py-2">
+            <div class="col-span-12 md:col-span-2 my-auto md:py-0 py-2">
               <p>{{ item.date }}</p>
             </div>
           </div>
