@@ -175,7 +175,7 @@ export default {
   },
   methods: {
     handleDateClick: function(arg) {
-      console.log("date click! " + arg.dateStr);
+      alert("date click! " + arg.dateStr);
     },
     // adding time on click
     addTime(item) {

@@ -6,11 +6,11 @@
         v-for="(item, i) in months"
         :key="i"
         @click="selectDay(item.name)"
-        class="inline-block mx-2 my-2 w-16 h-16 font-semibold hover:bg-custom-darkblue hover:text-white transition hover:border-custom-darkblue  border border-custom-lightgray bg-white"
+        class="inline-block mx-2 my-2 w-16 h-16 font-semibold transition hover:border-custom-darkblue  border border-custom-lightgray bg-white"
         :class="
           selectedDays.includes(item.name)
             ? 'bg-custom-darkblue text-white'
-            : ''
+            : 'bg-white text-custom-darkblue'
         "
       >
         {{ item.symbol }}

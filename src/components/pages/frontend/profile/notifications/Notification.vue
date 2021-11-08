@@ -7,7 +7,7 @@
         <!-- notification slides -->
         <div class="xl:h-563px xl:overflow-auto">
           <div
-            class="grid bg-white w-full grid-cols-12 py-3 px-4 mt-6 rounded-lg hover:shadow text-center "
+            class="grid bg-white w-full grid-cols-12 py-3 px-4 mt-4 rounded-lg hover:shadow text-center "
             v-for="(item, i) in notifications"
             :key="i"
           >
@@ -65,6 +65,18 @@ export default {
         {
           imgsrc: "/assets/user2.png",
           title: "Admin",
+          info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+          date: "6 Dec 20",
+        },
+        {
+          imgsrc: "/assets/user.png",
+          title: "Number Verified",
+          info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+          date: "6 Dec 20",
+        },
+        {
+          imgsrc: "/assets/user.png",
+          title: "Number Verified",
           info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
           date: "6 Dec 20",
         },
