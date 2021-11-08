@@ -62,7 +62,7 @@
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-12 mt-2 border-b py-2">
+    <div class="grid grid-cols-12 mt-2 border-b py-2 tracking-wider">
       <div class="col-span-12 ">
         <p class="text-custom-lightblue">subject</p>
         <p class="text-custom-darkblue md:text-xl font-semibold py-2">
@@ -74,7 +74,9 @@
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-12 ">
         <p class="text-custom-lightblue">decription</p>
-        <p class="text-custom-darkblue md:text-xl font-semibold py-2 inline">
+        <p
+          class="text-custom-darkblue md:text-xl font-semibold py-2 inline tracking-wider"
+        >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
           delectus suscipit odio impedit eos nostrum esse, commodi cum quod
           fugit minima ullam quos ex, tempora ut alias praesentium vero

@@ -49,7 +49,7 @@
       </p>
     </div>
     <div class="grid grid-cols-12 mt-2 border-b py-2">
-      <div class="col-span-6 ">
+      <div class="col-span-6">
         <p class="text-custom-lightblue">source</p>
         <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           john andrews (YOU)

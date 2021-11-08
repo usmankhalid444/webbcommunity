@@ -154,7 +154,7 @@ export default {
         },
         {
           title: "Notifications",
-          link: "myprofile",
+          link: "notifications",
           dropdown: [],
         },
       ],
