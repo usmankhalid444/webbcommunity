@@ -120,6 +120,7 @@
         </select>
         <span class="absolute top-3 right-7 pointer-events-none">
           <svg
+            class="fill-current hover:text-red-600"
             id="arrow_down_icon"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -136,7 +137,6 @@
               id="Path_118"
               data-name="Path 118"
               d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
-              fill="#000539"
             />
           </svg>
         </span>

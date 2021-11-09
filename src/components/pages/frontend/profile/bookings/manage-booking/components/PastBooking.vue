@@ -20,7 +20,7 @@
         <tr
           v-for="(item, i) in tabledata"
           :key="i"
-          class="border hover:border-2  hover:border-custom-lightgray group hover:bg-white group"
+          class="border hover:border-2  hover:border-custom-lightgray group hover:bg-white"
         >
           <td class="px-5">{{ item.id }}</td>
           <td>{{ item.eventType }}</td>

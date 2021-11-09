@@ -4,7 +4,7 @@
     v-slot="{ close }"
     v-bind="$attrs"
     classes="flex justify-center items-center"
-    content-class="w-full md:w-3/4 xl:w-2/4 relative max-h-full mx-4 md:p-12 p-5 border rounded bg-white capitalize"
+    content-class="w-full md:w-3/4 xl:w-2/4 relative max-h-full mx-4 md:p-12 p-5 border rounded bg-white capitalize z-50"
   >
     <div class="border-b pb-8">
       <p class="text-custom-lightblue font-medium inline-block">
@@ -61,7 +61,7 @@
     <div class="float-right mt-10">
       <button>
         <i
-          class="ri-delete-bin-7-line md:text-xl p-5 align-middle mr-5 hover:text-custom-purple"
+          class="ri-delete-bin-7-line md:text-xl p-5 align-middle mr-5 hover:text-red-600"
         ></i>
       </button>
       <router-link to="rechedulebooking">

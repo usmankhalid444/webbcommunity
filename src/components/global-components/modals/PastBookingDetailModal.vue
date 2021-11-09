@@ -4,7 +4,7 @@
     v-slot="{ close }"
     v-bind="$attrs"
     classes="flex justify-center items-center"
-    content-class="w-full md:w-3/4 xl:w-2/4 relative max-h-full mx-4 md:p-12 p-5 border rounded bg-white capitalize max-h-screen overflow-auto z-50"
+    content-class="w-full md:w-3/4 2xl:w-2/4 relative xl:h-4/5 mx-4 md:p-12 p-5 border rounded bg-white capitalize max-h-screen overflow-auto"
   >
     <div class="border-b pb-8">
       <p class="text-custom-lightblue font-medium inline-block">
@@ -63,16 +63,24 @@
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-12 mt-2 border-b py-2 gap-x-5">
+    <div class="grid grid-cols-12 mt-2 border-b py-2 gap-x-5 md:gap-x-16">
       <p class="col-span-12 text-custom-lightblue">Domage images</p>
-      <div class="col-span-4 border my-3">
-        <img src="/assets/s-img1.png" alt="domage image" class="md:h-52" />
+      <div class="col-span-6 md:col-span-4 border my-3">
+        <img
+          src="/assets/s-img1.png"
+          alt="domage image"
+          class="h-24 md:h-52 w-full"
+        />
         <p class="text-sm underline py-2 text-center text-custom-darkblue">
           image001.jpeg
         </p>
       </div>
-      <div class="col-span-4 border my-3">
-        <img src="/assets/s-img2.png" alt="domage image" class="md:h-52" />
+      <div class="col-span-6 md:col-span-4 border my-3">
+        <img
+          src="/assets/s-img2.png"
+          alt="domage image"
+          class="h-24 md:h-52 w-full"
+        />
         <p class="text-sm underline py-2 text-center text-custom-darkblue">
           image002.jpeg
         </p>

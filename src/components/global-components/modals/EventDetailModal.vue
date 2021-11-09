@@ -63,7 +63,7 @@
     <div class="float-right mt-10">
       <button>
         <i
-          class="ri-delete-bin-7-line md:text-xl p-5 align-middle mr-5 hover:text-custom-purple"
+          class="ri-delete-bin-7-line md:text-xl p-5 align-middle mr-5 hover:text-red-600"
         ></i>
       </button>
       <button
