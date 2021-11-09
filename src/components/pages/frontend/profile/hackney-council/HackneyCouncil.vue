@@ -168,7 +168,7 @@
               <td>under review</td>
               <td>
                 <p
-                  @click="modal = !modal"
+                  @click="showEvent"
                   class="text-custom-purple cursor-pointer invisible group-hover:visible"
                 >
                   view
@@ -227,18 +227,25 @@
           <i class="ri-arrow-right-s-line align-middle text-xl"></i>
         </p>
       </div>
-      <Modal v-if="modal" />
+      <HackneyCouncilDetailModal v-model="showmodal" />
     </UserProfileLayout>
   </div>
 </template>
 <script>
-import Modal from "./components/Modal";
+import HackneyCouncilDetailModal from "../../../../global-components/modals/HackneyCouncilDetailModal";
+import { $vfm } from "vue-final-modal";
+
 export default {
-  components: { Modal },
+  components: { HackneyCouncilDetailModal },
   data() {
     return {
-      modal: false,
+      showmodal: false,
     };
+  },
+  methods: {
+    showEvent() {
+      $vfm.show("hackneyCouncilDetailModal");
+    },
   },
 };
 </script>

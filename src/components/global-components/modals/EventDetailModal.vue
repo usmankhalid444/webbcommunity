@@ -1,13 +1,16 @@
 <template>
-  <div
-    class="absolute bg-white capitalize h-auto left-0 md:left-52 lg:max-w-4xl md:h-4/6 md:p-12 md:w-2/3 p-5 shadow-2xl top-20 md:top-32 w-full z-200"
-    v-if="show"
+  <vue-final-modal
+    name="EventModal"
+    v-slot="{ close }"
+    v-bind="$attrs"
+    classes="flex justify-center items-center"
+    content-class="w-full md:w-3/4 xl:w-2/4 relative max-h-full mx-4 md:p-12 p-5 border rounded bg-white capitalize"
   >
     <div class="border-b pb-8">
       <p class="text-custom-lightblue font-medium inline-block">
         REF No. <span class="underline">WC01</span>
       </p>
-      <p @click="show = false" class="float-right cursor-pointer">
+      <p @click="close" class="float-right cursor-pointer">
         <i class="ri-close-line text-3xl"></i>
       </p>
       <h1
@@ -52,38 +55,38 @@
         <p class="text-custom-darkblue md:text-xl font-semibold py-2 inline">
           £45 inc. tax
         </p>
-        <p class="inline px-5 text-custom-lightgray md:text-xl">(£15 /hour)</p>
+        <p class="inline px-5 text-custom-lightgray md:text-xl">
+          (£15 /hour)
+        </p>
       </div>
     </div>
     <div class="float-right mt-10">
       <button>
         <i
-          @click="cancel = !cancel"
           class="ri-delete-bin-7-line md:text-xl p-5 align-middle mr-5 hover:text-custom-purple"
         ></i>
       </button>
-      <router-link to="rechedulebooking">
-        <button
-          class="border-2 border-gray-300 px-6 py-2 font-semibold text-lg hover:bg-custom-purple hover:text-white transition"
-        >
-          RECHEDULE
-        </button>
-      </router-link>
+      <button
+        class="border-2 border-gray-300 px-6 py-2 font-semibold text-lg hover:bg-custom-purple hover:text-white hover:border-custom-purple transition"
+      >
+        RECHEDULE
+      </button>
     </div>
-  </div>
-  <CancelBooking v-if="cancel" />
+  </vue-final-modal>
 </template>
 <script>
-import CancelBooking from "./CancelBooking";
+import { VueFinalModal } from "vue-final-modal";
 export default {
   components: {
-    CancelBooking,
+    VueFinalModal,
   },
-  data() {
-    return {
-      show: true,
-      cancel: false,
-    };
+  inheritAttrs: false,
+  emits: ["cancel", "confirm"],
+
+  methods: {
+    beforeOpen(event) {
+      console.log(event.ref.params);
+    },
   },
 };
 </script>

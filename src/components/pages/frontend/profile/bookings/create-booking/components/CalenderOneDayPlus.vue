@@ -130,7 +130,7 @@
         </span>
       </div>
       <div class="relative  my-1.5">
-        <router-link to="calenderonedayplus">
+        <router-link to="calenderweekly">
           <button
             class="w-full h-14 bg-custom-purple hover:bg-custom-darkblue text-white font-semibold transition"
           >

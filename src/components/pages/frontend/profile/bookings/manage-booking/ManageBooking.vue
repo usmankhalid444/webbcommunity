@@ -95,18 +95,18 @@
           </span>
         </div>
       </div>
-      <PastBoking v-if="currentTab === 'past'" />
+      <PastBooking v-if="currentTab === 'past'" />
       <UpcommingBooking v-if="currentTab === 'upcoming'" />
       <OngoingBooking v-if="currentTab === 'ongoing'" />
     </UserProfileLayout>
   </div>
 </template>
 <script>
-import PastBoking from "./components/PastBoking";
+import PastBooking from "./components/PastBooking";
 import UpcommingBooking from "./components/UpcommingBooking";
 import OngoingBooking from "./components/OngoingBooking";
 export default {
-  components: { PastBoking, UpcommingBooking, OngoingBooking },
+  components: { PastBooking, UpcommingBooking, OngoingBooking },
   data() {
     return {
       currentTab: "ongoing",

@@ -12,9 +12,9 @@ import NumberVerification from '../components/pages/frontend/profile/my-profile/
 import EditProfile from '../components/pages/frontend/profile/my-profile/EditProfile';
 import HackneyCouncil from '../components/pages/frontend/profile/hackney-council/HackneyCouncil';
 import CreateHC from '../components/pages/frontend/profile/hackney-council/components/CreateHC';
-import Event from '../components/pages/frontend/profile/events/Event';
+import Events from '../components/pages/frontend/profile/events/Events';
 import CreateEvent from '../components/pages/frontend/profile/events/components/CreateEvent';
-import Report from '../components/pages/frontend/profile/Reports/Report';
+import Reports from '../components/pages/frontend/profile/Reports/Reports';
 import CreateReport from '../components/pages/frontend/profile/Reports/components/CreateReport';
 import Practice from '../components/layouts/frontend/profile-layout/components/Practice';
 import ManageBooking from '../components/pages/frontend/profile/bookings/manage-booking/ManageBooking';
@@ -22,6 +22,10 @@ import RescheduleBooking from '../components/pages/frontend/profile/bookings/man
 import CreateBooking from '../components/pages/frontend/profile/bookings/create-booking/CreateBooking';
 import CalenderOneDay from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderOneDay'
 import Notification from '../components/pages/frontend/profile/notifications/Notification'
+import CalenderOneDayPlus from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderOneDayPlus'
+import CalenderWeekly from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderWeekly'
+import CalenderMonthly from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderMonthly'
+
 const routes = [
   {  
     path: "/",
@@ -91,7 +95,7 @@ const routes = [
   {
     path: "/events",
     name: "Community events",
-    component: Event,
+    component: Events,
   },
   {
     path: "/createevent",
@@ -101,7 +105,7 @@ const routes = [
   {
     path: "/reports",
     name: "Reports",
-    component: Report,
+    component: Reports,
   },
   {
     path: "/createreport",
@@ -132,6 +136,21 @@ const routes = [
     path: "/calenderoneday",
     name: "One Day Calender",
     component: CalenderOneDay,
+  },
+  {
+    path: "/calenderonedayplus",
+    name: "One Day Plus Calender",
+    component: CalenderOneDayPlus,
+  },
+  {
+    path: "/calenderweekly",
+    name: "Weekly Calender",
+    component: CalenderWeekly,
+  },
+  {
+    path: "/calendermonthly",
+    name: "Monthly Calender",
+    component: CalenderMonthly,
   },
   {
     path: "/notifications",

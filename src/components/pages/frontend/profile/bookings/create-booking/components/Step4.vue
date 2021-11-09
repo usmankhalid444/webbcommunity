@@ -8,7 +8,6 @@
     />
     <router-link to="calenderoneday">
       <button
-        @click="nextStep('monthlyCalender')"
         class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"
       >
         SEND BOOKING REQUEST
@@ -17,11 +16,5 @@
   </div>
 </template>
 <script>
-export default {
-  methods: {
-    nextStep(currentStep) {
-      this.$emit("nextStep", currentStep);
-    },
-  },
-};
+export default {};
 </script>

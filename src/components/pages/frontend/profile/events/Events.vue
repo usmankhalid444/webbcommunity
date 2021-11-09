@@ -1,28 +1,27 @@
 <template>
   <div>
     <UserProfileLayout>
-      <!-- title section-->
+      <!-- title and add new event section -->
       <div class="w-full relative">
         <h1
           class="font-semibold text-xl md:text-4xl text-custom-darkblue inline"
         >
-          Reports
+          Events
         </h1>
-        <router-link to="createreport">
+        <router-link to="createevent">
           <button
             class="bg-custom-purple hover:bg-custom-lightblue md:w-44 md:h-12 h-10 w-40 uppercase font-semibold text-white absolute right-0"
           >
-            <i class="ri-add-fill px-1 align-middle"></i> NEW Report
+            <i class="ri-add-fill px-1 align-middle"></i> new event
           </button>
         </router-link>
       </div>
       <!-- filter and search field -->
-      <div class="w-full bg-white mt-14 p-5 ">
+      <div class="w-full bg-white mt-14 p-5 relative">
         <ul>
-          <li class="text-custom-darkblue inline font-bold relative group">
-            <p class="inline cursor-pointer py-5">
-              My Reports
-            </p>
+          <li class="inline text-custom-lightgray"><a href="#">All</a></li>
+          <li class="text-custom-darkblue   inline font-bold px-10">
+            <a href="#">My Events</a>
           </li>
         </ul>
         <div class="float-right relative">
@@ -61,6 +60,7 @@
       </div>
       <!-- table start -->
       <div class="capitalize h-72 md:h-96 mt-10 overflow-auto w-full">
+        <!-- px-8 py-4 -->
         <table
           class="w-full md:leading-extra-loose overflow-scroll text-sm md:text-base"
         >
@@ -83,8 +83,8 @@
               <td>under review</td>
               <td>
                 <p
-                  @click="modal = !modal"
-                  class="cursor-pointer text-custom-purple invisible group-hover:visible"
+                  @click="showEvent"
+                  class="text-custom-purple group-hover:visible invisible cursor-pointer"
                 >
                   view
                 </p>
@@ -142,19 +142,26 @@
           <i class="ri-arrow-right-s-line align-middle text-xl"></i>
         </p>
       </div>
-      <Modal v-if="modal" />
+      <EventDetailModal v-model="showmodal" />
     </UserProfileLayout>
   </div>
 </template>
 <script>
-import Modal from "./components/Modal";
+import EventDetailModal from "../../../../global-components/modals/EventDetailModal";
+import { $vfm } from "vue-final-modal";
 export default {
-  components: { Modal },
-
   data() {
     return {
-      modal: false,
+      showmodal: false,
     };
+  },
+  components: {
+    EventDetailModal,
+  },
+  methods: {
+    showEvent() {
+      $vfm.show("EventModal");
+    },
   },
 };
 </script>

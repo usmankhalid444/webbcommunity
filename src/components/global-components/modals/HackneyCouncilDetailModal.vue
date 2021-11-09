@@ -1,13 +1,16 @@
 <template>
-  <div
-    class="absolute bg-white capitalize h-auto left-0 md:left-52 lg:max-w-4xl md:p-12 md:w-2/3 p-5 shadow-2xl top-10 md:top-28 w-full z-50"
-    v-if="show"
+  <vue-final-modal
+    name="hackneyCouncilDetailModal"
+    v-slot="{ close }"
+    v-bind="$attrs"
+    classes="flex justify-center items-center"
+    content-class="w-full md:w-3/4 xl:w-2/4 relative max-h-full mx-4 md:p-12 p-5 border rounded bg-white capitalize"
   >
     <div class="border-b pb-8">
       <p class="text-custom-lightblue font-medium inline-block">
         REF No. <span class="underline">NW55</span>
       </p>
-      <p @click="show = false" class="float-right cursor-pointer">
+      <p @click="close" class="float-right cursor-pointer">
         <i class="ri-close-line text-3xl"></i>
       </p>
       <h1
@@ -49,7 +52,7 @@
       </p>
     </div>
     <div class="grid grid-cols-12 mt-2 border-b py-2">
-      <div class="col-span-6">
+      <div class="col-span-6 ">
         <p class="text-custom-lightblue">source</p>
         <p class="text-custom-darkblue md:text-xl font-semibold py-2">
           john andrews (YOU)
@@ -62,17 +65,12 @@
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-12 mt-2 border-b py-2">
-      <div class="col-span-12 md:col-span-6 ">
-        <p class="text-custom-lightblue">email</p>
+    <div class="grid grid-cols-12 mt-2 border-b py-2 tracking-wider">
+      <div class="col-span-12 ">
+        <p class="text-custom-lightblue">subject</p>
         <p class="text-custom-darkblue md:text-xl font-semibold py-2">
-          john_andrews@gmail.com
-        </p>
-      </div>
-      <div class="col-span-6 ">
-        <p class="text-custom-lightblue">phone number</p>
-        <p class="text-custom-darkblue md:text-xl font-semibold py-2">
-          +44 7700 900077
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+          praesentium nesciunt maiores exercitationem sapiente nostrum .
         </p>
       </div>
     </div>
@@ -85,10 +83,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
           delectus suscipit odio impedit eos nostrum esse, commodi cum quod
           fugit minima ullam quos ex, tempora ut alias praesentium vero
-          quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Dolorum praesentium fugit quos deserunt odio, sint alias fugiat
-          necessitatibus amet libero sapiente voluptas? Odio facere, consequatur
-          placeat est adipisci hic autem!
+          quibusdam.
         </p>
       </div>
     </div>
@@ -117,7 +112,7 @@
 
       <div class="relative">
         <select
-          class=" border-custom-lightgray border h-12 font-semibold px-4 w-48 appearance-none"
+          class=" border-custom-lightgray border h-12 font-semibold px-4 w-48"
         >
           <option value="More Actions">More Actions</option>
           <option value="Action 1">Action 1</option>
@@ -147,14 +142,22 @@
         </span>
       </div>
     </div>
-  </div>
+  </vue-final-modal>
 </template>
 <script>
+import { VueFinalModal } from "vue-final-modal";
 export default {
-  data() {
-    return {
-      show: true,
-    };
+  components: {
+    VueFinalModal,
+  },
+  name: "VTailwindModal",
+  inheritAttrs: false,
+  emits: ["cancel", "confirm"],
+
+  methods: {
+    beforeOpen(event) {
+      console.log(event.ref.params);
+    },
   },
 };
 </script>

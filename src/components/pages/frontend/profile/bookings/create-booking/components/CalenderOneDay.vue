@@ -130,12 +130,13 @@
         </span>
       </div>
       <div class="relative  my-1.5">
-        <button
-          @click="nextStep('monthlyCalender')"
-          class="w-full h-14 bg-custom-purple hover:bg-custom-darkblue text-white font-semibold transition"
-        >
-          CONTINUE
-        </button>
+        <router-link to="calenderonedayplus">
+          <button
+            class="w-full h-14 bg-custom-purple hover:bg-custom-darkblue text-white font-semibold transition"
+          >
+            CONTINUE
+          </button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -194,9 +195,6 @@ export default {
       this.selectedTimes = this.times.map((i) => {
         return i.title;
       });
-    },
-    nextStep(currentStep) {
-      this.$emit("nextStep", currentStep);
     },
   },
 };

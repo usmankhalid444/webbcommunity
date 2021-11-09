@@ -7,7 +7,7 @@
       >
         <thead class="border-2 text-custom-lightgray">
           <tr class="text-left">
-            <th class="px-5">sr.</th>
+            <th class="px-5">id.</th>
             <th>Event Type</th>
             <th>Start Date</th>
             <th>End Date</th>
@@ -18,68 +18,25 @@
         </thead>
         <tbody class="text-custom-darkblue font-semibold ">
           <tr
+            v-for="(item, i) in tabledata"
+            :key="i"
             class="border hover:border-2  hover:border-custom-lightgray group hover:bg-white group"
           >
-            <td class="px-5">01</td>
-            <td>wedding ceremony</td>
-            <td>dec 15, 2020</td>
-            <td>dec 15, 2020</td>
-            <td>80-100</td>
-            <td>4 hrs</td>
+            <td class="px-5">{{ item.id }}</td>
+            <td>{{ item.eventType }}</td>
+            <td>{{ item.startData }}</td>
+            <td>{{ item.endDate }}</td>
+            <td>{{ item.guestsNo }}</td>
+            <td>{{ item.totalHours }}</td>
             <td>
               <p
-                @click="modal = !modal"
+                @click="showEvent"
                 class="text-custom-purple group-hover:visible invisible cursor-pointer"
               >
                 view
               </p>
             </td>
           </tr>
-
-          <tr
-            class="border hover:border-2  hover:border-custom-lightgray hover:bg-white group"
-          >
-            <td class="px-5">03</td>
-            <td>Birthday Party</td>
-            <td>dec 01, 2020</td>
-            <td>dec 01, 2020</td>
-            <td>50</td>
-            <td>1 hrs</td>
-            <td>
-              <p
-                @click="modal = !modal"
-                class="text-custom-purple group-hover:visible invisible cursor-pointer"
-              >
-                view
-              </p>
-            </td>
-          </tr>
-          <tr
-            class="border hover:border-2  hover:border-custom-lightgray hover:bg-white group"
-          >
-            <td class="px-5">04</td>
-            <td>Children Activities</td>
-            <td>nov 23,2020</td>
-            <td>nov 23,2020</td>
-            <td>10-15</td>
-            <td>8 hrs</td>
-            <td>
-              <p
-                @click="modal = !modal"
-                class="text-custom-purple group-hover:visible invisible cursor-pointer"
-              >
-                view
-              </p>
-            </td>
-          </tr>
-          <td>
-            <p
-              @click="modal = !modal"
-              class="text-custom-purple group-hover:visible invisible cursor-pointer"
-            >
-              view
-            </p>
-          </td>
         </tbody>
       </table>
     </div>
@@ -91,16 +48,56 @@
       </p>
     </div>
   </div>
-  <OngoingModal v-if="modal" />
+  <OngoingBookingDetailModal v-model="showmodal" />
 </template>
 <script>
-import OngoingModal from "./OngoingModal";
+import OngoingBookingDetailModal from "../../../../../../global-components/modals/OngoingBookingDetailModal";
+import { $vfm } from "vue-final-modal";
 export default {
-  components: { OngoingModal },
+  components: { OngoingBookingDetailModal },
   data() {
     return {
-      modal: false,
+      showmodal: false,
+      tabledata: [
+        {
+          id: "01",
+          eventType: "Wedding Ceremony",
+          startData: "Dec 15, 2020",
+          endDate: "Dec 16, 2020",
+          guestsNo: "80-100",
+          totalHours: "4 Hrs",
+        },
+        {
+          id: "02",
+          eventType: "General Meeting",
+          startData: "Dec 15, 2020",
+          endDate: "Dec 16, 2020",
+          guestsNo: "80",
+          totalHours: "5 Hrs",
+        },
+        {
+          id: "03",
+          eventType: "Birthday Party",
+          startData: "Dec 15, 2020",
+          endDate: "Dec 16, 2020",
+          guestsNo: "80-100",
+          totalHours: "4 Hrs",
+        },
+        {
+          id: "04",
+          eventType: "Coders Meetup",
+          startData: "Dec 15, 2020",
+          endDate: "Dec 16, 2020",
+          guestsNo: "60",
+          totalHours: "1 Hrs",
+        },
+      ],
     };
+  },
+  methods: {
+    showEvent() {
+      $vfm.show("ongoingBookingDetailModal");
+    },
   },
 };
 </script>
