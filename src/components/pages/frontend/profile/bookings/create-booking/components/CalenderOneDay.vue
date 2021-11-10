@@ -2,9 +2,11 @@
   <div
     class="grid grid-cols-12 p-2 md:p-8 gap-x-4 md:gap-x-8 text-custom-darkblue mx-auto xl:max-w-7xl mt-10"
   >
+    <!-- calender section -->
     <div class="col-span-12 md:col-span-7 xl:col-span-9">
       <FullCalendar :options="calendarOptions" />
     </div>
+    <!-- sidebar section -->
     <div
       class="col-span-12 md:col-span-5 xl:col-span-3 border text-center py-8 px-5 md:mt-16 mt-5"
     >

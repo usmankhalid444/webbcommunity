@@ -2,13 +2,57 @@
   <div
     class="grid grid-cols-12 p-2 md:p-8 gap-x-4 md:gap-x-8 text-custom-darkblue mx-auto xl:max-w-7xl mt-10"
   >
+    <!-- calender section -->
+
     <div class="col-span-12 md:col-span-7 xl:col-span-9">
       <FullCalendar :options="calendarOptions" />
     </div>
+    <!-- sidebar section -->
     <div
       class="col-span-12 md:col-span-5 xl:col-span-3 border text-center py-8 px-5 md:mt-16 mt-5"
     >
-      <div class="mb-4 relative" @click="selectAll()">
+      <label class="float-left cursor-pointer relative mb-1.5">
+        <span
+          ><input
+            class="absolute top-0.5 h-5 w-5 text-custom-darkblue focus:ring-0 focus:shadow-none cursor-pointer"
+            type="checkbox"
+        /></span>
+        <p class="inline pl-8 font-semibold">Same Time all Day</p>
+      </label>
+      <br />
+      <div class="relative">
+        <select
+          name="status"
+          class="w-full border-custom-lightgray border font-semibold py-3 px-5 my-4"
+        >
+          <option value="21 Dec 2020">21 Dec 2020</option>
+          <option value="22 Dec 2020">22 Dec 2020</option>
+          <option value="23 Dec 2020">23 Dec 2020</option>
+        </select>
+        <span class="absolute right-5 top-9"
+          ><svg
+            id="arrow_down_icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="Path_117"
+              data-name="Path 117"
+              d="M0,0H24V24H0Z"
+              fill="none"
+            />
+            <path
+              id="Path_118"
+              data-name="Path 118"
+              d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
+              fill="#000539"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="mb-3 relative" @click="selectAll()">
         <button
           class="border border-custom-lightgray w-full py-3 px-5  font-semibold text-left"
         >
@@ -129,7 +173,7 @@
           </svg>
         </span>
       </div>
-      <div class="relative  my-1.5">
+      <div class="relative  mt-1.5">
         <router-link to="calenderweekly">
           <button
             class="w-full h-14 bg-custom-purple hover:bg-custom-darkblue text-white font-semibold transition"
@@ -165,11 +209,9 @@ export default {
       times: [
         { title: "10:00 AM - 11:00 AM", available: true },
         { title: "11:00 AM - 12:00 AM", available: false },
-        { title: "12:00 AM - 01:00 PM", available: true },
-        { title: "01:00 PM - 02:00 PM", available: false },
+        { title: "12:00 AM - 01:00 PM", available: false },
+        { title: "01:00 PM - 02:00 PM", available: true },
         { title: "02:00 PM - 03:00AM", available: true },
-        { title: "03:00 PM - 04:00AM", available: true },
-        { title: "04:00 PM - 05:00AM", available: true },
       ],
       selectedTimes: [],
     };

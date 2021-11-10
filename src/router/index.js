@@ -25,7 +25,7 @@ import Notification from '../components/pages/frontend/profile/notifications/Not
 import CalenderOneDayPlus from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderOneDayPlus'
 import CalenderWeekly from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderWeekly'
 import CalenderMonthly from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderMonthly'
-
+import BookingSummary from '../components/pages/frontend/profile/bookings/create-booking/components/BookingSummary'
 const routes = [
   {  
     path: "/",
@@ -156,6 +156,11 @@ const routes = [
     path: "/notifications",
     name: "Notifications",
     component: Notification,
+  },
+  {
+    path: "/bookingsummary",
+    name: "Booking Summary",
+    component: BookingSummary,
   },
 ];
 
