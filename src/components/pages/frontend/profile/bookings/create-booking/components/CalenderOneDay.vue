@@ -1,22 +1,32 @@
 <template>
+  <Header darkHeader="true" />
   <div
     class="grid grid-cols-12 p-2 md:p-8 gap-x-4 md:gap-x-8 text-custom-darkblue mx-auto xl:max-w-7xl mt-10"
   >
     <!-- calender section -->
     <div class="col-span-12 md:col-span-7 xl:col-span-9">
-      <FullCalendar :options="calendarOptions" />
+      <FullCalendar ref="one_day_calander" :options="calendarOptions" />
     </div>
     <!-- sidebar section -->
     <div
       class="col-span-12 md:col-span-5 xl:col-span-3 border text-center py-8 px-5 md:mt-16 mt-5"
     >
-      <div class="mb-4 relative" @click="selectAll()">
+      <div
+        class="mb-4 relative"
+        @click="checkAllDayAvailable() === 0 ? selectAll() : ''"
+      >
         <button
           class="border border-custom-lightgray w-full py-3 px-5  font-semibold text-left"
+          :class="checkAllDayAvailable() > 0 ? 'opacity-50' : ''"
         >
           All Days
         </button>
-        <span class="absolute right-4 top-3"
+        <span
+          v-if="
+            selectedTimes.length === times.length &&
+              checkAllDayAvailable() === 0
+          "
+          class="absolute right-4 top-3"
           ><svg
             class="hidden"
             xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +86,8 @@
         >
           {{ item.title }}
         </button>
-        <span class="absolute right-4 top-3"
-          ><svg
+        <span class="absolute right-4 top-3">
+          <svg
             :class="
               selectedTimes.includes(item.title)
                 ? 'hidden'
@@ -144,41 +154,91 @@
   </div>
 </template>
 <script>
-import "@fullcalendar/core/vdom"; // solves problem with Vite
+import Header from "../../../../../../layouts/frontend/header/Header";
+import "@fullcalendar/core/vdom";
 import FullCalendar from "@fullcalendar/vue3";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 export default {
   components: {
-    FullCalendar, // make the <FullCalendar> tag available
+    FullCalendar,
+    Header,
   },
   data() {
     return {
+      //selected_date: "2021-11-15",
+      new_event: {
+        title: "New event",
+        start: "2021-11-15",
+        end: "2021-11-15",
+        time_slots: ["10:00 AM"],
+      },
+      selectedTimes: [],
+      booking_events: [
+        {
+          title: "Wedding event",
+          start: "2021-11-15",
+          end: "2021-11-15",
+          time_slots: ["10:00 AM", "12:00 PM"],
+        },
+        {
+          title: "Birthday event",
+          start: "2021-11-15",
+          end: "2021-11-15",
+          time_slots: ["10:00 AM"],
+        },
+        {
+          title: "Test event",
+          start: "2021-11-18",
+          end: "2021-11-18",
+          time_slots: ["01:00 PM"],
+        },
+      ],
       calendarOptions: {
         plugins: [dayGridPlugin, interactionPlugin],
         initialView: "dayGridMonth",
         dateClick: this.handleDateClick,
         selectable: true,
-        events: [
-          { title: "event 1", date: "2019-04-01" },
-          { title: "event 2", date: "2019-04-02" },
-        ],
+        events: [],
       },
       times: [
-        { title: "10:00 AM - 11:00 AM", available: true },
-        { title: "11:00 AM - 12:00 AM", available: false },
-        { title: "12:00 AM - 01:00 PM", available: true },
-        { title: "01:00 PM - 02:00 PM", available: false },
-        { title: "02:00 PM - 03:00AM", available: true },
-        { title: "03:00 PM - 04:00AM", available: true },
-        { title: "04:00 PM - 05:00AM", available: true },
+        { title: "10:00 AM", available: true },
+        { title: "11:00 AM", available: true },
+        { title: "12:00 AM", available: true },
+        { title: "01:00 PM", available: true },
+        { title: "02:00 PM ", available: true },
+        { title: "03:00 PM ", available: true },
+        { title: "04:00 PM ", available: true },
       ],
-      selectedTimes: [],
     };
+  },
+  created() {
+    this.calendarOptions.events = this.booking_events;
+    this.disableNotAvailableSlots();
+    //console.log(this.checkAllDayAvailable());
   },
   methods: {
     handleDateClick: function(arg) {
-      alert("date click! " + arg.dateStr);
+      this.new_event.start = arg.dateStr;
+      this.disableNotAvailableSlots();
+      //console.log(this.new_event.start);
+    },
+    disableNotAvailableSlots() {
+      let temp_slots = [];
+      this.booking_events.map((event) => {
+        if (event.start === this.new_event.start) {
+          temp_slots = [...new Set([...temp_slots, ...event.time_slots])];
+          // temp_slots.concat(event.time_slots).unique();
+        }
+      });
+
+      this.new_event.time_slots = temp_slots;
+      console.log(this.new_event.time_slots);
+    },
+    checkAllDayAvailable() {
+      return this.booking_events.filter((event) => {
+        return event.start == this.new_event.start;
+      }).length;
     },
     // adding time on click
     addTime(item) {

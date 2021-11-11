@@ -47,34 +47,35 @@
           <div class="mt-12 md:text-xl">
             <div class="my-5">
               <h3 class="inline text-custom-lightblue">Reference Number</h3>
-              <p class="float-right">WC01</p>
+              <p class="float-right">{{ bookingSummary.reference_no }}</p>
             </div>
             <div class="my-5">
               <h3 class="inline text-custom-lightblue">Event Status</h3>
-              <p class="float-right">Private</p>
+              <p class="float-right">{{ bookingSummary.event_status }}</p>
             </div>
             <div class="my-5">
               <h3 class="inline text-custom-lightblue">Duration</h3>
-              <p class="float-right">1 Day Event</p>
+              <p class="float-right">{{ bookingSummary.duration }}t</p>
             </div>
             <div class="my-5">
               <h3 class="inline text-custom-lightblue">Guest No.</h3>
-              <p class="float-right">20 Kids</p>
+              <p class="float-right">{{ bookingSummary.guests.kids }} Kids</p>
               <br />
               <div class="my-5">
-                <p class="float-right">50 Adults</p>
+                <p class="float-right">
+                  {{ bookingSummary.guests.adults }} Adults
+                </p>
               </div>
             </div>
             <br />
-
             <div class="my-6">
               <h3 class="inline text-custom-lightblue">Start</h3>
-              <p class="float-right">15 Dec 2020</p>
+              <p class="float-right">{{ bookingSummary.start }}</p>
               <br />
               <div class="mt-6">
                 <h3 class="inline text-custom-lightblue">End</h3>
 
-                <p class="float-right">15 Dec 2020</p>
+                <p class="float-right">{{ bookingSummary.end }}</p>
               </div>
             </div>
           </div>
@@ -125,7 +126,7 @@
             <div class="border-b border-custom-lightgray px-12 py-7 relative">
               <p class="text-custom-lightblue">To confirm your spot</p>
               <select
-                class="w-full border-custom-lightgray border h-12 mt-4 font-semibold px-8"
+                class="w-full border-custom-lightgray border h-12 mt-4 font-semibold px-8 cursor-pointer"
               >
                 <option value="Pay Booking Fee">Pay Booking Fee</option>
                 <option value="Pay 2nd Instl.">Pay 2nd Instl.</option>
@@ -178,14 +179,14 @@ export default {
   },
   data() {
     return {
-      bookingData: [
-        { title: "Reference Number", value: "WC01" },
-        { title: "Event Status", value: "Private" },
-        { title: "Duration", value: "1 Day Event" },
-        { title: "Guests No", value: [{ kids: "20" }, { adults: "50" }] },
-        { title: "Start", value: "15 Dec 2020" },
-        { title: "End", value: "16 Dec 2020" },
-      ],
+      bookingSummary: {
+        reference_no: "WC01",
+        event_status: "Private",
+        duration: "1 Day Event",
+        guests: { kids: 20, adults: 50 },
+        start: "15 Dec 2020",
+        end: "16 Dec 2020",
+      },
     };
   },
 };

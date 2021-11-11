@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import MainFrontEnd from './components/layouts/frontend/MainFrontEnd';
 import UserProfileLayout from './components/layouts/frontend/profile-layout/UserProfileLayout';
+import AdminProfileLayout from './components/layouts/admin/profile-layout/AdminProfileLayout'
 import router from './router';
 import 'remixicon/fonts/remixicon.css';
 import "./index.css";
@@ -10,7 +11,7 @@ const app = createApp(App)
 
 app.component('FrontendMain', MainFrontEnd); // global registration - can be used anywhere
 app.component('UserProfileLayout', UserProfileLayout); // global registration - can be used anywhere
-
+app.component("AdminProfileLayout", AdminProfileLayout)
 app.use(router);
 
 app.mount('#app');

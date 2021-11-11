@@ -15,16 +15,17 @@
       />
       <!-- subscribe button  -->
 
-      <BtnLg text="sign me up" />
+      <button
+        class="bg-custom-purple hover:bg-custom-lightblue w-72 md:w-96 h-14 uppercase font-semibold text-white"
+      >
+        sign me up
+      </button>
     </div>
   </div>
 </template>
 <script>
-import BtnLg from "../../../../global-components/BtnLg";
 export default {
-  components: {
-    BtnLg,
-  },
+  components: {},
 };
 </script>
 <style></style>

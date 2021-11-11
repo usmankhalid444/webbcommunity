@@ -14,7 +14,11 @@
         voluptates, ipsa explicabo nesciunt.
       </p>
       <div class="text-center md:text-left">
-        <BtnLg text="book hall" />
+        <button
+          class="bg-custom-purple hover:bg-custom-lightblue w-72 md:w-96 h-14 uppercase font-semibold text-white"
+        >
+          Book Hall
+        </button>
       </div>
       <!-- inner text end -->
     </div>
@@ -22,12 +26,9 @@
   <!-- main container end -->
 </template>
 <script>
-import BtnLg from "../../../../global-components/BtnLg";
 export default {
   name: "hero",
-  components: {
-    BtnLg,
-  },
+  components: {},
 };
 </script>
 <style></style>
