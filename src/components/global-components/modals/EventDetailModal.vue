@@ -18,8 +18,43 @@
       >
         wedding Cermony
       </h1>
-      <p class="inline text-custom-lightblue">under review</p>
-      <p class="text-custom-lightblue inline px-12">Webb community hall</p>
+      <div class="mt-2">
+        <p class="inline text-custom-lightblue bg-custom-lightgreen p-1 mr-5 ">
+          under review
+        </p>
+        <p class="text-custom-lightblue bg-custom-lightgreen inline p-1">
+          <svg
+            class="inline fill-current text-custom-lightblue pb-1"
+            id="location_icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="Path_129"
+              data-name="Path 129"
+              d="M0,0H24V24H0Z"
+              fill="none"
+            />
+            <path
+              id="Path_130"
+              data-name="Path 130"
+              d="M12,2A7,7,0,0,0,5,9c0,5.25,7,13,7,13s7-7.75,7-13A7,7,0,0,0,12,2ZM7,9A5,5,0,0,1,17,9c0,2.88-2.88,7.19-5,9.88C9.92,16.21,7,11.85,7,9Z"
+              fill="#00033c"
+            />
+            <circle
+              id="Ellipse_44"
+              data-name="Ellipse 44"
+              cx="2.5"
+              cy="2.5"
+              r="2.5"
+              transform="translate(9.5 6.5)"
+            />
+          </svg>
+          Webb community hall
+        </p>
+      </div>
     </div>
     <div class="grid grid-cols-12 mt-2 border-b py-2">
       <div class="col-span-6 ">
