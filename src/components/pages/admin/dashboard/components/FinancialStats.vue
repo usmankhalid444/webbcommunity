@@ -18,12 +18,41 @@
         class="grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-7 gap-y-4 mt-8"
       >
         <div
-          class="bg-white p-5 xl:px-6 xl:py-7 border border-gray-300 hover:border-custom-darkblue hover:shadow"
+          class="bg-white p-5 xl:py-7 border border-gray-300 hover:border-custom-darkblue hover:shadow"
         >
           <h3 class="text-34px font-semibold">£{{ overview.total_earned }}</h3>
-          <p class="text-custom-lightblue font-semibold">
+          <p class="text-custom-lightblue font-semibold inline">
             Total Earned
           </p>
+          <div class="inline relative">
+            <select class="text-sm font-semibold border-none">
+              <option value="Dec 20">Dec 20</option>
+              <option value="Dec 20">Dec 20</option>
+              <option value="Dec 20">Dec 20</option>
+            </select>
+            <span class="absolute right-3 top-0 pointer-events-none"
+              ><svg
+                id="arrow_down_icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  id="Path_117"
+                  data-name="Path 117"
+                  d="M0,0H24V24H0Z"
+                  fill="none"
+                />
+                <path
+                  id="Path_118"
+                  data-name="Path 118"
+                  d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
+                  fill="#000539"
+                />
+              </svg>
+            </span>
+          </div>
         </div>
         <div
           class="bg-white p-5 xl:px-6 xl:py-7 border border-gray-300 hover:border-custom-darkblue hover:shadow"

@@ -94,7 +94,25 @@
             </span>
           </div>
           <div class="col-span-12 md:col-span-6 mb-5">
-            <p class="font-semibold text-custom-lightblue">Date and Time</p>
+            <p class="font-semibold text-custom-lightblue">Guest No.</p>
+            <input
+              class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8"
+              type="text"
+              placeholder="80-100"
+            />
+          </div>
+          <div class="col-span-12 md:col-span-6 mb-5">
+            <p class="font-semibold text-custom-lightblue">
+              Start Date and Time
+            </p>
+            <input
+              class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8"
+              type="date"
+              value="21 Dec 2020, 02:00 PM"
+            />
+          </div>
+          <div class="col-span-12 md:col-span-6 mb-5">
+            <p class="font-semibold text-custom-lightblue">End Date and Time</p>
             <input
               class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8"
               type="date"

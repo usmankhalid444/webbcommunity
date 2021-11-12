@@ -164,7 +164,7 @@ const routes = [
     component: BookingSummary,
   },
   {
-    path: "/admindashboard",
+    path: "/dashboard",
     name: "Admin Dashboard",
     component:Dashboard,
   },

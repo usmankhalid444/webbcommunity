@@ -5,7 +5,7 @@
       <h2 class="text-34px font-semibold md:inline">Dashboard</h2>
       <a
         @click="$emit('tab')"
-        class="text-custom-purple underline md:px-8 py-2 text-lg relative top-0 tracking-tight"
+        class="text-custom-purple hover:text-custom-darkblue underline md:px-8 py-2 text-lg relative top-0 tracking-tight"
         href="#"
         >View Financial Stats</a
       >
@@ -177,7 +177,9 @@
       <p class="inline px-5 py-1 rounded-full bg-custom-darkblue text-white">
         2 Awaiting
       </p>
-      <a class="float-right underline text-custom-purple font-semibold" href="#"
+      <a
+        class="float-right underline text-custom-purple hover:text-custom-darkblue font-semibold"
+        href="#"
         >Review Documents</a
       >
     </div>
