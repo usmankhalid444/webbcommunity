@@ -147,6 +147,10 @@ export default {
               title: "property_documents",
               path: "www.google.com",
             },
+            {
+              title: "residentail_certificate",
+              path: "www.google.com",
+            },
           ],
         },
         {
