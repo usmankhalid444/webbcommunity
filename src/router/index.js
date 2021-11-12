@@ -27,6 +27,7 @@ import CalenderWeekly from '../components/pages/frontend/profile/bookings/create
 import CalenderMonthly from '../components/pages/frontend/profile/bookings/create-booking/components/CalenderMonthly'
 import BookingSummary from '../components/pages/frontend/profile/bookings/create-booking/components/BookingSummary'
 import Dashboard from '../components/pages/admin/dashboard/Dashboard'
+import Users from '../components/pages/admin/users/Users'
 const routes = [
   {  
     path: "/",
@@ -167,6 +168,11 @@ const routes = [
     path: "/admin-dashboard",
     name: "Admin Dashboard",
     component:Dashboard,
+  },
+  {
+    path: "/users",
+    name: "Users",
+    component:Users,
   },
 ];
 

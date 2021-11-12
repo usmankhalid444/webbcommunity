@@ -4,7 +4,7 @@
     v-slot="{ close }"
     v-bind="$attrs"
     classes="flex justify-center items-center"
-    content-class="w-full md:w-3/4 xl:w-2/4 relative max-h-full mx-4 md:p-12 p-5 border rounded bg-white capitalize"
+    content-class="w-full md:w-3/4 xl:w-2/4 relative max-h-full mx-4 md:p-12 p-5 border rounded bg-white capitalize overflow-auto z-50"
   >
     <div class="border-b pb-8">
       <p class="text-custom-lightblue font-medium inline-block">
@@ -91,7 +91,45 @@
           quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Dolorum praesentium fugit quos deserunt odio, sint alias fugiat
           necessitatibus amet libero sapiente voluptas? Odio facere, consequatur
-          placeat est adipisci hic autem!
+          placeat est adipisci hic autem!Lorem Ipsum Dolor Sit Amet, Consectetur
+          Adipisicing Elit. Illum Delectus Suscipit Odio Impedit Eos Nostrum
+          Esse, Commodi Cum Quod Fugit Minima Ullam Quos Ex, Tempora Ut Alias
+          Praesentium Vero Quibusdam. Lorem Ipsum Dolor Sit Amet Consectetur
+          Adipisicing Elit. Dolorum Praesentium Fugit Quos Deserunt Odio, Sint
+          Alias Fugiat Necessitatibus Amet Libero Sapiente Voluptas? Odio
+          Facere, Consequatur Placeat Est Adipisci Hic Autem!Lorem Ipsum Dolor
+          Sit Amet, Consectetur Adipisicing Elit. Illum Delectus Suscipit Odio
+          Impedit Eos Nostrum Esse, Commodi Cum Quod Fugit Minima Ullam Quos Ex,
+          Tempora Ut Alias Praesentium Vero Quibusdam. Lorem Ipsum Dolor Sit
+          Amet Consectetur Adipisicing Elit. Dolorum Praesentium Fugit Quos
+          Deserunt Odio, Sint Alias Fugiat Necessitatibus Amet Libero Sapiente
+          Voluptas? Odio Facere, Consequatur Placeat Est Adipisci Hic
+          Autem!Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Illum
+          Delectus Suscipit Odio Impedit Eos Nostrum Esse, Commodi Cum Quod
+          Fugit Minima Ullam Quos Ex, Tempora Ut Alias Praesentium Vero
+          Quibusdam. Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+          Dolorum Praesentium Fugit Quos Deserunt Odio, Sint Alias Fugiat
+          Necessitatibus Amet Libero Sapiente Voluptas? Odio Facere, Consequatur
+          Placeat Est Adipisci Hic Autem!Lorem Ipsum Dolor Sit Amet, Consectetur
+          Adipisicing Elit. Illum Delectus Suscipit Odio Impedit Eos Nostrum
+          Esse, Commodi Cum Quod Fugit Minima Ullam Quos Ex, Tempora Ut Alias
+          Praesentium Vero Quibusdam. Lorem Ipsum Dolor Sit Amet Consectetur
+          Adipisicing Elit. Dolorum Praesentium Fugit Quos Deserunt Odio, Sint
+          Alias Fugiat Necessitatibus Amet Libero Sapiente Voluptas? Odio
+          Facere, Consequatur Placeat Est Adipisci Hic Autem!Lorem Ipsum Dolor
+          Sit Amet, Consectetur Adipisicing Elit. Illum Delectus Suscipit Odio
+          Impedit Eos Nostrum Esse, Commodi Cum Quod Fugit Minima Ullam Quos Ex,
+          Tempora Ut Alias Praesentium Vero Quibusdam. Lorem Ipsum Dolor Sit
+          Amet Consectetur Adipisicing Elit. Dolorum Praesentium Fugit Quos
+          Deserunt Odio, Sint Alias Fugiat Necessitatibus Amet Libero Sapiente
+          Voluptas? Odio Facere, Consequatur Placeat Est Adipisci Hic
+          Autem!Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Illum
+          Delectus Suscipit Odio Impedit Eos Nostrum Esse, Commodi Cum Quod
+          Fugit Minima Ullam Quos Ex, Tempora Ut Alias Praesentium Vero
+          Quibusdam. Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+          Dolorum Praesentium Fugit Quos Deserunt Odio, Sint Alias Fugiat
+          Necessitatibus Amet Libero Sapiente Voluptas? Odio Facere, Consequatur
+          Placeat Est Adipisci Hic Autem!
         </p>
       </div>
     </div>

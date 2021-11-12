@@ -36,12 +36,12 @@
     <div>
       <div class="relative inline text-custom-lightblue">
         <select
-          class="font-semibold relative border-none bg-custom-lightgreen pl-0 focus:ring-transparent "
+          class="font-semibold relative -left-3 border-none bg-custom-lightgreen focus:ring-transparent "
         >
           <option value="December, 2020">December, 2020</option>
           <option value="January, 2021">January, 2021</option>
         </select>
-        <span class="absolute right-2 top-0 pointer-events-none"
+        <span class="absolute right-6 top-0 pointer-events-none"
           ><svg
             class="fill-current text-custom-lightblue"
             id="arrow_down_icon"
@@ -106,12 +106,12 @@
     <div>
       <div class="relative inline text-custom-lightblue">
         <select
-          class="font-semibold relative border-none bg-custom-lightgreen pl-0 focus:ring-transparent "
+          class="font-semibold relative border-none bg-custom-lightgreen focus:ring-transparent -left-2.5"
         >
           <option value="December, 2020">December, 2020</option>
           <option value="January, 2021">January, 2021</option>
         </select>
-        <span class="absolute right-2 top-0 pointer-events-none"
+        <span class="absolute right-5 top-0 pointer-events-none"
           ><svg
             class="fill-current text-custom-lightblue"
             id="arrow_down_icon"
@@ -143,9 +143,40 @@
           <h3 class="text-34px font-semibold">
             {{ community.hackney_enquires }}
           </h3>
-          <p class="text-custom-lightblue font-semibold">
+          <!-- <p class="text-custom-lightblue font-semibold">
             Hackney Enquiries
-          </p>
+          </p> -->
+          <div class="relative inline">
+            <select
+              class="text-custom-lightblue font-semibold relative -left-2 border-none focus:ring-transparent"
+            >
+              <option value="Hackney Enquiries">Hackney Enquiries</option>
+              <option value="demo1">demo1</option>
+              <option value="Demo2">Demo2</option>
+            </select>
+            <span class="absolute right-5 top-0 pointer-events-none"
+              ><svg
+                class="fill-current text-custom-lightblue"
+                id="arrow_down_icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  id="Path_117"
+                  data-name="Path 117"
+                  d="M0,0H24V24H0Z"
+                  fill="none"
+                />
+                <path
+                  id="Path_118"
+                  data-name="Path 118"
+                  d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
+                />
+              </svg>
+            </span>
+          </div>
         </div>
         <div
           class="bg-white p-5 xl:p-6 border border-gray-300 hover:border-custom-purple hover:shadow "

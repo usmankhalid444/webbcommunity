@@ -25,7 +25,9 @@
             Total Earned
           </p>
           <div class="inline relative">
-            <select class="text-sm font-semibold border-none">
+            <select
+              class="text-sm font-semibold border-none focus:ring-transparent"
+            >
               <option value="Dec 20">Dec 20</option>
               <option value="Dec 20">Dec 20</option>
               <option value="Dec 20">Dec 20</option>

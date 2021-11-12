@@ -1,6 +1,6 @@
 <template>
   <header
-    class="grid grid-cols-12 gap-4   font-semibold py-2  px-4  lg:px-16  capitalize relative md:sticky md:top-0 z-50 "
+    class="grid grid-cols-12 gap-4   font-semibold py-2  px-4  lg:px-16  capitalize relative md:sticky md:top-0 z-20 "
     :class="
       darkHeader
         ? 'text-white bg-custom-darkblue'
