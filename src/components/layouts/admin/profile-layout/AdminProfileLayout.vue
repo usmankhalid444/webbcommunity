@@ -166,7 +166,7 @@ export default {
         },
         {
           title: "Announcements",
-          link: "notifications",
+          link: "announcements",
           dropdown: [],
         },
         {

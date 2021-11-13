@@ -3,7 +3,7 @@
     name="UserDetailModal"
     v-slot="{ close }"
     v-bind="$attrs"
-    classes="flex justify-center items-center"
+    classes="flex justify-center items-center overflow-scroll"
     content-class="w-full md:w-3/4 xl:w-2/4 relative max-h-full mx-4 md:p-12 p-5 border rounded bg-white"
   >
     <div>
@@ -11,7 +11,7 @@
         <img :src="userData.avatar" alt="userimage" class="h-32 w-32 " />
         <div class="absolute left-36 top-0">
           <p class="py-1 text-custom-lightblue">User ID UR0{{ userData.id }}</p>
-          <p class="pb-2 text-custom-darkblue text-34px ">
+          <p class="pb-2 text-custom-darkblue text-2xl md:text-34px ">
             {{ userData.name }}
           </p>
           <p
@@ -81,33 +81,32 @@
           <p class="p-2 text-center  text-sm underline">
             {{ document.title }}.pdf
           </p>
-          <span
-            class="absolute top-2 right-0 cursor-pointer"
-            @click="editToggle = !editToggle"
-          >
-            <svg
-              class="w-10 h-6 fill-current text-white"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
-              />
-            </svg>
-          </span>
-          <span
-            v-if="editToggle"
-            class="absolute top-9 right-3 bg-custom-lightgreen px-5 py-2 rounded font-semibold shadow border border-custom-lightgray"
-            ><p class="py-1 cursor-pointer hover:text-custom-purple">
-              Replace
-            </p>
-            <p class="py-1 cursor-pointer hover:text-custom-purple">Delete</p>
-          </span>
+          <div class="group">
+            <span class="absolute top-2 right-0 cursor-pointer">
+              <svg
+                class="w-10 h-6 fill-current text-white"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                />
+              </svg>
+            </span>
+            <!--  -->
+            <span
+              class="hidden group-hover:block absolute top-8 right-3 bg-custom-lightgreen px-5 py-2 rounded font-semibold shadow border border-custom-lightgray"
+              ><p class="py-1 cursor-pointer hover:text-custom-purple">
+                Replace
+              </p>
+              <p class="py-1 cursor-pointer hover:text-custom-purple">Delete</p>
+            </span>
+          </div>
         </div>
       </div>
       <!-- documents section end -->
       <div class="float-right mt-10 flex">
-        <div class="mr-10">
+        <div class="mr-3 md:mr-10 mb-3">
           <button
             class="border-custom-lightgray border h-12 font-semibold px-4 w-44 hover:bg-custom-lightblue hover:text-white"
           >
@@ -155,11 +154,6 @@ export default {
   props: ["userData"],
   components: {
     VueFinalModal,
-  },
-  data() {
-    return {
-      editToggle: false,
-    };
   },
   inheritAttrs: false,
   emits: ["cancel", "confirm"],

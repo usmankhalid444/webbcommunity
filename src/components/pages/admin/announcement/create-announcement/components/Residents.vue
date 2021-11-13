@@ -1,13 +1,18 @@
 <template>
   <div>
     <!-- table start -->
-    <div class="capitalize h-72 md:h-2/5 mt-10 overflow-auto w-full">
+    <div class="capitalize md:h-2/5 mt-7 overflow-auto w-full">
       <table
-        class="w-full md:leading-extra-loose overflow-scroll text-sm md:text-base"
+        class="w-full  h-72 md:leading-extra-loose overflow-scroll text-sm md:text-base"
       >
         <thead class="border-2 text-custom-lightgray">
           <tr class="text-left">
-            <th class="px-5">Sr.</th>
+            <th class="px-5">
+              <input
+                class="h-5 w-5 text-custom-darkblue focus:ring-0 focus:shadow-none cursor-pointer"
+                type="checkbox"
+              />
+            </th>
             <th>User</th>
             <th>
               <span
@@ -70,7 +75,12 @@
             :key="i"
             class="border hover:border-2  hover:border-custom-lightgray group hover:bg-white"
           >
-            <td class="px-5">{{ item.id }}</td>
+            <td class="px-5">
+              <input
+                class="h-5 w-5 text-custom-darkblue focus:ring-0 focus:shadow-none cursor-pointer"
+                type="checkbox"
+              />
+            </td>
             <td>
               <img
                 class="w-8 h-8 rounded-full inline mr-3"
@@ -80,168 +90,69 @@
             </td>
             <td>{{ item.joined_date }}</td>
             <td>{{ item.status }}</td>
-            <td>
-              <p
-                @click="showModal(item)"
-                class="text-custom-purple group-hover:visible invisible cursor-pointer"
-              >
-                Verify Documents
-              </p>
-            </td>
           </tr>
         </tbody>
       </table>
     </div>
     <div class="w-full text-custom-darkblue font-semibold mt-10">
-      <p class="inline">Total 4</p>
+      <p class="inline">3 Selected (3 Residents, 0 Outsiders)</p>
       <p class="float-right">
         Page <i class="ri-arrow-left-s-line align-middle text-xl"></i> 1 of 1
         <i class="ri-arrow-right-s-line align-middle text-xl"></i>
       </p>
     </div>
   </div>
-  <ModalsContainer />
 </template>
 <script>
-import UserDetailModal from "./UserDetailModal";
-import { $vfm, ModalsContainer } from "vue-final-modal";
 export default {
-  components: { ModalsContainer },
   data() {
     return {
-      showmodal: false,
       redisent_users: [
         {
           id: 1,
           name: "John Andrews",
-          email: "johnandrews@gmail.com",
-          contact_no: "+44 7700 988077",
           avatar: "/assets/user.png",
           joined_date: "Dec 15, 2020",
           status: "Non-Verified Resident",
-          documents: [
-            {
-              title: "residentail_certificate",
-              path: "www.google.com",
-            },
-            {
-              title: "property_documents",
-              path: "www.google.com",
-            },
-          ],
         },
         {
           id: 2,
           name: "Stephen Baker",
-          email: "stephanbaker@gmail.com",
-          contact_no: "+44 7700 900077",
           avatar: "/assets/user2.png",
           joined_date: "Dec 15, 2020",
           status: "Verified Resident",
-          documents: [
-            {
-              title: "residentail_certificate",
-              path: "www.google.com",
-            },
-            {
-              title: "property_documents",
-              path: "www.google.com",
-            },
-            {
-              title: "residentail_certificate",
-              path: "www.google.com",
-            },
-          ],
         },
         {
           id: 3,
           name: "Keith Birkett",
-          email: "keithbirkett@gmail.com",
-          contact_no: "+44 7700 900077",
 
           avatar: "/assets/user.png",
           joined_date: "Dec 15, 2020",
           status: "Non-Verified Resident",
-          documents: [
-            {
-              title: "residentail_certificate",
-              path: "www.google.com",
-            },
-            {
-              title: "property_documents",
-              path: "www.google.com",
-            },
-          ],
         },
         {
           id: 4,
           name: "John Andrews",
-          email: "johnandrews@gmail.com",
-          contact_no: "+44 7700 900077",
           avatar: "/assets/user.png",
           joined_date: "Dec 15, 2020",
           status: "Non-Verified Resident",
-          documents: [
-            {
-              title: "residentail_certificate",
-              path: "www.google.com",
-            },
-            {
-              title: "property_documents",
-              path: "www.google.com",
-            },
-          ],
         },
         {
           id: 5,
           name: "Stephen Baker",
-          email: "stephanbaker@gmail.com",
-          contact_no: "+44 7700 900077",
           avatar: "/assets/user2.png",
           joined_date: "Dec 15, 2020",
           status: "Verified Resident",
-          documents: [
-            {
-              title: "residentail_certificate",
-              path: "www.google.com",
-            },
-            {
-              title: "property_documents",
-              path: "www.google.com",
-            },
-          ],
         },
         {
           id: 6,
           name: "Keith Birkett",
-          email: "keithbirkett@gmail.com",
-          contact_no: "+44 7700 900077",
           avatar: "/assets/user.png",
           joined_date: "Dec 15, 2020",
           status: "Non-Verified Resident",
-          documents: [
-            {
-              title: "residentail_certificate",
-              path: "www.google.com",
-            },
-            {
-              title: "property_documents",
-              path: "www.google.com",
-            },
-          ],
         },
       ],
     };
-  },
-  methods: {
-    showModal(user) {
-      $vfm.show({
-        component: UserDetailModal,
-        bind: {
-          userData: user,
-        },
-      });
-    },
   },
 };
 </script>

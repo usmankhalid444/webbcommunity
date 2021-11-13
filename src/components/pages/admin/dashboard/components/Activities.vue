@@ -13,9 +13,12 @@
     <!--bookings tab -->
     <div class="mb-1">
       <h3 class="inline text-2xl font-semibold">Bookings</h3>
-      <label for="toggleB" class="flex items-center cursor-pointer float-right"
+      <label
+        for="toggleB"
+        class="flex items-center cursor-pointer float-right"
+        @click="showEvent"
         ><!-- label -->
-        <div class="mr-3 text-lg tracking-tight" @click="showEvent">
+        <div class="mr-3 text-lg tracking-tight">
           Vacation Mode
         </div>
         <!-- toggle -->

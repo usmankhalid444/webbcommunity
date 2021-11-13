@@ -28,6 +28,8 @@ import CalenderMonthly from '../components/pages/frontend/profile/bookings/creat
 import BookingSummary from '../components/pages/frontend/profile/bookings/create-booking/components/BookingSummary'
 import Dashboard from '../components/pages/admin/dashboard/Dashboard'
 import Users from '../components/pages/admin/users/Users'
+import Announcements from '../components/pages/admin/announcement/Announcements'
+import CreateAnnouncement from '../components/pages/admin/announcement/create-announcement/CreateAnnouncement'
 const routes = [
   {  
     path: "/",
@@ -173,6 +175,16 @@ const routes = [
     path: "/users",
     name: "Users",
     component:Users,
+  },
+   {
+    path: "/announcements",
+    name: "Announcements",
+    component:Announcements,
+  },
+   {
+    path: "/createannouncement",
+    name: "Create New Announcement",
+    component:CreateAnnouncement,
   },
 ];
 
