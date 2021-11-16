@@ -93,7 +93,7 @@
       </table>
     </div>
     <div class="w-full text-custom-darkblue font-semibold mt-10">
-      <p class="inline">Total 4</p>
+      <p class="inline">Total {{ redisent_users.length }}</p>
       <p class="float-right">
         Page <i class="ri-arrow-left-s-line align-middle text-xl"></i> 1 of 1
         <i class="ri-arrow-right-s-line align-middle text-xl"></i>

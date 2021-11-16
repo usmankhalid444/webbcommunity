@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UserProfileLayout>
+    <AdminProfileLayout>
       <!-- intro -->
       <div class="w-full relative mb-14">
         <router-link to="announcements">
@@ -44,7 +44,7 @@
         </div>
       </div>
       <ModalsContainer />
-    </UserProfileLayout>
+    </AdminProfileLayout>
   </div>
 </template>
 

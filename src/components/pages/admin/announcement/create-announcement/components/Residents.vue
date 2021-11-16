@@ -9,8 +9,10 @@
           <tr class="text-left">
             <th class="px-5">
               <input
+                @click="addAll"
                 class="h-5 w-5 text-custom-darkblue focus:ring-0 focus:shadow-none cursor-pointer"
                 type="checkbox"
+                :checked="selectedResidents == resident_users ? true : false"
               />
             </th>
             <th>User</th>
@@ -71,14 +73,16 @@
         </thead>
         <tbody class="text-custom-darkblue font-semibold ">
           <tr
-            v-for="(item, i) in redisent_users"
+            v-for="(item, i) in resident_users"
             :key="i"
             class="border hover:border-2  hover:border-custom-lightgray group hover:bg-white"
           >
             <td class="px-5">
               <input
+                @click="addResident(item)"
                 class="h-5 w-5 text-custom-darkblue focus:ring-0 focus:shadow-none cursor-pointer"
                 type="checkbox"
+                :checked="selectedResidents.includes(item) ? true : false"
               />
             </td>
             <td>
@@ -94,8 +98,7 @@
         </tbody>
       </table>
     </div>
-    <div class="w-full text-custom-darkblue font-semibold mt-10">
-      <p class="inline">3 Selected (3 Residents, 0 Outsiders)</p>
+    <div class="text-custom-darkblue font-semibold mt-10">
       <p class="float-right">
         Page <i class="ri-arrow-left-s-line align-middle text-xl"></i> 1 of 1
         <i class="ri-arrow-right-s-line align-middle text-xl"></i>
@@ -105,54 +108,33 @@
 </template>
 <script>
 export default {
+  props: ["resident_users", "selected_residents"],
   data() {
     return {
-      redisent_users: [
-        {
-          id: 1,
-          name: "John Andrews",
-          avatar: "/assets/user.png",
-          joined_date: "Dec 15, 2020",
-          status: "Non-Verified Resident",
-        },
-        {
-          id: 2,
-          name: "Stephen Baker",
-          avatar: "/assets/user2.png",
-          joined_date: "Dec 15, 2020",
-          status: "Verified Resident",
-        },
-        {
-          id: 3,
-          name: "Keith Birkett",
-
-          avatar: "/assets/user.png",
-          joined_date: "Dec 15, 2020",
-          status: "Non-Verified Resident",
-        },
-        {
-          id: 4,
-          name: "John Andrews",
-          avatar: "/assets/user.png",
-          joined_date: "Dec 15, 2020",
-          status: "Non-Verified Resident",
-        },
-        {
-          id: 5,
-          name: "Stephen Baker",
-          avatar: "/assets/user2.png",
-          joined_date: "Dec 15, 2020",
-          status: "Verified Resident",
-        },
-        {
-          id: 6,
-          name: "Keith Birkett",
-          avatar: "/assets/user.png",
-          joined_date: "Dec 15, 2020",
-          status: "Non-Verified Resident",
-        },
-      ],
+      selectedResidents: this.selected_residents,
     };
+  },
+  methods: {
+    addResident(item) {
+      if (!this.selectedResidents.includes(item)) {
+        this.selectedResidents.push(item);
+      } else {
+        let itemIndex = this.selectedResidents.indexOf(item);
+        this.selectedResidents.splice(itemIndex, 1);
+      }
+      this.emmitSelectedResidents();
+    },
+    addAll() {
+      if (this.selectedResidents == this.resident_users) {
+        this.selectedResidents = [];
+      } else {
+        this.selectedResidents = this.resident_users;
+      }
+      this.emmitSelectedResidents();
+    },
+    emmitSelectedResidents() {
+      this.$emit("on_selected_residents", this.selectedResidents);
+    },
   },
 };
 </script>

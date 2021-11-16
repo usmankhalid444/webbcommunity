@@ -145,12 +145,16 @@ export default {
               link: "events",
             },
             {
+              title: "News",
+              link: "adminnews",
+            },
+            {
               title: "Hackney Council",
               link: "hackneycouncil",
             },
             {
               title: "Reports",
-              link: "reports",
+              link: "adminreports",
             },
           ],
         },

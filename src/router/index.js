@@ -30,6 +30,10 @@ import Dashboard from '../components/pages/admin/dashboard/Dashboard'
 import Users from '../components/pages/admin/users/Users'
 import Announcements from '../components/pages/admin/announcement/Announcements'
 import CreateAnnouncement from '../components/pages/admin/announcement/create-announcement/CreateAnnouncement'
+import AdminNews from '../components/pages/admin/news/AdminNews'
+import AdminReports from '../components/pages/admin/reports/AdminReports'
+import CreateNews from '../components/pages/admin/news/components/CreateNews'
+import EditNews from '../components/pages/admin/news/components/EditNews'
 const routes = [
   {  
     path: "/",
@@ -185,6 +189,26 @@ const routes = [
     path: "/createannouncement",
     name: "Create New Announcement",
     component:CreateAnnouncement,
+  },
+  {
+    path: "/adminnews",
+    name: "Admin News",
+    component:AdminNews,
+  },
+   {
+    path: "/adminreports",
+    name: "Admin Reports",
+    component:AdminReports,
+  },
+  {
+    path: "/createnews",
+    name: "Create News",
+    component:CreateNews,
+  },
+  {
+    path: "/editnews",
+    name: "Edit News",
+    component: EditNews,
   },
 ];
 

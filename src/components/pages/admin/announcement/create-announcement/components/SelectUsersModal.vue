@@ -84,8 +84,27 @@
         </div>
       </div>
 
-      <Residents v-if="currentTab === 'residents'" />
-      <Outsiders v-if="currentTab === 'outsiders'" />
+      <Residents
+        v-if="currentTab === 'residents'"
+        :resident_users="resident_users"
+        :selected_residents="selected_residents"
+        @on_selected_residents="getSelectResidents"
+      />
+      <Outsiders
+        v-if="currentTab === 'outsiders'"
+        :none_resident_users="none_resident_users"
+        :selected_none_residents="selected_none_residents"
+        @on_selected_none_residents="getSelectNoneResidents"
+      />
+      <div class="w-full text-custom-darkblue font-semibold mt-10">
+        <p class="inline">
+          {{
+            selected_residents.length + selected_none_residents.length
+          }}
+          Selected ({{ selected_residents.length }} Residents,
+          {{ selected_none_residents.length }} Outsiders)
+        </p>
+      </div>
       <button
         class="bg-custom-purple hover:bg-custom-lightblue w-72 mt-5 md:w-96 py-4 uppercase font-semibold text-white"
       >
@@ -107,7 +126,106 @@ export default {
   data() {
     return {
       currentTab: "residents",
+      resident_users: [
+        {
+          id: 1,
+          name: "John Andrews",
+          avatar: "/assets/user.png",
+          joined_date: "Dec 15, 2020",
+          status: "Non-Verified Resident",
+        },
+        {
+          id: 2,
+          name: "Stephen Baker",
+          avatar: "/assets/user2.png",
+          joined_date: "Dec 15, 2020",
+          status: "Verified Resident",
+        },
+        {
+          id: 3,
+          name: "Keith Birkett",
+
+          avatar: "/assets/user.png",
+          joined_date: "Dec 15, 2020",
+          status: "Non-Verified Resident",
+        },
+        {
+          id: 4,
+          name: "John Andrews",
+          avatar: "/assets/user.png",
+          joined_date: "Dec 15, 2020",
+          status: "Non-Verified Resident",
+        },
+        {
+          id: 5,
+          name: "Stephen Baker",
+          avatar: "/assets/user2.png",
+          joined_date: "Dec 15, 2020",
+          status: "Verified Resident",
+        },
+        {
+          id: 6,
+          name: "Keith Birkett",
+          avatar: "/assets/user.png",
+          joined_date: "Dec 15, 2020",
+          status: "Non-Verified Resident",
+        },
+      ],
+      selected_residents: [],
+      none_resident_users: [
+        {
+          id: 1,
+          name: "Stephen Baker",
+          avatar: "/assets/user2.png",
+          joined_date: "Dec 15, 2020",
+          status: "Verified Resident",
+        },
+        {
+          id: 2,
+          name: "John Andrews",
+          avatar: "/assets/user.png",
+          joined_date: "Dec 15, 2020",
+          status: "Non-Verified Resident",
+        },
+        {
+          id: 3,
+          name: "Keith Birkett",
+          avatar: "/assets/user.png",
+          joined_date: "Dec 15, 2020",
+          status: "Non-Verified Resident",
+        },
+        {
+          id: 4,
+          name: "John Andrews",
+          avatar: "/assets/user.png",
+          joined_date: "Dec 15, 2020",
+          status: "Non-Verified Resident",
+        },
+        {
+          id: 5,
+          name: "Stephen Baker",
+          avatar: "/assets/user2.png",
+          joined_date: "Dec 15, 2020",
+          status: "Verified Resident",
+        },
+        {
+          id: 6,
+          name: "Keith Birkett",
+          avatar: "/assets/user.png",
+          joined_date: "Dec 15, 2020",
+          status: "Non-Verified Resident",
+        },
+      ],
+      selected_none_residents: [],
     };
+  },
+  methods: {
+    getSelectResidents(value) {
+      this.selected_residents = value;
+    },
+    getSelectNoneResidents(value) {
+      this.selected_none_residents = value;
+    },
   },
   inheritAttrs: false,
   emits: ["cancel", "confirm"],

@@ -11,7 +11,7 @@
         <img :src="userData.avatar" alt="userimage" class="h-32 w-32 " />
         <div class="absolute left-36 top-0">
           <p class="py-1 text-custom-lightblue">User ID UR0{{ userData.id }}</p>
-          <p class="pb-2 text-custom-darkblue text-2xl md:text-34px ">
+          <p class="pb-2 text-custom-darkblue text-2xl md:text-34px my-2 ">
             {{ userData.name }}
           </p>
           <p

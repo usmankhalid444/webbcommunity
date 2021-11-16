@@ -8,7 +8,7 @@
         <thead class="border-2 text-custom-lightgray">
           <tr class="text-left">
             <th class="px-5">Sr.</th>
-            <th>Subject</th>
+            <th>News</th>
             <th>
               <span
                 ><svg
@@ -33,7 +33,7 @@
                   />
                 </svg>
               </span>
-              Date
+              Published On
             </th>
             <th>
               <span
@@ -59,26 +59,27 @@
                   />
                 </svg>
               </span>
-              Shared with
+              Source
             </th>
             <th></th>
           </tr>
         </thead>
         <tbody class="text-custom-darkblue font-semibold ">
           <tr
-            v-for="(announcement, i) in announcements"
+            v-for="(item, i) in news"
             :key="i"
             class="border hover:border-2  hover:border-custom-lightgray group hover:bg-white"
           >
-            <td class="px-5">{{ announcement.id }}</td>
+            <td class="px-5">{{ item.id }}</td>
             <td>
-              {{ announcement.subject }}
+              <span class="text-lg">{{ item.news_title }} - </span
+              ><span>{{ getBriefDescription(item.brief) }}</span>
             </td>
-            <td>{{ announcement.date }}</td>
-            <td>{{ announcement.shared_with }}</td>
+            <td>{{ item.published_on }}</td>
+            <td>{{ item.source }}</td>
             <td>
               <p
-                @click="showModal(announcement)"
+                @click="showModal(item)"
                 class="text-custom-purple group-hover:visible invisible cursor-pointer"
               >
                 view
@@ -89,7 +90,7 @@
       </table>
     </div>
     <div class="w-full text-custom-darkblue font-semibold mt-10">
-      <p class="inline">Total 4</p>
+      <p class="inline">Total {{ news.length }}</p>
       <p class="float-right">
         Page <i class="ri-arrow-left-s-line align-middle text-xl"></i> 1 of 1
         <i class="ri-arrow-right-s-line align-middle text-xl"></i>
@@ -99,65 +100,76 @@
   <ModalsContainer />
 </template>
 <script>
-import AnnouncementsDetailModal from "./AnnouncementsDetailModal";
+import NewsDetailModal from "./NewsDetailModal";
 import { $vfm, ModalsContainer } from "vue-final-modal";
 export default {
   components: { ModalsContainer },
   data() {
     return {
       showmodal: false,
-      announcements: [
+      news: [
         {
           id: 1,
-          subject: "Hall Booking Prices Has Been Revised",
-          date: "Dec 15 2020",
+          news_title: "Crime Activity",
+          published_on: "Dec 15 2020",
           time: "04:00 PM",
-          shared_with: "All Residents",
+          type: "Trash",
+          source: "Stephen Baker",
+          location: "Webb Community Hall",
           brief:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium tempora ipsam a aut quis, adipisci doloribus rerum debitisplaceat in excepturi asperiores impedit aliquid quos facilis iure quidem  odit",
         },
         {
           id: 2,
-          subject: "The quick, brown fox jumps over a lazy",
-          date: "Dec 15 2020",
+          news_title: "Crime Activity",
+          published_on: "Dec 14 2020",
           time: "04:00 PM",
-          shared_with: "All Outsiders",
-          brief:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium tempora ipsam a aut quis, adipisci doloribus rerum debitisplaceat in excepturi asperiores impedit aliquid quos facilis iure quidem  odit",
+          type: "Trash",
+          source: "Keith Birkett",
+          location: "Webb Community Hall",
+          brief: "Lorem dolor",
         },
         {
           id: 3,
-          subject: "The quick, brown fox jumps over a lazy",
-          date: "Dec 18 2020",
+          news_title: "Drug Activity",
+          published_on: "Dec 18 2020",
           time: "04:00 PM",
-          shared_with: "All Residents",
+          type: "Trash",
+          source: "Steven Clark",
+          location: "Webb Community Hall",
           brief:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium tempora ipsam a aut quis, adipisci doloribus rerum debitisplaceat in excepturi asperiores impedit aliquid quos facilis iure quidem  odit",
+            "Adipisci doloribus rerum debitisplaceat in excepturi asperiores impedit aliquid quos Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium tempora ipsam a aut q facilis iure quidem  odit",
         },
         {
           id: 4,
-          subject: "Hall Booking Prices Has Been Revised",
-          date: "Dec 15 2020",
-          time: "01:00 PM",
-          shared_with: "All Residents",
+          news_title: "Crime Activity",
+          published_on: "Dec 15 2020",
+          time: "04:00 PM",
+          type: "Trash",
+          source: "Stephen Baker",
+          location: "Webb Community Hall",
           brief:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium tempora ipsam a aut quis, adipisci doloribus rerum debitisplaceat in excepturi asperiores impedit aliquid quos facilis iure quidem  odit",
         },
         {
           id: 5,
-          subject: "The quick, brown fox jumps over a lazy",
-          date: "Dec 12 2020",
-          time: "08:00 PM",
-          shared_with: "All Outsiders",
+          news_title: "Drug Activity",
+          published_on: "Dec 15 2020",
+          time: "04:00 PM",
+          type: "Trash",
+          source: "Stephen Baker",
+          location: "Webb Community Hall",
           brief:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium tempora ipsam a aut quis, adipisci doloribus rerum debitisplaceat in excepturi asperiores impedit aliquid quos facilis iure quidem  odit",
+            " Consequatur praesentium tempora ipsam a aut quis, adipisci doloribus rerum debitisplaceat in excepturi asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. impedit aliquid quos facilis iure quidem  odit",
         },
         {
           id: 6,
-          subject: "The quick, brown fox jumps over a lazy",
-          date: "Dec 15 2020",
+          news_title: "Crime Activity",
+          published_on: "Dec 15 2020",
           time: "04:00 PM",
-          shared_with: "All Residents",
+          type: "Trash",
+          source: "Stephen Baker",
+          location: "Webb Community Hall",
           brief:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur praesentium tempora ipsam a aut quis, adipisci doloribus rerum debitisplaceat in excepturi asperiores impedit aliquid quos facilis iure quidem  odit",
         },
@@ -165,13 +177,20 @@ export default {
     };
   },
   methods: {
-    showModal(announcement) {
+    showModal(item) {
       $vfm.show({
-        component: AnnouncementsDetailModal,
+        component: NewsDetailModal,
         bind: {
-          announcements: announcement,
+          news: item,
         },
       });
+    },
+    getBriefDescription(text) {
+      if (text.length < 35) {
+        return text;
+      } else {
+        return text.substring(0, 35) + "...";
+      }
     },
   },
 };

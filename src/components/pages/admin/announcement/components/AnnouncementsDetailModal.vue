@@ -22,7 +22,7 @@
       </div>
       <div class="grid grid-cols-12 border-b py-2">
         <div class="col-span-6 ">
-          <p class="text-custom-lightblue">{{ announcements.shared_with }}</p>
+          <p class="text-custom-lightblue">Shared with</p>
           <p
             class="md:text-xl font-semibold py-2 text-custom-purple underline tracking-wide"
           >
