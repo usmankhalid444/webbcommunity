@@ -34,6 +34,8 @@ import AdminNews from '../components/pages/admin/news/AdminNews'
 import AdminReports from '../components/pages/admin/reports/AdminReports'
 import CreateNews from '../components/pages/admin/news/components/CreateNews'
 import EditNews from '../components/pages/admin/news/components/EditNews'
+import AdminHackneyCouncil from '../components/pages/admin/hackney-council/AdminHackneyCouncil'
+import Subscribers from '../components/pages/admin/subscribers/Subscribers'
 const routes = [
   {  
     path: "/",
@@ -209,6 +211,16 @@ const routes = [
     path: "/editnews",
     name: "Edit News",
     component: EditNews,
+  },
+  {
+    path: "/adminhackneycouncil",
+    name: "Admin Hackney Council",
+    component: AdminHackneyCouncil,
+  },
+   {
+    path: "/subscribers",
+    name: "Subscribers",
+    component: Subscribers,
   },
 ];
 

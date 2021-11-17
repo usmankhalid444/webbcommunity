@@ -150,7 +150,7 @@ export default {
             },
             {
               title: "Hackney Council",
-              link: "hackneycouncil",
+              link: "adminhackneycouncil",
             },
             {
               title: "Reports",
@@ -180,7 +180,7 @@ export default {
         },
         {
           title: "Subscribers",
-          link: "notifications",
+          link: "subscribers",
           dropdown: [],
         },
         {
