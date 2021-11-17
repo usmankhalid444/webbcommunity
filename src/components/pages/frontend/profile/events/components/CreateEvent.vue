@@ -105,19 +105,72 @@
             <p class="font-semibold text-custom-lightblue">
               Start Date and Time
             </p>
-            <input
+            <!-- <input
               class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8"
               type="date"
               value="21 Dec 2020, 02:00 PM"
-            />
+            /> -->
+            <Datepicker
+              v-model="start_date"
+              :is24="false"
+              format="dd MMM yyyy, hh:mm a"
+              inputClassName="pl-12 py-4 my-4 border border-custom-lightgray rounded-none"
+            >
+              <template #input-icon>
+                <svg
+                  class="calender-icon fill-current text-custom-darkblue ml-5"
+                  id="calendar_icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    id="Path_119"
+                    data-name="Path 119"
+                    d="M0,0H24V24H0Z"
+                    fill="none"
+                  />
+                  <path
+                    id="Path_120"
+                    data-name="Path 120"
+                    d="M20,3H19V1H17V3H7V1H5V3H4A2.006,2.006,0,0,0,2,5V21a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,20,3Zm0,18H4V10H20ZM20,8H4V5H20Z"
+                  />
+                </svg>
+              </template>
+            </Datepicker>
           </div>
           <div class="col-span-12 md:col-span-6 mb-5">
             <p class="font-semibold text-custom-lightblue">End Date and Time</p>
-            <input
-              class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8"
-              type="date"
-              value="21 Dec 2020, 02:00 PM"
-            />
+            <Datepicker
+              v-model="end_date"
+              :is24="false"
+              format="dd MMM yyyy, hh:mm a"
+              inputClassName="pl-12 py-4 my-4 border border-custom-lightgray rounded-none"
+            >
+              <template #input-icon>
+                <svg
+                  class="calender-icon fill-current text-custom-darkblue ml-5"
+                  id="calendar_icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    id="Path_119"
+                    data-name="Path 119"
+                    d="M0,0H24V24H0Z"
+                    fill="none"
+                  />
+                  <path
+                    id="Path_120"
+                    data-name="Path 120"
+                    d="M20,3H19V1H17V3H7V1H5V3H4A2.006,2.006,0,0,0,2,5V21a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,20,3Zm0,18H4V10H20ZM20,8H4V5H20Z"
+                  />
+                </svg>
+              </template>
+            </Datepicker>
           </div>
           <div class="col-span-12 md:col-span-6 relative mb-5">
             <p class="font-semibold inline text-custom-lightblue">
@@ -179,5 +232,18 @@
   </div>
 </template>
 <script>
-export default {};
+import Datepicker from "vue3-date-time-picker";
+import "vue3-date-time-picker/dist/main.css";
+// import "vue3-date-time-picker/src/Vue3DatePicker/style/main.scss";
+//  py-4 border border-custom-lightgray rounded-none
+
+export default {
+  components: { Datepicker },
+  data() {
+    return {
+      start_date: null,
+      end_date: null,
+    };
+  },
+};
 </script>
