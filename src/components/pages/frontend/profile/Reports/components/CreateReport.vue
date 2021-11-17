@@ -18,11 +18,14 @@
         >
           <div class="col-span-12 md:col-span-6 mb-5">
             <p class="font-semibold text-custom-lightblue inline">Topic</p>
-            <p class="text-custom-lightgray float-right inline">39/50</p>
+            <p class="text-custom-lightgray float-right inline">
+              {{ formObj.topic.length }}/50
+            </p>
             <input
               class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8"
               type="text"
-              value="Plot 45 has been creating alot of noise…"
+              maxlength="50"
+              v-model="formObj.topic"
             />
           </div>
           <div class="col-span-12 md:col-span-6 mb-5">
@@ -38,12 +41,15 @@
               Description
             </p>
             <p class="inline text-custom-lightgray px-4">(Optional)</p>
-            <p class="text-custom-lightgray float-right inline">145/250</p>
+            <p class="text-custom-lightgray float-right inline">
+              {{ formObj.description.length }}/250
+            </p>
 
             <textarea
               class="w-full border-custom-lightgray border  my-4 font-semibold px-8 py-6"
               rows="6"
-              value="The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex."
+              maxlength="250"
+              v-model="formObj.description"
             >
             </textarea>
           </div>
@@ -100,5 +106,14 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      formObj: {
+        topic: "",
+        description: "",
+      },
+    };
+  },
+};
 </script>
