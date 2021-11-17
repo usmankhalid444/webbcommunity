@@ -6,16 +6,16 @@
       <div class="md:text-xl px-5 py-9 md:py-14 ">
         <img
           class="inline w-11 h-11 rounded-full"
-          :src="imgsrc"
+          :src="news.imgsrc"
           alt="userimage"
         />
-        <p class="inline px-5 font-semibold ">{{ name }}</p>
-        <p class="float-right mt-2 text-custom-lightgray">{{ date }}</p>
+        <p class="inline px-5 font-semibold ">{{ news.name }}</p>
+        <p class="float-right mt-2 text-custom-lightgray">{{ news.date }}</p>
         <h1 class="text-2xl md:text-3xl py-7">
-          {{ heading }}
+          {{ news.heading }}
         </h1>
         <p class="text-custom-lightblue  leading-relaxed">
-          {{ info }}
+          {{ news.info }}
         </p>
       </div>
     </router-link>
@@ -23,15 +23,7 @@
 </template>
 <script>
 export default {
-  props: {
-    imgsrc: String,
-    name: String,
-    date: String,
-    heading: String,
-    info: String,
-    duration: String,
-    location: String,
-  },
+  props: ["news"],
 };
 </script>
 <style></style>

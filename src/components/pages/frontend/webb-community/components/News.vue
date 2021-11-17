@@ -1,14 +1,6 @@
 <template>
   <div class="grid grid-cols-12 xl:gap-12 gap-4 mt-12">
-    <NewsCard
-      v-for="card in cards"
-      :key="card.id"
-      :imgsrc="card.imgsrc"
-      :name="card.name"
-      :date="card.date"
-      :heading="card.heading"
-      :info="card.info"
-    />
+    <NewsCard v-for="card in cards" :key="card.id" :news="card" />
   </div>
   <div class="text-center my-14 text-xl text-custom-lightgray">
     <i class="ri-arrow-left-s-line align-middle mx-4 text-custom-darkblue"> </i>
