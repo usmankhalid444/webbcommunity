@@ -3,7 +3,7 @@
     <AdminProfileLayout>
       <!-- intro -->
       <div class="w-full relative mb-14">
-        <router-link to="admin-dashboard">
+        <router-link to="adminmanagebookings">
           <span class="absolute right-0 md:right-auto md:-left-14 text-3xl"
             ><i class="ri-arrow-left-line p-3"></i
           ></span>
@@ -136,10 +136,12 @@
           </span>
         </div>
         <div
-          v-if="recurringEvent == 'monthly' || recurringEvent == 'weekly'"
+          v-if="recurringEvent == 'weekly'"
           class="col-span-12 md:col-span-6 mb-5"
         >
           <RepeatWeekly v-if="recurringEvent == 'weekly'" />
+        </div>
+        <div class="col-span-12 mb-5" v-if="recurringEvent == 'monthly'">
           <RepeatMonthly v-if="recurringEvent == 'monthly'" />
         </div>
         <div

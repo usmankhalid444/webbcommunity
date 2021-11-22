@@ -1,6 +1,6 @@
 <template>
   <div class="text-custom-darkblue">
-    <p class="font-semibold w-full mt-5">Select Months</p>
+    <p class="font-semibold w-full">Select Months</p>
     <div class="w-full font-semibold mt-3">
       <button
         v-for="(item, i) in months"

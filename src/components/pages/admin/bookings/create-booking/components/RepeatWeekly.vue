@@ -1,6 +1,6 @@
 <template>
   <div class="text-custom-darkblue">
-    <p class="font-semibold w-full mt-5">Choose Days</p>
+    <p class="font-semibold w-full">Choose Days</p>
     <div class="w-full font-semibold mt-3">
       <button
         v-for="(item, i) in days"

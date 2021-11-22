@@ -8,7 +8,7 @@
         >
           Bookings
         </h1>
-        <router-link to="admincreateevent">
+        <router-link to="admincreatebooking">
           <button
             class="bg-custom-purple hover:bg-custom-lightblue w-64 md:h-12 h-10 uppercase font-semibold text-white absolute right-0 -top-12 md:-top-0"
           >
