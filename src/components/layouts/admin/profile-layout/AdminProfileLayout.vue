@@ -20,7 +20,7 @@
             class="py-3 hover:text-custom-darkblue block group cursor-pointer font-semibold w-full text-left"
           >
             {{ item.title }}
-            <span class="absolute right-0 top-4">
+            <span class="absolute right-0 top-3">
               <!-- svg arrow down -->
               <svg
                 v-if="current_submenu !== 'dropdown-' + i"
@@ -119,7 +119,7 @@ export default {
       menu: [
         {
           title: "Dashboard",
-          link: "myprofile",
+          link: "admin-dashboard",
           dropdown: [],
         },
         {
@@ -132,7 +132,7 @@ export default {
             },
             {
               title: "Manage",
-              link: "managebookings",
+              link: "adminmanagebookings",
             },
           ],
         },
@@ -142,7 +142,7 @@ export default {
           dropdown: [
             {
               title: "Events",
-              link: "events",
+              link: "adminevents",
             },
             {
               title: "News",
@@ -160,12 +160,12 @@ export default {
         },
         {
           title: "Hiring Prices",
-          link: "notifications",
+          link: "hiringprices",
           dropdown: [],
         },
         {
           title: "System Updates",
-          link: "notifications",
+          link: "adminnotifications",
           dropdown: [],
         },
         {
@@ -185,7 +185,7 @@ export default {
         },
         {
           title: "Notifications",
-          link: "notifications",
+          link: "adminnotifications",
           dropdown: [],
         },
       ],

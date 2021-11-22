@@ -29,9 +29,9 @@
             <td>
               <p
                 @click="showModal"
-                class="text-custom-purple group-hover:visible invisible cursor-pointer"
+                class="text-custom-purple group-hover:visible invisible cursor-pointer underline"
               >
-                view
+                Remove
               </p>
             </td>
           </tr>

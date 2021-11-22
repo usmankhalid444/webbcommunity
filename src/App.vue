@@ -16,4 +16,7 @@ export default {};
 select {
   background-image: none !important;
 }
+.dp__input {
+  border: 1px solid #9ea4c9 !important;
+}
 </style>

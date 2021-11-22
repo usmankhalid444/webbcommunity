@@ -1,13 +1,13 @@
 <template>
   <div>
-    <UserProfileLayout>
+    <AdminProfileLayout>
       <div class="text-custom-darkblue">
         <!-- title -->
         <h1 class="text-34px font-semibold mb-4">Notifications</h1>
         <!-- notification slides -->
         <div class="xl:h-563px xl:overflow-auto">
           <div
-            class="grid bg-white w-full grid-cols-12 py-3 px-4 mt-4 rounded-lg hover:shadow text-center "
+            class="grid bg-white w-full grid-cols-12 py-3 px-4 mt-4 rounded-lg hover:shadow text-center"
             v-for="(item, i) in notifications"
             :key="i"
           >
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-    </UserProfileLayout>
+    </AdminProfileLayout>
   </div>
 </template>
 <script>

@@ -10,7 +10,7 @@
     <!-- desktop menu start -->
     <div class="col-span-11">
       <ul class="text-right">
-        <router-link to="notifications">
+        <router-link to="adminnotifications">
           <li
             class="inline relative hover:text-custom-purple tex-5xl p-1 md:p-5"
           >

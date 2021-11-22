@@ -315,6 +315,16 @@ export default {
           subject:
             "The quicThe quick, brown fox jumps over ak, brown fox jumps over a DJs flock by when MTV ax quiz prog The quick, brown fox jumps over a DJs flock by when MTV ax quiz prog The quick, brown fox jumps over a DJs flock by when MTV ax quiz prog",
         },
+        {
+          id: 7,
+          date: "Dec 09 2020",
+          time: "04:00 PM",
+          location: "Webb Community Hall",
+          submitted_by: "Keith Birkett",
+          type: "Bulky Waste Collection",
+          subject:
+            "The quicThe quick, brown fox jumps over ak, brown fox jumps over a DJs flock by when MTV ax quiz prog The quick, brown fox jumps over a DJs flock by when MTV ax quiz prog The quick, brown fox jumps over a DJs flock by when MTV ax quiz prog",
+        },
       ],
     };
   },

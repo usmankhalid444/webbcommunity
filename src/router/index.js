@@ -36,6 +36,11 @@ import CreateNews from '../components/pages/admin/news/components/CreateNews'
 import EditNews from '../components/pages/admin/news/components/EditNews'
 import AdminHackneyCouncil from '../components/pages/admin/hackney-council/AdminHackneyCouncil'
 import Subscribers from '../components/pages/admin/subscribers/Subscribers'
+import AdminEvents from '../components/pages/admin/events/AdminEvents'
+import AdminCreateEvent from '../components/pages/admin/events/components/AdminCreateEvent'
+import AdminNotification from '../components/pages/admin/notifications/AdminNotification'
+import HiringPrices from '../components/pages/admin/hiring-prices/HiringPrices'
+import AdminManageBooking from '../components/pages/admin/bookings/manage-booking/AdminManageBooking'
 const routes = [
   {  
     path: "/",
@@ -222,6 +227,32 @@ const routes = [
     name: "Subscribers",
     component: Subscribers,
   },
+   {
+    path: "/adminevents",
+    name: "Events",
+    component: AdminEvents,
+  },
+   {
+    path: "/admincreateevent",
+    name: "Create Event",
+    component: AdminCreateEvent,
+  },
+  {
+    path: "/adminnotifications",
+    name: "Admin Notifications",
+    component: AdminNotification,
+  },
+  {
+    path: "/hiringprices",
+    name: "Hiring Prices",
+    component: HiringPrices,
+  },
+  {
+    path: "/adminmanagebookings",
+    name: "Admin Manage Bookings",
+    component: AdminManageBooking,
+  },
+  
 ];
 
 const router = createRouter({
