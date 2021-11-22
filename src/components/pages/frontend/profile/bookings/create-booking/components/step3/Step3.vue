@@ -8,6 +8,7 @@
         class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8 appearance-none"
       >
         <option value="1 Day Event">1 Day Event</option>
+        <option value="1 Day Plus Event">1 Day Plus Event</option>
         <option value="Repeat Weekly">Repeat Weekly</option>
         <option value="Repeat Monthly">Repeat Monthly</option>
       </select>
@@ -50,7 +51,7 @@ import RepeatMonthly from "./RepeatMonthly";
 export default {
   data() {
     return {
-      recurringEvent: "oneday",
+      recurringEvent: "",
     };
   },
   components: {
@@ -67,7 +68,7 @@ export default {
       } else if (event.target.value == "Repeat Monthly") {
         return (this.recurringEvent = "monthly");
       } else {
-        return (this.recurringEvent = "onday");
+        return (this.recurringEvent = "");
       }
 
       // console.log(event.target.value);
