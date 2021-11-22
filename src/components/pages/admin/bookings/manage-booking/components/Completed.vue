@@ -67,7 +67,7 @@ export default {
       completed_bookings: [
         {
           id: 1,
-          event_type: "Birthday Party",
+          event_type: "Anniversary Party",
           start_date: "Dec 15, 2020",
           end_date: "Dec 16, 2020",
           guests: {
@@ -117,7 +117,7 @@ export default {
         },
         {
           id: 3,
-          event_type: "Birthday Party",
+          event_type: "Anniversary Party",
           start_date: "Dec 15, 2020",
           end_date: "Dec 16, 2020",
           guests: {
@@ -167,7 +167,7 @@ export default {
         },
         {
           id: 5,
-          event_type: "General Meeting",
+          event_type: "Anniversary Party",
           start_date: "Dec 15, 2020",
           end_date: "Dec 16, 2020",
           guests: {

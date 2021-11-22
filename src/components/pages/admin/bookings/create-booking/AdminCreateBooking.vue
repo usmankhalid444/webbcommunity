@@ -134,10 +134,51 @@
               />
             </svg>
           </span>
+        </div>
+        <div
+          v-if="recurringEvent == 'monthly' || recurringEvent == 'weekly'"
+          class="col-span-12 md:col-span-6 mb-5"
+        >
           <RepeatWeekly v-if="recurringEvent == 'weekly'" />
           <RepeatMonthly v-if="recurringEvent == 'monthly'" />
         </div>
-        <div class="col-span-12 md:col-span-6 my-5">
+        <div
+          class="col-span-12 md:col-span-6 relative mb-5"
+          v-if="recurringEvent == 'monthly'"
+        >
+          <p class="font-semibold">How many days a month?</p>
+          <select
+            class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8 appearance-none"
+          >
+            <option value="1 Day a Month">1 Day a Month</option>
+            <option value="2 Day a Month">2 Day a Month</option>
+            <option value="3 Day a Month">3 Day a Month</option>
+          </select>
+          <span class="absolute top-14 right-5">
+            <svg
+              id="arrow_down_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                id="Path_117"
+                data-name="Path 117"
+                d="M0,0H24V24H0Z"
+                fill="none"
+              />
+              <path
+                id="Path_118"
+                data-name="Path 118"
+                d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
+                fill="#000539"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="col-span-12 md:col-span-6 mb-5">
+          <p class="font-semibold">Date and Time</p>
           <Datepicker
             v-model="end_date"
             :is24="false"
@@ -168,6 +209,10 @@
             </template>
           </Datepicker>
         </div>
+        <div
+          class="col-span-12 md:col-span-6 mb-5"
+          v-if="recurringEvent == 'weekly'"
+        ></div>
         <div class="col-span-12 md:col-span-6 mb-5 mt-3">
           <router-link to="calender-oneday">
             <button

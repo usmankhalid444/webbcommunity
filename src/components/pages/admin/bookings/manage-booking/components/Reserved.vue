@@ -67,7 +67,7 @@ export default {
       reserved_bookings: [
         {
           id: 1,
-          event_type: "Birthday Party",
+          event_type: "Christmas Party",
           start_date: "Dec 15, 2020",
           end_date: "Dec 16, 2020",
           guests: {
@@ -119,7 +119,7 @@ export default {
         },
         {
           id: 3,
-          event_type: "Birthday Party",
+          event_type: "Christmas Party",
           start_date: "Dec 15, 2020",
           end_date: "Dec 16, 2020",
           guests: {
