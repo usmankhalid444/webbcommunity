@@ -212,38 +212,11 @@
         </div>
       </div>
       <div class="float-right mt-10 flex">
-        <div class="relative">
-          <select
-            class=" border-custom-lightgray border h-12 font-semibold px-4 w-56"
-          >
-            <option value="More Actions">More Actions</option>
-            <option value="Ask Reschedule">Ask Reschedule</option>
-            <option value="Cancel Booking">Cancel Booking</option>
-            <option value="Download Invoice">Download Invoice</option>
-          </select>
-          <span class="absolute top-3 right-7 pointer-events-none">
-            <svg
-              class="fill-current hover:text-red-600"
-              id="arrow_down_icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                id="Path_117"
-                data-name="Path 117"
-                d="M0,0H24V24H0Z"
-                fill="none"
-              />
-              <path
-                id="Path_118"
-                data-name="Path 118"
-                d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
-              />
-            </svg>
-          </span>
-        </div>
+        <button
+          class="border-custom-lightgray hover:bg-custom-lightblue w-full hover:border-transparent hover:text-white border px-10 py-2 my-1 md:my-0 font-semibold"
+        >
+          Delete
+        </button>
       </div>
     </div>
   </vue-final-modal>

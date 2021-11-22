@@ -137,7 +137,7 @@
               </svg>
             </p>
             <div
-              class="absolute -top-16 -left-6 md:left-32 border-2 border-custom-lightgreen py-4 px-7 w-52 md:w-80 text-custom-lightblue font-semibold bg-white hidden group-hover:block"
+              class="absolute -top-16 -left-6 md:left-28 border-2 border-custom-lightgreen py-4 px-7 w-52 md:w-3/4 text-custom-lightblue font-semibold bg-white hidden group-hover:block"
             >
               <div class="mb-4">
                 <span
