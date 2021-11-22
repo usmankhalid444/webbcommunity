@@ -41,6 +41,11 @@ import AdminCreateEvent from '../components/pages/admin/events/components/AdminC
 import AdminNotification from '../components/pages/admin/notifications/AdminNotification'
 import HiringPrices from '../components/pages/admin/hiring-prices/HiringPrices'
 import AdminManageBooking from '../components/pages/admin/bookings/manage-booking/AdminManageBooking'
+import AdminCreateBooking from '../components/pages/admin/bookings/create-booking/AdminCreateBooking'
+import AdminCalenderOneDay from '../components/pages/admin/bookings/create-booking/components/CalenderOneDay'
+import AdminCalenderOneDayPlus from '../components/pages/admin/bookings/create-booking/components/CalenderOneDayPlus'
+import AdminCalenderWeekly from '../components/pages/admin/bookings/create-booking/components/CalenderWeekly'
+import AdminCalenderMonthly from '../components/pages/admin/bookings/create-booking/components/CalenderMonthly'
 const routes = [
   {  
     path: "/",
@@ -251,6 +256,34 @@ const routes = [
     path: "/adminmanagebookings",
     name: "Admin Manage Bookings",
     component: AdminManageBooking,
+  },
+  {
+    path: "/admincreatebooking",
+    name: "Admin Create Bookings",
+    component: AdminCreateBooking,
+  },
+  {
+    path: "/calender-oneday",
+    name: "Admin Calender Oneday",
+    component: AdminCalenderOneDay,
+  },
+  
+  {
+    path: "/calender-oneday-plus",
+    name: "Admin Calender Oneday Plus",
+    component: AdminCalenderOneDayPlus,
+  },
+  
+  {
+    path: "/calender-Weekly",
+    name: "Admin Calender Weekly",
+    component: AdminCalenderWeekly,
+  },
+  
+  {
+    path: "/calender-mothly",
+    name: "Admin Calender Monthly",
+    component: AdminCalenderMonthly,
   },
   
 ];

@@ -128,7 +128,7 @@ export default {
           dropdown: [
             {
               title: "Create New",
-              link: "createbooking",
+              link: "admincreatebooking",
             },
             {
               title: "Manage",
