@@ -146,10 +146,8 @@
       </div>
       <!-- table start -->
       <div class="capitalize h-72 md:h-96 mt-10 overflow-auto w-full">
-        <table
-          class="w-full md:leading-extra-loose overflow-scroll text-sm md:text-base"
-        >
-          <thead class="border-2">
+        <table class="w-full md:leading-extra-loose  text-sm md:text-base">
+          <thead class="border">
             <tr class="text-left">
               <th class="px-5">sr.</th>
               <th>type</th>
@@ -159,9 +157,7 @@
             </tr>
           </thead>
           <tbody class="text-custom-darkblue font-semibold ">
-            <tr
-              class="border hover:border-2  hover:border-custom-lightgray group"
-            >
+            <tr class="border hover:outline-blue group">
               <td class="px-5">01</td>
               <td>general meeing</td>
               <td>dec 15, 2020</td>
@@ -175,42 +171,49 @@
                 </p>
               </td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">02</td>
               <td>enterpreneurship conference</td>
               <td>dec 08, 2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">03</td>
               <td>coders meetup</td>
               <td>dec 01, 2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">04</td>
               <td>domestic problems debate</td>
               <td>nov 23,2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">04</td>
               <td>domestic problems debate</td>
               <td>nov 23,2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">04</td>
               <td>domestic problems debate</td>
               <td>nov 23,2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
+              <td class="px-5">04</td>
+              <td>domestic problems debate</td>
+              <td>nov 23,2020</td>
+              <td>approved</td>
+              <td></td>
+            </tr>
+            <tr class="border hover:outline-blue">
               <td class="px-5">04</td>
               <td>domestic problems debate</td>
               <td>nov 23,2020</td>

@@ -33,6 +33,7 @@ module.exports = {
       },
       outline:{
         solid:['2px solid #E1E7EF','1px'],
+        blue:['1px solid #6169A0','-1px'],
       },
     },
   },

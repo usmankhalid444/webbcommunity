@@ -138,7 +138,7 @@
         </div>
       </div>
       <!-- table start -->
-      <div class="capitalize h-72 md:h-2/5 mt-10 overflow-auto w-full">
+      <div class="capitalize h-72 md:h-96 mt-10 overflow-auto w-full">
         <table
           class="w-full md:leading-extra-loose overflow-scroll text-sm md:text-base"
         >
