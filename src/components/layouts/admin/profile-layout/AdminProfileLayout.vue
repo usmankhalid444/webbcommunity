@@ -3,7 +3,7 @@
     <AdminHeader />
     <AdminProfileLayoutMobile :menu="menu" />
     <div
-      class="bg-white h-screen hidden md:block text-custom-lightblue capitalize font-semibold border-r border-gray-300 w-72  fixed"
+      class="bg-white h-screen hidden md:block text-custom-lightblue capitalize font-semibold border-r border-gray-300 w-72 fixed overflow-auto"
     >
       <ul class="border-b border-gray-300 w-full px-10 py-5">
         <li v-for="(item, i) in menu" :key="i" class="relative">
