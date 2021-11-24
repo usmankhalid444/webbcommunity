@@ -61,7 +61,7 @@
       <!-- table start -->
       <div class="capitalize h-72 md:h-96 mt-10 overflow-auto w-full">
         <!-- px-8 py-4 -->
-        <table class="w-full md:leading-extra-loose  text-sm md:text-base">
+        <table class="w-full md:leading-extra-loose text-sm md:text-base">
           <thead class="border">
             <tr class="text-left">
               <th class="px-5">sr.</th>
@@ -86,42 +86,42 @@
                 </p>
               </td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">02</td>
               <td>enterpreneurship conference</td>
               <td>dec 08, 2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">03</td>
               <td>coders meetup</td>
               <td>dec 01, 2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">04</td>
               <td>domestic problems debate</td>
               <td>nov 23,2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">04</td>
               <td>domestic problems debate</td>
               <td>nov 23,2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">04</td>
               <td>domestic problems debate</td>
               <td>nov 23,2020</td>
               <td>approved</td>
               <td></td>
             </tr>
-            <tr class="border hover:border-2  hover:border-custom-lightgray">
+            <tr class="border hover:outline-blue">
               <td class="px-5">04</td>
               <td>domestic problems debate</td>
               <td>nov 23,2020</td>
