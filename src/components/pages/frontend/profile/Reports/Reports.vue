@@ -61,10 +61,8 @@
       </div>
       <!-- table start -->
       <div class="capitalize h-72 md:h-96 mt-10 overflow-auto w-full">
-        <table
-          class="w-full md:leading-extra-loose overflow-scroll text-sm md:text-base"
-        >
-          <thead class="border-2">
+        <table class="w-full md:leading-extra-loose text-sm md:text-base">
+          <thead class="border">
             <tr class="text-left">
               <th class="px-5">sr.</th>
               <th>type</th>
@@ -74,9 +72,7 @@
             </tr>
           </thead>
           <tbody class="text-custom-darkblue font-semibold ">
-            <tr
-              class="border hover:border-2  hover:border-custom-lightgray group"
-            >
+            <tr class="border hover:outline-blue group">
               <td class="px-5">01</td>
               <td>general meeing</td>
               <td>dec 15, 2020</td>

@@ -2,10 +2,8 @@
   <div>
     <!-- table start -->
     <div class="capitalize h-72 md:h-96 mt-10 overflow-auto w-full">
-      <table
-        class="w-full md:leading-extra-loose overflow-scroll text-sm md:text-base"
-      >
-        <thead class="border-2 text-custom-lightgray">
+      <table class="w-full md:leading-extra-loose text-sm md:text-base">
+        <thead class="border text-custom-lightgray">
           <tr class="text-left">
             <th class="px-5">Sr.</th>
             <th>News</th>
@@ -68,7 +66,7 @@
           <tr
             v-for="(item, i) in news"
             :key="i"
-            class="border hover:border-2  hover:border-custom-lightgray group hover:bg-white"
+            class="border hover:outline-blue group hover:bg-white"
           >
             <td class="px-5">{{ item.id }}</td>
             <td>

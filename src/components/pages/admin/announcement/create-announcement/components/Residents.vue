@@ -2,10 +2,8 @@
   <div>
     <!-- table start -->
     <div class="capitalize md:h-2/5 mt-7 overflow-auto w-full">
-      <table
-        class="w-full  h-72 md:leading-extra-loose overflow-scroll text-sm md:text-base"
-      >
-        <thead class="border-2 text-custom-lightgray">
+      <table class="w-full  h-72 md:leading-extra-loose text-sm md:text-base">
+        <thead class="border text-custom-lightgray">
           <tr class="text-left">
             <th class="px-5">
               <input
@@ -75,7 +73,7 @@
           <tr
             v-for="(item, i) in resident_users"
             :key="i"
-            class="border hover:border-2  hover:border-custom-lightgray group hover:bg-white"
+            class="border hover:outline-blue group hover:bg-white"
           >
             <td class="px-5">
               <input

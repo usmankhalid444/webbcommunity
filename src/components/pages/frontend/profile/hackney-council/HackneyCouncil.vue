@@ -146,7 +146,7 @@
       </div>
       <!-- table start -->
       <div class="capitalize h-72 md:h-96 mt-10 overflow-auto w-full">
-        <table class="w-full md:leading-extra-loose  text-sm md:text-base">
+        <table class="w-full md:leading-extra-loose text-sm md:text-base">
           <thead class="border">
             <tr class="text-left">
               <th class="px-5">sr.</th>
