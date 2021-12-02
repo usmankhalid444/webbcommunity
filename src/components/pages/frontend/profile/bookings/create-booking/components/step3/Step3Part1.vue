@@ -1,16 +1,17 @@
 <template>
   <div>
     <div class="w-full relative">
-      <p class="font-semibold">Recurring Event</p>
+      <p class="font-semibold">How many days a month?</p>
       <select
-        @change="onChange($event)"
         name="status"
         class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8 appearance-none"
       >
-        <option value="1 Day Event">1 Day Event</option>
-        <option value="1 Day Plus Event">1 Day Plus Event</option>
-        <option value="Repeat Weekly">Repeat Weekly</option>
-        <option value="Repeat Monthly">Repeat Monthly</option>
+        <option value="1 Day a Month">1 Day a Month</option>
+        <option value="2 Day a Month">2 Day a Month</option>
+        <option value="3 Day a Month">3 Day a Month</option>
+        <option value="4 Day a Month">4 Day a Month</option>
+        <option value="5 Day a Month">5 Day a Month</option>
+        <option value="6 Day a Month">6 Day a Month</option>
       </select>
       <span class="absolute top-14 right-5 pointer-events-none">
         <svg
@@ -35,10 +36,8 @@
         </svg>
       </span>
     </div>
-    <RepeatWeekly v-if="recurringEvent == 'weekly'" />
-    <RepeatMonthly v-if="recurringEvent == 'monthly'" />
     <button
-      @click="nextStep('step3Part1')"
+      @click="nextStep('step3Part2')"
       class="bg-custom-purple hover:bg-custom-lightblue font-semibold text-white w-full h-16 my-10"
     >
       CONTINUE
@@ -46,32 +45,10 @@
   </div>
 </template>
 <script>
-import RepeatWeekly from "./RepeatWeekly";
-import RepeatMonthly from "./RepeatMonthly";
 export default {
-  data() {
-    return {
-      recurringEvent: "",
-    };
-  },
-  components: {
-    RepeatWeekly,
-    RepeatMonthly,
-  },
   methods: {
     nextStep(currentStep) {
       this.$emit("nextStep", currentStep);
-    },
-    onChange(event) {
-      if (event.target.value == "Repeat Weekly") {
-        return (this.recurringEvent = "weekly");
-      } else if (event.target.value == "Repeat Monthly") {
-        return (this.recurringEvent = "monthly");
-      } else {
-        return (this.recurringEvent = "");
-      }
-
-      // console.log(event.target.value);
     },
   },
 };

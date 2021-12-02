@@ -9,6 +9,10 @@
       <Step1 @nextStep="getCurrentStep" v-if="currentStep == 'step1'" />
       <Step2 @nextStep="getCurrentStep" v-if="currentStep == 'step2'" />
       <Step3 @nextStep="getCurrentStep" v-if="currentStep == 'step3'" />
+      <Step3Part1
+        @nextStep="getCurrentStep"
+        v-if="currentStep == 'step3Part1'"
+      />
       <Step3Part2
         @nextStep="getCurrentStep"
         v-if="currentStep == 'step3Part2'"
@@ -22,6 +26,7 @@ import Header from "../../../../../layouts/frontend/header/Header";
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
 import Step3 from "./components/step3/Step3";
+import Step3Part1 from "./components/step3/Step3Part1";
 import Step3Part2 from "./components/Step3Part2";
 import Step4 from "./components/Step4";
 export default {
@@ -40,6 +45,7 @@ export default {
     Step1,
     Step2,
     Step3,
+    Step3Part1,
     Step3Part2,
     Step4,
   },
