@@ -7,11 +7,11 @@
         class="w-full border-custom-lightgray border h-14 my-4 font-semibold px-8 appearance-none"
       >
         <option value="1 Day a Month">1 Day a Month</option>
-        <option value="2 Day a Month">2 Day a Month</option>
-        <option value="3 Day a Month">3 Day a Month</option>
-        <option value="4 Day a Month">4 Day a Month</option>
-        <option value="5 Day a Month">5 Day a Month</option>
-        <option value="6 Day a Month">6 Day a Month</option>
+        <option value="2 Days a Month">2 Days a Month</option>
+        <option value="3 Days a Month">3 Days a Month</option>
+        <option value="4 Days a Month">4 Days a Month</option>
+        <option value="5 Days a Month">5 Days a Month</option>
+        <option value="6 Days a Month">6 Days a Month</option>
       </select>
       <span class="absolute top-14 right-5 pointer-events-none">
         <svg
