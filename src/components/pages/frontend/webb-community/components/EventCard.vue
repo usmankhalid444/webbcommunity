@@ -10,9 +10,11 @@
       />
       <p class="inline px-5 font-semibold ">{{ event.name }}</p>
       <p class="float-right mt-2 text-custom-lightgray">{{ event.date }}</p>
-      <h1 class="text-2xl md:text-3xl py-7">
-        {{ event.heading }}
-      </h1>
+      <a href="#">
+        <h4 class="text-2xl md:text-3xl py-7">
+          {{ event.heading }}
+        </h4>
+      </a>
       <div class="text-base text-custom-lightblue my-3">
         <p class=" inline p-2 rounded-md mx-2 bg-custom-lightgreen">
           {{ event.duration }}
