@@ -14,9 +14,7 @@
     <!--intro end  -->
     <div class="mb-8">
       <h3 class="inline text-2xl font-semibold">Overview</h3>
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-7 gap-y-4 mt-8"
-      >
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-7 gap-y-4 mt-8">
         <div
           class="bg-white p-5 xl:py-7 border border-gray-300 hover:border-custom-darkblue hover:shadow"
         >
@@ -25,9 +23,7 @@
             Total Earned
           </p>
           <div class="inline relative">
-            <select
-              class="text-sm font-semibold border-none focus:ring-transparent"
-            >
+            <select class="text-sm font-semibold border-none focus:ring-transparent">
               <option value="Dec 20">Dec 20</option>
               <option value="Dec 20">Dec 20</option>
               <option value="Dec 20">Dec 20</option>
@@ -40,12 +36,7 @@
                 height="24"
                 viewBox="0 0 24 24"
               >
-                <path
-                  id="Path_117"
-                  data-name="Path 117"
-                  d="M0,0H24V24H0Z"
-                  fill="none"
-                />
+                <path id="Path_117" data-name="Path 117" d="M0,0H24V24H0Z" fill="none" />
                 <path
                   id="Path_118"
                   data-name="Path 118"
@@ -92,12 +83,7 @@
           height="24"
           viewBox="0 0 24 24"
         >
-          <path
-            id="Path_117"
-            data-name="Path 117"
-            d="M0,0H24V24H0Z"
-            fill="none"
-          />
+          <path id="Path_117" data-name="Path 117" d="M0,0H24V24H0Z" fill="none" />
           <path
             id="Path_118"
             data-name="Path 118"
@@ -106,18 +92,107 @@
         </svg>
       </span>
     </div>
+    <!-- chart start -->
+    <div class="mt-3">
+      <highcharts :options="chartOptions"></highcharts>
+    </div>
+    <!-- chart end -->
   </div>
 </template>
 <script>
+import { Chart } from "highcharts-vue";
 export default {
+  components: { highcharts: Chart },
   data() {
     return {
+      earning_data: [1300, 1450, 1100, 1200, 1050, 1380, 950, 1250, 1370, 1180, 1300, 1150],
       overview: {
         total_earned: 8500,
         total_pending: 3450,
         security_deposite: 800,
       },
     };
+  },
+  computed: {
+    chartOptions() {
+      return {
+        chart: {
+          type: "column",
+          borderColor: "#D1D5DB",
+          borderWidth: 1,
+        },
+        credits: {
+          enabled: false,
+        },
+        tooltip: { enabled: false },
+        title: {
+          text: null,
+        },
+        xAxis: {
+          labels: {
+            style: {
+              color: "#00033C",
+              fontWeight: "bold",
+            },
+          },
+          categories: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          crosshair: true,
+        },
+        yAxis: {
+          visible: false,
+          title: {
+            text: null,
+          },
+          labels: {
+            enabled: false,
+          },
+        },
+        legend: { enabled: false },
+
+        plotOptions: {
+          series: {
+            pointWidth: 60,
+            dataLabels: { enabled: true, outside: true, color: "#6168A4", format: "£ {y}" },
+          },
+          column: {
+            borderWidth: 0,
+            color: "#9FA4C8",
+          },
+        },
+        responsive: {
+          rules: [
+            {
+              condition: {
+                maxWidth: 700,
+              },
+              chartOptions: {
+                series: {
+                  pointWidth: 35,
+                },
+              },
+            },
+          ],
+        },
+        series: [
+          {
+            data: this.earning_data,
+          },
+        ],
+      };
+    },
   },
 };
 </script>
