@@ -28,7 +28,7 @@ import CalenderMonthly from '../components/pages/frontend/profile/bookings/creat
 import BookingSummary from '../components/pages/frontend/profile/bookings/create-booking/components/BookingSummary'
 import Dashboard from '../components/pages/admin/dashboard/Dashboard'
 import Users from '../components/pages/admin/users/Users'
-import Announcements from '../components/pages/admin/announcement/Announcements'
+// import Announcements from '../components/pages/admin/announcement/Announcements'
 import CreateAnnouncement from '../components/pages/admin/announcement/create-announcement/CreateAnnouncement'
 import AdminNews from '../components/pages/admin/news/AdminNews'
 import AdminReports from '../components/pages/admin/reports/AdminReports'
@@ -46,6 +46,8 @@ import AdminCalenderOneDay from '../components/pages/admin/bookings/create-booki
 import AdminCalenderOneDayPlus from '../components/pages/admin/bookings/create-booking/components/CalenderOneDayPlus'
 import AdminCalenderWeekly from '../components/pages/admin/bookings/create-booking/components/CalenderWeekly'
 import AdminCalenderMonthly from '../components/pages/admin/bookings/create-booking/components/CalenderMonthly'
+import Announcements from '../components/pages/frontend/Announcement/Announcements'
+import TestModal from '../components/pages/frontend/TestModal'
 const routes = [
   {  
     path: "/",
@@ -192,11 +194,11 @@ const routes = [
     name: "Users",
     component:Users,
   },
-   {
-    path: "/announcements",
-    name: "Announcements",
-    component:Announcements,
-  },
+  //  {
+  //   path: "/announcements",
+  //   name: "Announcements",
+  //   component:Announcements,
+  // },
    {
     path: "/createannouncement",
     name: "Create New Announcement",
@@ -284,6 +286,16 @@ const routes = [
     path: "/calender-mothly",
     name: "Admin Calender Monthly",
     component: AdminCalenderMonthly,
+  },
+  {
+    path: "/announcements",
+    name: "announcements",
+    component: Announcements,
+  },
+   {
+    path: "/test-modal",
+    name: "test modal",
+    component: TestModal,
   },
   
 ];
