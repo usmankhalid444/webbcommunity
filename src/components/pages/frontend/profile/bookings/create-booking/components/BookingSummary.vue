@@ -17,12 +17,7 @@
               height="26"
               viewBox="0 0 24 24"
             >
-              <path
-                id="Path_210"
-                data-name="Path 210"
-                d="M0,0H24V24H0Z"
-                fill="none"
-              />
+              <path id="Path_210" data-name="Path 210" d="M0,0H24V24H0Z" fill="none" />
               <path
                 id="Path_211"
                 data-name="Path 211"
@@ -38,9 +33,7 @@
         </h1>
       </div>
       <div class="grid grid-cols-12 mt-14 md:gap-x-10 gap-y-5 md:gap-y-0">
-        <div
-          class="col-span-12 md:col-span-7 bg-white border border-custom-lightgray p-12 shadow"
-        >
+        <div class="col-span-12 md:col-span-7 bg-white border border-custom-lightgray p-12 shadow">
           <h1 class="text-xl md:text-34px font-semibold">
             Children Activities
           </h1>
@@ -62,9 +55,7 @@
               <p class="float-right">{{ bookingSummary.guests.kids }} Kids</p>
               <br />
               <div class="my-5">
-                <p class="float-right">
-                  {{ bookingSummary.guests.adults }} Adults
-                </p>
+                <p class="float-right">{{ bookingSummary.guests.adults }} Adults</p>
               </div>
             </div>
             <br />
@@ -81,9 +72,7 @@
           </div>
         </div>
         <div class="col-span-12 md:col-span-4">
-          <div
-            class="w-full bg-white border border-custom-lightgray py-7 shadow"
-          >
+          <div class="w-full bg-white border border-custom-lightgray py-7 shadow">
             <div class="border-b border-custom-lightgray px-12 md:text-xl">
               <div class="my-5">
                 <h3 class="inline">Bookings</h3>
@@ -123,38 +112,108 @@
                 <p class="float-right">£45</p>
               </div>
             </div>
-            <div class="border-b border-custom-lightgray px-12 py-7 relative">
+            <div class="border-b border-custom-lightgray px-12 py-7">
               <p class="text-custom-lightblue">To confirm your spot</p>
-              <select
-                class="w-full border-custom-lightgray border h-12 mt-4 font-semibold px-8 cursor-pointer"
+              <button
+                @click="full_amount = !full_amount"
+                class="border border-custom-lightgray w-full py-3 px-5 mt-4 font-semibold relative"
               >
-                <option value="Pay Booking Fee">Pay Booking Fee</option>
-                <option value="Pay 2nd Instl.">Pay 2nd Instl.</option>
-              </select>
-              <span class="absolute right-20 bottom-10"
-                ><svg
-                  id="arrow_down_icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    id="Path_117"
-                    data-name="Path 117"
-                    d="M0,0H24V24H0Z"
-                    fill="none"
-                  />
-                  <path
-                    id="Path_118"
-                    data-name="Path 118"
-                    d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
-                    fill="#000539"
-                  />
-                </svg>
-              </span>
+                Pay Full Amount
+                <span class="absolute left-3.5 top-3"
+                  ><svg
+                    :class="full_amount ? 'hidden' : 'block'"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g id="uncheck_circle_icon" transform="translate(-19524 4739)">
+                      <path
+                        id="Path_3444"
+                        data-name="Path 3444"
+                        d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+                        transform="translate(19524 -4739)"
+                        fill="#00033c"
+                      />
+                      <rect
+                        id="Rectangle_2745"
+                        data-name="Rectangle 2745"
+                        width="24"
+                        height="24"
+                        transform="translate(19524 -4739)"
+                        fill="none"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    :class="full_amount ? 'block' : 'hidden'"
+                    id="check_circle_icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path id="Path_121" data-name="Path 121" d="M0,0H24V24H0Z" fill="none" />
+                    <path
+                      id="Path_122"
+                      data-name="Path 122"
+                      d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10,17,5,12l1.41-1.41L10,14.17l7.59-7.59L19,8Z"
+                      fill="#00033c"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <button
+                @click="installment = !installment"
+                class="border border-custom-lightgray w-full py-3 px-5 mt-4 font-semibold relative"
+              >
+                Pay 1nd Instl
+                <span class="absolute left-3.5 top-3"
+                  ><svg
+                    :class="installment ? 'hidden' : 'block'"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g id="uncheck_circle_icon" transform="translate(-19524 4739)">
+                      <path
+                        id="Path_3444"
+                        data-name="Path 3444"
+                        d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"
+                        transform="translate(19524 -4739)"
+                        fill="#00033c"
+                      />
+                      <rect
+                        id="Rectangle_2745"
+                        data-name="Rectangle 2745"
+                        width="24"
+                        height="24"
+                        transform="translate(19524 -4739)"
+                        fill="none"
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    :class="installment ? 'block' : 'hidden'"
+                    id="check_circle_icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path id="Path_121" data-name="Path 121" d="M0,0H24V24H0Z" fill="none" />
+                    <path
+                      id="Path_122"
+                      data-name="Path 122"
+                      d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2ZM10,17,5,12l1.41-1.41L10,14.17l7.59-7.59L19,8Z"
+                      fill="#00033c"
+                    />
+                  </svg>
+                </span>
+              </button>
             </div>
-            <div class="mt-6 px-8 text-xl">
+            <div class="mt-6 px-8 text-xl font-semibold">
               <h3 class="inline">Due</h3>
               <p class="float-right">8 Dec 2020</p>
             </div>
@@ -179,6 +238,8 @@ export default {
   },
   data() {
     return {
+      installment: false,
+      full_amount: false,
       bookingSummary: {
         reference_no: "WC01",
         event_status: "Private",
