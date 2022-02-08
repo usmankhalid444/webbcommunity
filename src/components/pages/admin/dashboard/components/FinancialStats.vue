@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="xl:w-800p 2xl:w-full  ">
     <!-- intro -->
     <div class="w-full relative mb-14">
       <span
@@ -94,15 +94,183 @@
     </div>
     <!-- chart start -->
     <div class="mt-3">
-      <highcharts :options="chartOptions"></highcharts>
+      <Chart :options="chartOptions"></Chart>
     </div>
     <!-- chart end -->
+    <!-- sidebar start -->
+    <div
+      class="fixed h-screen right-0 border top-16 xl:w-56 2xl:w-96 bg-white p-5 overflow-auto hidden xl:block "
+    >
+      <div class="my-5">
+        <span class="text-2xl font-semibold">Bookings</span
+        ><span
+          class="text-custom-purple text-lg underline xl:mx-3 2xl:mx-6 cursor-pointer block xl:inline"
+          >Full View</span
+        >
+        <div class="relative inline">
+          <select
+            class="text-custom-lightblue font-semibold relative -left-2 border-none focus:ring-transparent mt-1"
+          >
+            <option value="Wednesday, 21 Dec">Wednesday, 21 Dec</option>
+            <option value="Wednesday, 22 Dec">Wednesday, 22 Dec</option>
+            <option value="Wednesday, 23 Dec">Wednesday, 23 Dec</option>
+          </select>
+          <span class="absolute right-5 top-0 pointer-events-none"
+            ><svg
+              class="fill-current text-custom-lightblue"
+              id="arrow_down_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path id="Path_117" data-name="Path 117" d="M0,0H24V24H0Z" fill="none" />
+              <path
+                id="Path_118"
+                data-name="Path 118"
+                d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="space-y-4 2xl:pb-16">
+        <div class="bg-gray-200 rounded py-5 shadow text-center">
+          <p class="font-semibold">Wedding Ceremony</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-5">
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+          </div>
+        </div>
+        <div class="bg-red-200 rounded py-5 shadow text-center">
+          <p class="font-semibold">Birthday Party</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-5">
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+          </div>
+        </div>
+        <div class="bg-gray-200 rounded py-5 shadow text-center">
+          <p class="font-semibold">Wedding Ceremony</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-5">
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+          </div>
+        </div>
+        <div class="bg-blue-100 rounded py-5 shadow text-center">
+          <p class="font-semibold">Birthday Party</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-5">
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+          </div>
+        </div>
+        <div class="bg-yellow-100 rounded py-5 shadow text-center">
+          <p class="font-semibold">Wedding Ceremony</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-5">
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+          </div>
+        </div>
+        <div class="bg-red-200 rounded py-5 shadow text-center">
+          <p class="font-semibold">Birthday Party</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-5">
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+          </div>
+        </div>
+        <div class="bg-gray-200 rounded py-5 shadow text-center">
+          <p class="font-semibold">Wedding Ceremony</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-5">
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+          </div>
+        </div>
+        <div class="bg-red-200 rounded py-5 shadow text-center">
+          <p class="font-semibold">Birthday Party</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-5">
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
+              ><span>3</span>AM to <span>4</span>AM</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sidebar end -->
   </div>
 </template>
 <script>
 import { Chart } from "highcharts-vue";
 export default {
-  components: { highcharts: Chart },
+  components: { Chart },
   data() {
     return {
       earning_data: [1300, 1450, 1100, 1200, 1050, 1380, 950, 1250, 1370, 1180, 1300, 1150],
