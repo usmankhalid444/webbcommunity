@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full xl:w-10/12 2xl:w-full  ">
+  <div class="xl:w-10/12 2xl:w-full  ">
     <!-- intro -->
     <div class="w-full relative mb-14">
       <span
