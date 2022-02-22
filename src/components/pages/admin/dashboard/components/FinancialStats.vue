@@ -1,5 +1,5 @@
 <template>
-  <div class="xl:w-800p 2xl:w-full  ">
+  <div class="w-full xl:w-10/12 2xl:w-full  ">
     <!-- intro -->
     <div class="w-full relative mb-14">
       <span
@@ -99,7 +99,7 @@
     <!-- chart end -->
     <!-- sidebar start -->
     <div
-      class="fixed h-screen right-0 border top-16 xl:w-56 2xl:w-96 bg-white p-5 overflow-auto hidden xl:block "
+      class="fixed h-screen right-0 border top-16 xl:w-72 2xl:w-80 bg-white p-5 overflow-auto hidden xl:block "
     >
       <div class="my-5">
         <span class="text-2xl font-semibold">Bookings</span
@@ -134,132 +134,23 @@
           </span>
         </div>
       </div>
-      <div class="space-y-4 2xl:pb-16">
-        <div class="bg-gray-200 rounded py-5 shadow text-center">
-          <p class="font-semibold">Wedding Ceremony</p>
-          <div class="flex flex-wrap justify-center gap-2 mt-5">
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
+      <div class="space-y-4 2xl:pb-16 ">
+        <div class="bg-custom-lightgreen border border-gray-300 text-lg  2xl:text-xl">
+          <p class="border-b border-gray-300 py-3 px-5 font-semibold">
+            Children Activities
+          </p>
+          <div class="space-y-1.5 py-3 px-5">
+            <p class="text-custom-lightblue"><span>10:00 AM</span>- <span>11:00 AM</span></p>
+            <p class="text-custom-lightblue"><span>12:00 AM</span>- <span>01:00 PM</span></p>
+            <p class="text-custom-lightblue"><span>02:00 PM</span>- <span>03:00 PM</span></p>
           </div>
         </div>
-        <div class="bg-red-200 rounded py-5 shadow text-center">
-          <p class="font-semibold">Birthday Party</p>
-          <div class="flex flex-wrap justify-center gap-2 mt-5">
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-          </div>
-        </div>
-        <div class="bg-gray-200 rounded py-5 shadow text-center">
-          <p class="font-semibold">Wedding Ceremony</p>
-          <div class="flex flex-wrap justify-center gap-2 mt-5">
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-          </div>
-        </div>
-        <div class="bg-blue-100 rounded py-5 shadow text-center">
-          <p class="font-semibold">Birthday Party</p>
-          <div class="flex flex-wrap justify-center gap-2 mt-5">
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-          </div>
-        </div>
-        <div class="bg-yellow-100 rounded py-5 shadow text-center">
-          <p class="font-semibold">Wedding Ceremony</p>
-          <div class="flex flex-wrap justify-center gap-2 mt-5">
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-          </div>
-        </div>
-        <div class="bg-red-200 rounded py-5 shadow text-center">
-          <p class="font-semibold">Birthday Party</p>
-          <div class="flex flex-wrap justify-center gap-2 mt-5">
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-          </div>
-        </div>
-        <div class="bg-gray-200 rounded py-5 shadow text-center">
-          <p class="font-semibold">Wedding Ceremony</p>
-          <div class="flex flex-wrap justify-center gap-2 mt-5">
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-          </div>
-        </div>
-        <div class="bg-red-200 rounded py-5 shadow text-center">
-          <p class="font-semibold">Birthday Party</p>
-          <div class="flex flex-wrap justify-center gap-2 mt-5">
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
-            <span class="border border-custom-purple rounded-xl px-2 shadow-xl"
-              ><span>3</span>AM to <span>4</span>AM</span
-            >
+        <div class="bg-custom-lightgreen border border-gray-300 text-lg  2xl:text-xl">
+          <p class="border-b border-gray-300 py-3 px-5 font-semibold">
+            Wedding Ceremony
+          </p>
+          <div class="space-y-1.5 py-3 px-5">
+            <p class="text-custom-lightblue"><span>08:00 AM</span>- <span>10:00 AM</span></p>
           </div>
         </div>
       </div>
@@ -348,7 +239,7 @@ export default {
               },
               chartOptions: {
                 series: {
-                  pointWidth: 35,
+                  pointWidth: 45,
                 },
               },
             },
